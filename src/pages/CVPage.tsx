@@ -12,24 +12,25 @@ export default function CVPage() {
   return (
     <div className="min-h-screen bg-background text-on-surface print:bg-white print:text-black">
       <div className="print:hidden sticky top-0 z-50 bg-[#0e0e0e]/80 backdrop-blur-xl border-b border-zinc-800/30">
-        <div className="max-w-4xl mx-auto px-4 md:px-8 h-16 flex items-center justify-between">
+        <div className="max-w-4xl mx-auto px-4 md:px-8 h-16 flex items-center justify-between gap-2">
           <a
             href="/"
-            className="text-sm font-bold text-on-surface-variant hover:text-primary transition-colors"
+            className="text-xs sm:text-sm font-bold text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap"
           >
-            ← Back to Portfolio
+            <span className="sm:hidden">← Back</span>
+            <span className="hidden sm:inline">← Back to Portfolio</span>
           </a>
-          <div className="flex gap-3">
+          <div className="flex gap-2 sm:gap-3">
             <button
               onClick={() => window.print()}
-              className="px-4 py-2 rounded-full border border-outline-variant/30 text-sm font-bold hover:bg-surface-container transition-colors"
+              className="px-3 py-1.5 sm:px-4 sm:py-2 rounded-full border border-outline-variant/30 text-xs sm:text-sm font-bold hover:bg-surface-container transition-colors whitespace-nowrap"
             >
               Print
             </button>
             <a
               href={CV_PDF_PATH}
               download
-              className="px-4 py-2 rounded-full bg-primary text-on-primary text-sm font-black uppercase tracking-wide hover:bg-primary-container transition-colors"
+              className="px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-primary text-on-primary text-xs sm:text-sm font-black uppercase tracking-wide hover:bg-primary-container transition-colors whitespace-nowrap"
             >
               Download PDF
             </a>
