@@ -1,0 +1,18 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Once justinjohnson.de is added and set as the primary domain in Netlify,
+# this permanently redirects the old *.netlify.app URL to it.
+[[redirects]]
+  from = "https://justin-johnson.netlify.app/*"
+  to = "https://justinjohnson.de/:splat"
+  status = 301
+  force = true
+
+# Client-side routing fallback (e.g. /cv) for direct loads and refreshes.
+# Only applies when no physical file matches the request path.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
