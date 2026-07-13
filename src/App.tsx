@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { profile } from "./data/profile";
 import Header from "./components/Header";
 import HeroSection from "./components/sections/HeroSection";
@@ -10,11 +11,45 @@ import LanguagesSection from "./components/sections/LanguagesSection";
 import EducationSection from "./components/sections/EducationSection";
 import ContactSection from "./components/sections/ContactSection";
 import Footer from "./components/Footer";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 import CVPage from "./pages/CVPage";
+import BlogListPage from "./pages/BlogListPage";
+import BlogPostPage from "./pages/BlogPostPage";
 
 export default function App() {
-  if (window.location.pathname === "/cv") {
+  const path = window.location.pathname;
+
+  // Full page loads (every nav here is a real browser navigation, not client-side
+  // routing) can race the browser's native scroll-to-hash against React mounting
+  // the target section, so retry a few times until the element actually exists.
+  useEffect(() => {
+    if (path !== "/" || !window.location.hash) return;
+
+    const id = window.location.hash.slice(1);
+    let attempts = 0;
+    const tryScroll = () => {
+      const target = document.getElementById(id);
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+      } else if (attempts < 20) {
+        attempts += 1;
+        setTimeout(tryScroll, 50);
+      }
+    };
+    tryScroll();
+  }, [path]);
+
+  if (path === "/cv") {
     return <CVPage />;
+  }
+
+  if (path === "/blog" || path === "/blog/") {
+    return <BlogListPage />;
+  }
+
+  if (path.startsWith("/blog/")) {
+    const slug = path.slice("/blog/".length).replace(/\/$/, "");
+    return <BlogPostPage slug={slug} />;
   }
 
   return (
@@ -46,6 +81,7 @@ export default function App() {
           <path d="M16 .5C7.44.5.5 7.44.5 16c0 2.83.74 5.49 2.04 7.8L.5 31.5l7.93-2.01A15.45 15.45 0 0 0 16 31.5C24.56 31.5 31.5 24.56 31.5 16S24.56.5 16 .5zm0 28.3a13.17 13.17 0 0 1-6.72-1.84l-.48-.29-4.7 1.19 1.24-4.57-.32-.5A13.2 13.2 0 1 1 16 28.8zm7.24-9.88c-.4-.2-2.35-1.16-2.71-1.29-.37-.13-.63-.2-.9.2s-1.03 1.29-1.26 1.55c-.23.27-.46.3-.86.1a10.83 10.83 0 0 1-3.19-1.97 11.96 11.96 0 0 1-2.21-2.74c-.23-.4 0-.61.18-.81.16-.18.4-.46.6-.69.2-.23.26-.4.4-.66.13-.27.07-.5-.03-.7-.1-.2-.9-2.16-1.23-2.96-.32-.78-.65-.67-.9-.68h-.76c-.27 0-.7.1-1.06.5-.37.4-1.4 1.36-1.4 3.32s1.43 3.85 1.63 4.12c.2.27 2.82 4.3 6.83 6.03.95.41 1.7.66 2.28.84.96.3 1.83.26 2.52.16.77-.12 2.35-.96 2.68-1.89.33-.93.33-1.72.23-1.89-.1-.17-.36-.27-.76-.47z" />
         </svg>
       </a>
+      <ScrollToTopButton />
     </div>
   );
 }

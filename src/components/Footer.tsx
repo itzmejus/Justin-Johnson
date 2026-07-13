@@ -33,6 +33,12 @@ export default function Footer() {
           >
             Download CV
           </a>
+          <a
+            href="/blog"
+            className="text-zinc-500 font-['Inter'] text-[10px] tracking-[0.05em] uppercase hover:text-cyan-400 transition-all duration-300 underline decoration-2 underline-offset-4"
+          >
+            Blog
+          </a>
         </div>
       </div>
     </footer>

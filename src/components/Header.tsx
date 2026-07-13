@@ -7,18 +7,25 @@ const navLinks = [
   { label: "Experience", href: "#experience" },
   { label: "Case Studies", href: "#case-studies" },
   { label: "Projects", href: "#projects" },
+  { label: "Blog", href: "/blog" },
   { label: "Contact", href: "#contact" },
 ];
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const onHome = window.location.pathname === "/";
 
   return (
     <header className="fixed top-0 w-full z-50 bg-[#0e0e0e]/60 backdrop-blur-xl shadow-[0_0_32px_0_rgba(255,255,255,0.04)]">
       <div className="flex justify-between items-center max-w-7xl mx-auto px-4 md:px-8 h-20">
         <a
-          href="#"
-          onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+          href="/"
+          onClick={(e) => {
+            if (onHome) {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }
+          }}
           className="shrink-0 whitespace-nowrap text-lg sm:text-xl xl:text-2xl font-black text-cyan-400 tracking-tighter font-['Space_Grotesk']"
         >
           JUSTIN JOHNSON
@@ -28,7 +35,7 @@ export default function Header() {
           {navLinks.map((link) => (
             <a
               key={link.href}
-              href={link.href}
+              href={link.href.startsWith("#") && !onHome ? `/${link.href}` : link.href}
               className="text-zinc-400 font-medium hover:text-cyan-300 transition-colors whitespace-nowrap"
             >
               {link.label}
@@ -42,7 +49,7 @@ export default function Header() {
             CV
           </a>
           <a
-            href="#contact"
+            href={onHome ? "#contact" : "/#contact"}
             className="bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2 rounded-full font-bold transition-all duration-300 hover:scale-105 active:scale-95 whitespace-nowrap"
           >
             Hire Me
@@ -87,7 +94,7 @@ export default function Header() {
           {navLinks.map((link) => (
             <a
               key={link.href}
-              href={link.href}
+              href={link.href.startsWith("#") && !onHome ? `/${link.href}` : link.href}
               className="text-zinc-400 text-lg hover:text-cyan-300 transition-colors"
               onClick={() => setMenuOpen(false)}
             >
@@ -103,7 +110,7 @@ export default function Header() {
             CV
           </a>
           <a
-            href="#contact"
+            href={onHome ? "#contact" : "/#contact"}
             className="bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2 rounded-full font-bold transition-all duration-300 hover:scale-105 active:scale-95"
             onClick={() => setMenuOpen(false)}
           >
