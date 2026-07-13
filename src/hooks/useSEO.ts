@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const SITE_URL = "https://justinjohnson.de";
+const SITE_URL = "https://www.justinjohnson.de";
 const DEFAULT_IMAGE = `${SITE_URL}/og-image.png`;
 
 type SEOOptions = {

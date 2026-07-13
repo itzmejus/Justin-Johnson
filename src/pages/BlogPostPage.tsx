@@ -8,7 +8,7 @@ import { profile } from "../data/profile";
 import { useSEO } from "../hooks/useSEO";
 import { getSiteScreenshot } from "../lib/screenshot";
 
-const SITE_URL = "https://justinjohnson.de";
+const SITE_URL = "https://www.justinjohnson.de";
 
 export default function BlogPostPage({ slug }: { slug: string }) {
   const post = getBlogPost(slug);
