@@ -5,10 +5,31 @@ import { education } from "../data/education";
 import { skills } from "../data/skills";
 import { languages } from "../data/languages";
 import { caseStudies } from "../data/caseStudies";
+import { useSEO } from "../hooks/useSEO";
 
 export const CV_PDF_PATH = "/cv/Justin-Johnson-CV.pdf";
 
 export default function CVPage() {
+  useSEO({
+    title: "Justin Johnson | Full Stack Developer CV & Resume",
+    description:
+      "View and download the CV of Justin Johnson, a Full Stack Developer specializing in React, Next.js, Node.js, and AWS, with experience across e-commerce, cloud integrations, and multi-market booking platforms.",
+    path: "/cv",
+    keywords:
+      "Justin Johnson CV, Justin Johnson resume, Full Stack Developer resume, React developer CV, Next.js developer resume, hire full stack developer",
+    jsonLd: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "mainEntity": {
+        "@type": "Person",
+        "name": profile.name,
+        "jobTitle": profile.jobTitle,
+        "url": "https://www.justinjohnson.de/",
+        "email": `mailto:${profile.email}`,
+      },
+    }),
+  });
+
   return (
     <div className="min-h-screen bg-background text-on-surface print:bg-white print:text-black">
       <div className="print:hidden sticky top-0 z-50 bg-[#0e0e0e]/80 backdrop-blur-xl border-b border-zinc-800/30">

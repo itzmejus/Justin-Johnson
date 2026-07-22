@@ -39,6 +39,18 @@ export default function Footer() {
           >
             Blog
           </a>
+          <a
+            href="/services"
+            className="text-zinc-500 font-['Inter'] text-[10px] tracking-[0.05em] uppercase hover:text-cyan-400 transition-all duration-300 underline decoration-2 underline-offset-4"
+          >
+            Services
+          </a>
+          <a
+            href="/freelance"
+            className="text-zinc-500 font-['Inter'] text-[10px] tracking-[0.05em] uppercase hover:text-cyan-400 transition-all duration-300 underline decoration-2 underline-offset-4"
+          >
+            Freelance
+          </a>
         </div>
       </div>
     </footer>

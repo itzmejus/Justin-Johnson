@@ -11,6 +11,8 @@ export default function BlogListPage() {
     description:
       "In-depth build notes on 28 live websites and apps I've shipped — the tech stack, architecture, and reasoning behind each one, from headless commerce booking platforms to multi-brand vehicle hire networks.",
     path: "/blog",
+    keywords:
+      "React developer case studies, Next.js developer portfolio, Node.js developer projects, Shopify headless commerce examples, AWS developer case studies, web development build notes, Justin Johnson portfolio",
   });
 
   const sortedPosts = [...blogPosts].sort(

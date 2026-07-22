@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
 const SITE_URL = "https://www.justinjohnson.de";
-const DEFAULT_IMAGE = `${SITE_URL}/og-image.png`;
+const DEFAULT_IMAGE = `${SITE_URL}/headshot.png`;
 
 type SEOOptions = {
   title: string;
@@ -9,6 +9,7 @@ type SEOOptions = {
   path: string;
   image?: string;
   type?: "website" | "article";
+  keywords?: string;
   jsonLd?: string;
 };
 
@@ -33,13 +34,23 @@ function setLink(rel: string, href: string) {
 }
 
 /** Updates document head tags for the current client-rendered route. */
-export function useSEO({ title, description, path, image = DEFAULT_IMAGE, type = "website", jsonLd }: SEOOptions) {
+export function useSEO({
+  title,
+  description,
+  path,
+  image = DEFAULT_IMAGE,
+  type = "website",
+  keywords,
+  jsonLd,
+}: SEOOptions) {
   useEffect(() => {
     const previousTitle = document.title;
+    const previousKeywords = document.querySelector('meta[name="keywords"]')?.getAttribute("content") ?? null;
     const url = `${SITE_URL}${path}`;
 
     document.title = title;
     setMeta("name", "description", description);
+    if (keywords) setMeta("name", "keywords", keywords);
     setLink("canonical", url);
 
     setMeta("property", "og:type", type);
@@ -64,7 +75,14 @@ export function useSEO({ title, description, path, image = DEFAULT_IMAGE, type =
 
     return () => {
       document.title = previousTitle;
+      if (keywords) {
+        if (previousKeywords !== null) {
+          setMeta("name", "keywords", previousKeywords);
+        } else {
+          document.querySelector('meta[name="keywords"]')?.remove();
+        }
+      }
       script?.remove();
     };
-  }, [title, description, path, image, type, jsonLd]);
+  }, [title, description, path, image, type, keywords, jsonLd]);
 }

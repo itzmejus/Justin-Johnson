@@ -15,6 +15,8 @@ import ScrollToTopButton from "./components/ScrollToTopButton";
 import CVPage from "./pages/CVPage";
 import BlogListPage from "./pages/BlogListPage";
 import BlogPostPage from "./pages/BlogPostPage";
+import FreelancePage from "./pages/FreelancePage";
+import ServicesPage from "./pages/ServicesPage";
 
 export default function App() {
   const path = window.location.pathname;
@@ -41,6 +43,14 @@ export default function App() {
 
   if (path === "/cv") {
     return <CVPage />;
+  }
+
+  if (path === "/freelance" || path === "/freelance/") {
+    return <FreelancePage />;
+  }
+
+  if (path === "/services" || path === "/services/") {
+    return <ServicesPage />;
   }
 
   if (path === "/blog" || path === "/blog/") {

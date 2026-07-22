@@ -24,6 +24,15 @@ function BlogPostContent({ post }: { post: BlogPost }) {
   const [imgFailed, setImgFailed] = useState(false);
   const heroImage = post.image ?? getSiteScreenshot(post.siteUrl, 1200);
 
+  const keywords = [
+    ...post.techStack,
+    post.category,
+    `${post.category} developer`,
+    "Justin Johnson",
+    "freelance full stack developer",
+    "web development case study",
+  ].join(", ");
+
   const jsonLd = JSON.stringify({
     "@context": "https://schema.org",
     "@type": "Article",
@@ -31,6 +40,8 @@ function BlogPostContent({ post }: { post: BlogPost }) {
     description: post.metaDescription,
     datePublished: post.publishedDate,
     dateModified: post.publishedDate,
+    articleSection: post.category,
+    keywords,
     author: {
       "@type": "Person",
       name: profile.name,
@@ -46,6 +57,7 @@ function BlogPostContent({ post }: { post: BlogPost }) {
     path: `/blog/${post.slug}`,
     image: post.image ? `${SITE_URL}${post.image}` : undefined,
     type: "article",
+    keywords,
     jsonLd,
   });
 

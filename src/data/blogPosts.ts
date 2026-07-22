@@ -121,7 +121,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "daisys-paws",
-    title: "Daisy's Paws: A WhatsApp-First E-Commerce Storefront for a Pet Boutique",
+    title: "Daisy's Paws: A WhatsApp-First E-Commerce Storefront",
     metaDescription:
       "The technology behind Daisy's Paws, a UK pet boutique storefront that pairs a Shopify-backed React catalog with a friendly WhatsApp order confirmation step.",
     category: "Pet Boutique",
@@ -162,7 +162,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "minibus-hire-london",
-    title: "Minibus Hire London: The Flagship of a Multi-City Booking Network",
+    title: "Minibus Hire London: Flagship of a Multi-City Network",
     metaDescription:
       "How Minibus Hire London was built as the flagship of a shared React frontend deployed across a growing network of UK minibus and coach hire brands.",
     category: "Vehicle Hire",
@@ -206,7 +206,7 @@ export const blogPosts: BlogPost[] = [
     slug: "tawaf-essentials",
     title: "Tawaf Essentials: An E-Commerce Site for Umrah Travelers",
     metaDescription:
-      "The build behind Tawaf Essentials, a Shopify-backed React storefront selling Umrah essentials, with WhatsApp supporting order confirmation for a global audience.",
+      "The build behind Tawaf Essentials: a Shopify-backed React storefront for Umrah essentials, with WhatsApp handling order confirmation for a global audience.",
     category: "Umrah Essentials",
     company: "Global Web Marketing LLC",
     siteUrl: "https://www.tawafessentials.com/",
@@ -246,9 +246,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "compare-transport-uk",
-    title: "Compare Transport UK: A Comparison Layer Across the Minibus Network",
+    title: "Compare Transport UK: A UK Minibus Comparison Layer",
     metaDescription:
-      "How Compare Transport UK gives visitors a way to compare coach and minibus hire options across the UK, built on the same platform family as the city-specific brands.",
+      "How Compare Transport UK helps visitors compare coach and minibus hire options UK-wide, built on the same platform as the city-specific brands.",
     category: "Transport Comparison",
     company: "Global Web Marketing LLC",
     siteUrl: "http://comparetransport.co.uk/",
@@ -287,7 +287,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "jetset-visas-app",
-    title: "Jetset Visas App: Extending Visa Services Into a Dedicated Application",
+    title: "Jetset Visas App: A Dedicated Visa Tracking Dashboard",
     metaDescription:
       "How the Jetset Visas App extends the core Jetset Visas platform into a dedicated dashboard experience for tracking and managing visa applications.",
     category: "Visa App",
@@ -328,7 +328,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "abc-minibuses-edinburgh",
-    title: "ABC Minibuses Edinburgh: Localizing a Shared Booking Platform for Scotland",
+    title: "ABC Minibuses Edinburgh: A Localized Booking Platform",
     metaDescription:
       "How ABC Minibuses Edinburgh was launched from the shared, config-driven React minibus hire platform used across the UK.",
     category: "Minibus Hire",
@@ -368,7 +368,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "minibuses-manchester",
-    title: "Minibuses Manchester: Extending the Network to Greater Manchester",
+    title: "Minibuses Manchester: Joining the UK Booking Network",
     metaDescription:
       "How Minibuses Manchester was launched as a configuration of the shared React minibus hire platform used across the company's UK network.",
     category: "Minibus Hire",
@@ -408,7 +408,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "minibuses-glasgow",
-    title: "Minibuses Glasgow: Scaling the Booking Network North of the Border",
+    title: "Minibuses Glasgow: Scaling the UK Booking Network",
     metaDescription:
       "How Minibuses Glasgow fits into the shared React minibus hire platform powering multiple UK city brands.",
     category: "Minibus Hire",
@@ -608,9 +608,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "cheap-minibus",
-    title: "Cheap Minibus: A Value Brand Built on the Same Shared Platform",
+    title: "Cheap Minibus: A Value Brand on a Shared Platform",
     metaDescription:
-      "How Cheap Minibus was positioned as a value-focused brand within the shared React minibus hire platform, with a fully featured booking form and multiple payment options.",
+      "How Cheap Minibus was positioned as a value-focused brand on the shared React minibus hire platform, with a full booking form and multiple payment options.",
     category: "Minibus Hire",
     company: "Global Web Marketing LLC",
     siteUrl: "https://www.cheapminibus.co.uk/",
@@ -688,7 +688,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "sell-my-business-ae",
-    title: "Sell My Business AE: Using Shopify as a Headless CMS for Business Listings",
+    title: "Sell My Business AE: Shopify as a Headless Listings CMS",
     metaDescription:
       "How Sell My Business AE repurposes Shopify's product model as a listings backend for a UAE business-for-sale marketplace, built on a modern React frontend.",
     category: "Business Marketplace",
@@ -769,7 +769,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "franks-handyman",
-    title: "Franks Handyman Services: A Local Services Site Built for Enquiries",
+    title: "Franks Handyman Services: A Local Trade Enquiry Site",
     metaDescription:
       "How Franks Handyman Services was built as a local services website in the UK, focused on service listings and turning visitors into booked call-outs.",
     category: "Handyman Services",
@@ -810,7 +810,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "smp-nationwide",
-    title: "SMP Nationwide: A Booking Site for Scalp Micropigmentation Clinics",
+    title: "SMP Nationwide: A UK Clinic Booking Platform",
     metaDescription:
       "The technology behind SMP Nationwide, a UK-wide scalp micropigmentation clinic directory and booking site built around a large-scale local search strategy.",
     category: "Scalp Micropigmentation",
@@ -893,7 +893,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "total-property-ae",
-    title: "Total Property AE: A Next.js Listings Site for Abu Dhabi Office Space",
+    title: "Total Property AE: A Next.js Office Listings Site",
     metaDescription:
       "How Total Property AE was built on Next.js and Tailwind CSS to market private, serviced, coworking and virtual office space across Abu Dhabi.",
     category: "Real Estate",
@@ -973,9 +973,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "excursions-dubai",
-    title: "Building Excursions Dubai: A Headless Booking Platform for Desert Tours",
+    title: "Excursions Dubai: A Headless Booking Platform for Tours",
     metaDescription:
-      "How Excursions Dubai was built on Shopify's Storefront API with a React and Redux frontend, multi-currency support, and a WhatsApp booking flow for international tourists.",
+      "How Excursions Dubai was built on Shopify's Storefront API with React, Redux, multi-currency support, and a WhatsApp booking flow for tourists.",
     category: "Tour Booking",
     company: "Global Web Marketing LLC",
     siteUrl: "https://www.excursionsdubai.ae/",
@@ -1060,7 +1060,7 @@ export const blogPosts: BlogPost[] = [
     slug: "safaris-ae",
     title: "Safaris UAE: Desert Safari Booking on a Headless Commerce Stack",
     metaDescription:
-      "How Safaris UAE was built with Shopify's Storefront API, React/Redux state management, and a WhatsApp booking alternative for desert safari and adventure tour bookings.",
+      "How Safaris UAE was built with Shopify's Storefront API, React/Redux state management, and WhatsApp as a booking alternative for desert safari tours.",
     category: "Desert Safaris",
     company: "Global Web Marketing LLC",
     siteUrl: "https://www.safaris.ae/",

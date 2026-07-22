@@ -23,3 +23,18 @@
   from = "/*"
   to = "/index.html"
   status = 200
+
+# Hashed build assets (JS/CSS/images) never change content under the same
+# filename, so they're safe to cache for a year — speeds up repeat crawls
+# and page loads, which factors into Core Web Vitals / search ranking.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Baseline hardening headers on every response.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
