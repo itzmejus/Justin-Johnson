@@ -1,3 +1,5 @@
+import { renderInlineLinks } from "../../lib/inlineLinks";
+
 export default function PageHero({
   eyebrow,
   h1,
@@ -17,7 +19,7 @@ export default function PageHero({
             key={i}
             className={i === 0 ? "text-lg md:text-xl text-on-surface-variant leading-relaxed" : "text-on-surface-variant leading-relaxed"}
           >
-            {paragraph}
+            {renderInlineLinks(paragraph)}
           </p>
         ))}
       </div>

@@ -121,7 +121,7 @@ export const industryPages: SeoPage[] = [
         answer: "Yes, with availability checked against agent calendars and confirmation sent automatically to both the agent and the prospective buyer or tenant.",
       },
     ],
-    relatedSlugs: ["services/crm-development-services", "industries/web-development-for-real-estate", "solutions/ai-lead-generation-systems"],
+    relatedSlugs: ["services/crm-development-services", "industries/web-development-for-real-estate", "solutions/ai-lead-generation-systems", "solutions/ai-powered-crm-solutions"],
     publishedAt: "2026-07-24",
     updatedAt: "2026-07-24",
   },
@@ -163,7 +163,7 @@ export const industryPages: SeoPage[] = [
           {
             kind: "paragraphs",
             paragraphs: [
-              "Independent restaurants and small groups that need a fast, easy-to-maintain site distinct from a generic listing-platform page, especially where local search visibility (being found by nearby, hungry searchers) matters directly to foot traffic.",
+              "Independent restaurants and small groups that need a fast, easy-to-maintain site distinct from a generic listing-platform page, especially where [local search visibility](resources/local-seo-website-development) (being found by nearby, hungry searchers) matters directly to foot traffic.",
             ],
           },
         ],
@@ -183,7 +183,7 @@ export const industryPages: SeoPage[] = [
         answer: "Very — most restaurant searches happen on mobile, often from someone nearby deciding in the moment, so a slow-loading menu page directly costs potential visits.",
       },
     ],
-    relatedSlugs: ["industries/online-ordering-systems-for-restaurants", "industries/appointment-booking-systems", "resources/local-seo-website-development"],
+    relatedSlugs: ["industries/online-ordering-systems-for-restaurants", "industries/appointment-booking-systems", "resources/local-seo-website-development", "services/ecommerce-development"],
     publishedAt: "2026-07-24",
     updatedAt: "2026-07-24",
   },
@@ -431,7 +431,7 @@ export const industryPages: SeoPage[] = [
         answer: "Yes, via email, SMS, or WhatsApp depending on preference, which measurably reduces no-shows compared to no reminder system at all.",
       },
     ],
-    relatedSlugs: ["solutions/ai-appointment-scheduling", "industries/salon-booking-system-development", "industries/hotel-booking-website-development"],
+    relatedSlugs: ["solutions/ai-appointment-scheduling", "industries/salon-booking-system-development", "industries/hotel-booking-website-development", "industries/web-development-for-restaurants", "industries/web-development-for-dental-clinics", "industries/web-development-for-healthcare-clinics"],
     publishedAt: "2026-07-24",
     updatedAt: "2026-07-24",
   },
@@ -617,7 +617,7 @@ export const industryPages: SeoPage[] = [
         answer: "Yes — this is a common pattern for transport bookings where customers want a direct line to confirm pickup details for a time-sensitive trip.",
       },
     ],
-    relatedSlugs: ["industries/bus-and-coach-booking-systems", "technologies/google-maps-api-integration", "services/ecommerce-development"],
+    relatedSlugs: ["industries/bus-and-coach-booking-systems", "technologies/google-maps-api-integration", "services/ecommerce-development", "guides/how-to-add-google-maps-to-nextjs"],
     publishedAt: "2026-07-24",
     updatedAt: "2026-07-24",
   },
@@ -1217,7 +1217,7 @@ export const industryPages: SeoPage[] = [
           {
             kind: "paragraphs",
             paragraphs: [
-              "Any small business that's outgrown a DIY website builder's limitations, or one relying entirely on social media presence and wants a proper site to anchor its online presence and support local search visibility.",
+              "Any small business that's outgrown a DIY website builder's limitations, or one relying entirely on social media presence and wants a proper site to anchor its online presence and support [local search visibility](resources/local-seo-website-development).",
             ],
           },
         ],

@@ -55,6 +55,27 @@ function validate() {
       }
     }
   }
+
+  // Inline markdown-style links ([label](category/slug)) written into prose must resolve to real pages.
+  const inlineLinkPattern = /\[([^\]]+)\]\((services|technologies|solutions|resources|industries|guides)\/([a-z0-9-]+)\)/g;
+  for (const page of allSeoPages) {
+    const selfKey = `${page.category}/${page.slug}`;
+    const text = [
+      ...page.intro,
+      ...page.sections.flatMap((s) => s.blocks.flatMap((b) => (b.kind === "paragraphs" || b.kind === "list" || b.kind === "checklist" ? (b.kind === "paragraphs" ? b.paragraphs : b.items) : []))),
+    ].join("\n");
+    let match: RegExpExecArray | null;
+    inlineLinkPattern.lastIndex = 0;
+    while ((match = inlineLinkPattern.exec(text)) !== null) {
+      const targetKey = `${match[2]}/${match[3]}`;
+      if (!seenKeys.has(targetKey)) {
+        throw new Error(`[seo content] ${selfKey} has an inline link to missing page "${targetKey}"`);
+      }
+      if (targetKey === selfKey) {
+        throw new Error(`[seo content] ${selfKey} has an inline link pointing to itself`);
+      }
+    }
+  }
 }
 
 validate();

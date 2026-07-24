@@ -8,10 +8,13 @@ import type { HubConfig } from "../../data/seo/hubs";
 import { seoPagesByCategory, getSeoPage } from "../../data/seo";
 import { useSEO } from "../../hooks/useSEO";
 import { SITE_URL, seoPagePath, breadcrumbJsonLd } from "../../lib/seoMeta";
-import { CATEGORY_PATHS } from "../../data/seo/types";
+import { CATEGORY_LABELS, CATEGORY_PATHS, type SeoCategory } from "../../data/seo/types";
+
+const ALL_CATEGORIES: SeoCategory[] = ["services", "technologies", "solutions", "resources", "industries", "guides"];
 
 export default function SeoHubPage({ hub }: { hub: HubConfig }) {
   const categoryPath = CATEGORY_PATHS[hub.category];
+  const otherCategories = ALL_CATEGORIES.filter((c) => c !== hub.category);
   const breadcrumbItems = [
     { label: "Home", path: "/" },
     { label: hub.h1, path: categoryPath },
@@ -75,6 +78,22 @@ export default function SeoHubPage({ hub }: { hub: HubConfig }) {
               </div>
             </section>
           ))}
+        </div>
+
+        <div className="max-w-5xl mx-auto px-4 md:px-8 pb-16">
+          <p className="text-xs uppercase tracking-[0.2em] text-primary font-bold mb-3">More</p>
+          <h2 className="font-headline text-xl md:text-2xl font-black mb-6">Explore Other Categories</h2>
+          <div className="flex flex-wrap gap-3">
+            {otherCategories.map((category) => (
+              <a
+                key={category}
+                href={CATEGORY_PATHS[category]}
+                className="px-5 py-3 rounded-full border border-outline-variant/20 text-sm font-bold text-on-surface hover:bg-surface-container transition-colors"
+              >
+                {CATEGORY_LABELS[category]}
+              </a>
+            ))}
+          </div>
         </div>
 
         <ContactCta

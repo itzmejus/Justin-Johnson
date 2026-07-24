@@ -12,6 +12,7 @@
     "qa:content": "tsx scripts/qa-content.mjs",
     "qa:dist": "node scripts/qa-dist.mjs",
     "qa:links": "node scripts/qa-links.mjs",
+    "audit:links": "node scripts/audit-link-graph.mjs",
     "lint": "eslint .",
     "preview": "vite preview"
   },

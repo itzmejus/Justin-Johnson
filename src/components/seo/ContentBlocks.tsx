@@ -1,4 +1,5 @@
 import type { ContentBlock, PageSection } from "../../data/seo/types";
+import { renderInlineLinks } from "../../lib/inlineLinks";
 
 function Block({ block }: { block: ContentBlock }) {
   switch (block.kind) {
@@ -7,7 +8,7 @@ function Block({ block }: { block: ContentBlock }) {
         <div className="space-y-4">
           {block.paragraphs.map((paragraph, i) => (
             <p key={i} className="text-on-surface-variant leading-relaxed">
-              {paragraph}
+              {renderInlineLinks(paragraph)}
             </p>
           ))}
         </div>
@@ -23,7 +24,7 @@ function Block({ block }: { block: ContentBlock }) {
                   arrow_right
                 </span>
               )}
-              <span>{item}</span>
+              <span>{renderInlineLinks(item)}</span>
             </li>
           ))}
         </Tag>
