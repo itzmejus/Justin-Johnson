@@ -10,7 +10,8 @@ type SEOOptions = {
   image?: string;
   type?: "website" | "article";
   keywords?: string;
-  jsonLd?: string;
+  /** One or more pre-serialized JSON-LD strings, each rendered as its own <script> tag. */
+  jsonLd?: string | string[];
 };
 
 function setMeta(attr: "name" | "property", key: string, content: string) {
@@ -65,12 +66,16 @@ export function useSEO({
     setMeta("name", "twitter:description", description);
     setMeta("name", "twitter:image", image);
 
-    let script: HTMLScriptElement | null = null;
+    const scripts: HTMLScriptElement[] = [];
     if (jsonLd) {
-      script = document.createElement("script");
-      script.type = "application/ld+json";
-      script.text = jsonLd;
-      document.head.appendChild(script);
+      const entries = Array.isArray(jsonLd) ? jsonLd : [jsonLd];
+      for (const entry of entries) {
+        const script = document.createElement("script");
+        script.type = "application/ld+json";
+        script.text = entry;
+        document.head.appendChild(script);
+        scripts.push(script);
+      }
     }
 
     return () => {
@@ -82,7 +87,7 @@ export function useSEO({
           document.querySelector('meta[name="keywords"]')?.remove();
         }
       }
-      script?.remove();
+      scripts.forEach((script) => script.remove());
     };
   }, [title, description, path, image, type, keywords, jsonLd]);
 }

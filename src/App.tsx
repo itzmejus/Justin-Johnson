@@ -17,6 +17,15 @@ import BlogListPage from "./pages/BlogListPage";
 import BlogPostPage from "./pages/BlogPostPage";
 import FreelancePage from "./pages/FreelancePage";
 import ServicesPage from "./pages/ServicesPage";
+import SeoPage from "./pages/seo/SeoPage";
+import SeoHubPage from "./pages/seo/SeoHubPage";
+import SeoNotFoundPage from "./pages/seo/SeoNotFoundPage";
+import { getSeoPage } from "./data/seo";
+import { hubConfigs } from "./data/seo/hubs";
+import type { SeoCategory } from "./data/seo/types";
+
+const SEO_DETAIL_CATEGORIES: SeoCategory[] = ["technologies", "solutions", "resources", "industries", "guides"];
+const SEO_HUB_CATEGORIES: SeoCategory[] = ["technologies", "solutions", "resources", "industries", "guides"];
 
 export default function App() {
   const path = window.location.pathname;
@@ -51,6 +60,27 @@ export default function App() {
 
   if (path === "/services" || path === "/services/") {
     return <ServicesPage />;
+  }
+
+  if (path.startsWith("/services/")) {
+    const slug = path.slice("/services/".length).replace(/\/$/, "");
+    const page = getSeoPage("services", slug);
+    return page ? <SeoPage page={page} /> : <SeoNotFoundPage category="services" />;
+  }
+
+  for (const category of SEO_HUB_CATEGORIES) {
+    if (path === `/${category}` || path === `/${category}/`) {
+      return <SeoHubPage hub={hubConfigs[category]} />;
+    }
+  }
+
+  for (const category of SEO_DETAIL_CATEGORIES) {
+    const prefix = `/${category}/`;
+    if (path.startsWith(prefix)) {
+      const slug = path.slice(prefix.length).replace(/\/$/, "");
+      const page = getSeoPage(category, slug);
+      return page ? <SeoPage page={page} /> : <SeoNotFoundPage category={category} />;
+    }
   }
 
   if (path === "/blog" || path === "/blog/") {

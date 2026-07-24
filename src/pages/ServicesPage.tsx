@@ -3,6 +3,12 @@ import Footer from "../components/Footer";
 import ScrollToTopButton from "../components/ScrollToTopButton";
 import { profile } from "../data/profile";
 import { useSEO } from "../hooks/useSEO";
+import { hubConfigs } from "../data/seo/hubs";
+import { getSeoPage } from "../data/seo";
+import { CATEGORY_LABELS, CATEGORY_PATHS, type SeoCategory } from "../data/seo/types";
+import { seoPagePath } from "../lib/seoMeta";
+
+const OTHER_CATEGORIES: SeoCategory[] = ["technologies", "solutions", "resources", "industries", "guides"];
 
 type Service = {
   icon: string;
@@ -169,6 +175,57 @@ export default function ServicesPage() {
                     <span className="material-symbols-outlined text-base">arrow_forward</span>
                   </a>
                 </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="pb-24 border-t border-outline-variant/10 pt-24">
+          <div className="max-w-5xl mx-auto px-4 md:px-8">
+            <p className="text-xs uppercase tracking-[0.2em] text-primary font-bold mb-3">In Depth</p>
+            <h2 className="font-headline text-2xl md:text-3xl font-black mb-10">
+              EVERY SERVICE, BROKEN DOWN
+            </h2>
+            <div className="space-y-12">
+              {hubConfigs.services.groups.map((group) => (
+                <div key={group.heading}>
+                  <h3 className="font-headline text-lg font-bold mb-4">{group.heading}</h3>
+                  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                    {group.slugs.map((slug) => {
+                      const page = getSeoPage("services", slug);
+                      if (!page) return null;
+                      return (
+                        <a
+                          key={slug}
+                          href={seoPagePath(page)}
+                          className="text-sm font-bold text-on-surface-variant hover:text-primary transition-colors bg-surface-container-low rounded-lg px-4 py-3"
+                        >
+                          {page.h1}
+                        </a>
+                      );
+                    })}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="pb-24">
+          <div className="max-w-5xl mx-auto px-4 md:px-8">
+            <p className="text-xs uppercase tracking-[0.2em] text-primary font-bold mb-3">More</p>
+            <h2 className="font-headline text-2xl md:text-3xl font-black mb-6">
+              EXPLORE BY CATEGORY
+            </h2>
+            <div className="flex flex-wrap gap-3">
+              {OTHER_CATEGORIES.map((category) => (
+                <a
+                  key={category}
+                  href={CATEGORY_PATHS[category]}
+                  className="px-5 py-3 rounded-full border border-outline-variant/20 text-sm font-bold text-on-surface hover:bg-surface-container transition-colors"
+                >
+                  {CATEGORY_LABELS[category]}
+                </a>
               ))}
             </div>
           </div>
