@@ -50,7 +50,7 @@ export default function App() {
     tryScroll();
   }, [path]);
 
-  if (path === "/cv") {
+  if (path === "/cv" || path === "/cv/") {
     return <CVPage />;
   }
 

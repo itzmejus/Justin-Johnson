@@ -11,10 +11,18 @@ import puppeteer from "puppeteer";
  * executing JavaScript to see page content and the meta tags useSEO() injects.
  * This script serves the production build locally, visits every route in
  * sitemap.xml with a headless browser, waits for React to render, and writes
- * the resulting HTML to disk at that route's path. Netlify serves these real
- * files directly (ahead of the SPA catch-all redirect in netlify.toml), so
- * crawlers get fully-formed HTML on first response, while the same bundled
- * script tag still boots the app for real visitors.
+ * the resulting HTML to disk as a flat `<route>.html` file (e.g. /cv -> cv.html).
+ * Netlify serves these real files directly via clean-URL matching — no
+ * redirect, no trailing slash — ahead of the SPA catch-all redirect in
+ * netlify.toml, so crawlers get fully-formed HTML on first response with a
+ * plain 200, while the same bundled script tag still boots the app for real
+ * visitors.
+ *
+ * Deliberately NOT written as `<route>/index.html`: Netlify 301-redirects a
+ * bare path to its trailing-slash form whenever a matching *directory* with
+ * an index.html exists, which (a) adds a redirect hop to every prerendered
+ * page and (b) mismatches the non-trailing-slash canonical URLs declared by
+ * useSEO/sitemap.xml. Flat `.html` siblings avoid that redirect entirely.
  */
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -26,6 +34,11 @@ function routesFromSitemap() {
   const xml = readFileSync(sitemapPath, "utf-8");
   const matches = [...xml.matchAll(/<loc>(.*?)<\/loc>/g)];
   return matches.map((m) => new URL(m[1]).pathname);
+}
+
+function outputPathFor(route) {
+  if (route === "/") return path.join(distDir, "index.html");
+  return path.join(distDir, `${route}.html`);
 }
 
 function startStaticServer() {
@@ -47,7 +60,10 @@ function startStaticServer() {
   const server = http.createServer((req, res) => {
     const urlPath = decodeURIComponent(req.url.split("?")[0]);
     const hasExtension = path.extname(urlPath) !== "";
-    const filePath = hasExtension ? path.join(distDir, urlPath) : path.join(distDir, urlPath, "index.html");
+    // During the crawl, none of the flat prerendered .html files exist yet (they're
+    // this script's output, written after the fact), so every extensionless route
+    // correctly falls back to the pristine SPA shell and renders client-side.
+    const filePath = hasExtension ? path.join(distDir, urlPath) : path.join(distDir, `${urlPath}.html`);
     const fallback = path.join(distDir, "index.html");
     const target = existsSync(filePath) ? filePath : fallback;
     const ext = path.extname(target);
@@ -68,9 +84,9 @@ async function prerenderRoute(browser, baseUrl, route) {
     await new Promise((r) => setTimeout(r, 150));
     const html = await page.content();
 
-    const outDir = route === "/" ? distDir : path.join(distDir, route);
-    mkdirSync(outDir, { recursive: true });
-    writeFileSync(path.join(outDir, "index.html"), html, "utf-8");
+    const outPath = outputPathFor(route);
+    mkdirSync(path.dirname(outPath), { recursive: true });
+    writeFileSync(outPath, html, "utf-8");
     return { route, ok: true };
   } catch (err) {
     return { route, ok: false, error: err.message };

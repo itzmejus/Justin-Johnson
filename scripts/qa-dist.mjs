@@ -3,12 +3,15 @@ import path from "node:path";
 
 const distDir = path.join(process.cwd(), "dist");
 
+// Not app pages — third-party ownership/verification markers, not real HTML documents.
+const NON_PAGE_FILES = new Set(["google6cd2dffa6488784c.html"]);
+
 function walk(dir) {
   const files = [];
   for (const entry of readdirSync(dir)) {
     const full = path.join(dir, entry);
     if (statSync(full).isDirectory()) files.push(...walk(full));
-    else if (entry === "index.html") files.push(full);
+    else if (entry.endsWith(".html") && !NON_PAGE_FILES.has(entry)) files.push(full);
   }
   return files;
 }
