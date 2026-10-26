@@ -13,7 +13,7 @@ export default function ProjectCardSimple({
   image,
   locked = false,
 }: ProjectCardSimpleProps) {
-  if (locked) return <LockedCard category={category} title={title} />;
+  if (locked) return <LockedCard category={category} title={title} image={image} />;
 
   return (
     <div
@@ -64,14 +64,34 @@ export default function ProjectCardSimple({
   );
 }
 
-// Internal systems have no public URL, so the card shows a lock instead of a screenshot.
-function LockedCard({ category, title }: { category: string; title: string }) {
+// Internal systems have no public URL, so the card is not a link. It shows a demo
+// screenshot with a lock badge when there is one, otherwise a lock placeholder.
+function LockedCard({ category, title, image }: { category: string; title: string; image?: string }) {
   return (
     <div
       className="group flex flex-col bg-surface-container rounded-2xl border border-outline-variant shadow-sm overflow-hidden"
       aria-label={`${title} (internal system, not publicly accessible)`}
     >
       <div className="p-3 pb-0">
+        {image ? (
+          <div className="relative aspect-video bg-surface-container-low overflow-hidden rounded-xl border border-outline-variant">
+            <img
+              src={image}
+              alt={`${title} dashboard (demo data)`}
+              loading="lazy"
+              decoding="async"
+              className="w-full h-full object-cover object-top"
+            />
+            <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-white/30">
+              <span className="flex items-center justify-center w-14 h-14 rounded-[999px] bg-white border border-outline-variant shadow-lg text-primary">
+                <span className="material-symbols-outlined text-3xl">lock</span>
+              </span>
+              <span className="px-2.5 py-1 rounded-[999px] bg-white/90 backdrop-blur-sm border border-outline-variant shadow-sm text-[10px] uppercase tracking-widest font-bold text-on-surface">
+                Internal system
+              </span>
+            </div>
+          </div>
+        ) : (
         <div className="aspect-video rounded-xl border border-dashed border-outline bg-[repeating-linear-gradient(135deg,#f8f8f9_0px,#f8f8f9_10px,#f4f4f5_10px,#f4f4f5_20px)] flex flex-col items-center justify-center gap-2">
           <span className="flex items-center justify-center w-14 h-14 rounded-[999px] bg-white border border-outline-variant shadow-sm text-primary">
             <span className="material-symbols-outlined text-3xl">lock</span>
@@ -80,6 +100,7 @@ function LockedCard({ category, title }: { category: string; title: string }) {
             Internal system
           </span>
         </div>
+        )}
       </div>
       <div className="flex flex-col flex-1 p-6 pt-5">
         <span className="self-start px-2.5 py-1 rounded-[999px] bg-surface-container-high text-[10px] uppercase tracking-widest text-primary font-bold">

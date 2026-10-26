@@ -20,6 +20,7 @@ import imgKarak from "../../assets/karak-time.webp";
 import imgSmpNationwide from "../../assets/smpnationwide.webp";
 import imgFranksHandyman from "../../assets/frankshandyman.webp";
 import imgMaldivesHotelReviews from "../../assets/maldivesproject.webp";
+import imgTransportCrm from "../../assets/global-transport-crm-demo-thumbnail.jpg";
 
 const featuredProjects = [
   {
@@ -64,7 +65,7 @@ const simpleProjects = [
   { category: "Scalp Micropigmentation", title: "SMP Nationwide", link: "https://www.smpnationwide.co.uk/", image: imgSmpNationwide },
   { category: "Handyman Services", title: "Franks Handyman Services", link: "https://www.frankhandyman.co.uk/", image: imgFranksHandyman },
   { category: "Hotel Reviews", title: "Maldives Hotel Reviews", link: "https://www.maldiveshotelreviews.com/", image: imgMaldivesHotelReviews },
-  { category: "Transport Operations", title: "Transport CRM", locked: true },
+  { category: "Transport Operations", title: "Transport CRM", image: imgTransportCrm, locked: true },
   { category: "Business Centre CRM", title: "Total Business Centre CRM", locked: true },
 ];
 
