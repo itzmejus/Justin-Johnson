@@ -62,7 +62,7 @@ export default function SeoHubPage({ hub }: { hub: HubConfig }) {
                     <a
                       key={slug}
                       href={seoPagePath(page)}
-                      className="group bg-surface-container-low p-6 rounded-2xl border border-outline-variant/10 hover:border-primary/20 transition-all flex flex-col"
+                      className="group bg-surface-container-low p-6 rounded-2xl border border-outline-variant hover:border-primary/20 transition-all flex flex-col"
                     >
                       <h3 className="font-headline text-lg font-bold mb-2 group-hover:text-primary transition-colors">
                         {page.h1}
@@ -88,7 +88,7 @@ export default function SeoHubPage({ hub }: { hub: HubConfig }) {
               <a
                 key={category}
                 href={CATEGORY_PATHS[category]}
-                className="px-5 py-3 rounded-full border border-outline-variant/20 text-sm font-bold text-on-surface hover:bg-surface-container transition-colors"
+                className="px-5 py-3 rounded-full border border-outline-variant text-sm font-bold text-on-surface hover:bg-surface-container-low transition-colors"
               >
                 {CATEGORY_LABELS[category]}
               </a>

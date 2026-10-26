@@ -15,7 +15,7 @@ export default function LanguagesSection() {
           {languages.map((lang) => (
             <div
               key={lang.name}
-              className="bg-surface-container-low border border-outline-variant/15 rounded-2xl p-6 text-center"
+              className="bg-white border border-outline-variant shadow-sm rounded-2xl p-6 text-center"
             >
               <h3 className="font-bold text-lg">{lang.name}</h3>
               <p className="text-primary font-black text-sm mt-1 uppercase tracking-widest">

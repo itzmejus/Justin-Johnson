@@ -9,7 +9,7 @@ export default function BlogCard({ post }: { post: BlogPost }) {
   return (
     <a
       href={`/blog/${post.slug}`}
-      className="group bg-surface-container p-6 rounded-lg transition-all hover:bg-surface-bright border border-transparent hover:border-primary/20 flex flex-col"
+      className="group bg-surface-container p-6 rounded-lg transition-all hover:bg-surface-bright border border-outline-variant shadow-sm hover:border-primary/40 hover:shadow-lg flex flex-col"
     >
       <div className="aspect-video bg-surface-container-low mb-6 overflow-hidden rounded">
         {!imgFailed ? (

@@ -15,7 +15,7 @@ export default function ExperienceSection() {
         </div>
 
         <div className="relative space-y-12">
-          <div className="absolute left-[11px] top-0 bottom-0 w-px bg-outline-variant/20 hidden md:block" />
+          <div className="absolute left-[11px] top-0 bottom-0 w-px bg-outline-variant hidden md:block" />
           {experiences.map((exp) => (
             <ExperienceItem key={exp.company} {...exp} />
           ))}

@@ -117,7 +117,7 @@ function BlogPostContent({ post }: { post: BlogPost }) {
               {post.techStack.map((tech) => (
                 <span
                   key={tech}
-                  className="text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full border border-outline-variant/20 text-on-surface-variant"
+                  className="text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full border border-outline-variant text-on-surface-variant"
                 >
                   {tech}
                 </span>
@@ -150,7 +150,7 @@ function BlogPostContent({ post }: { post: BlogPost }) {
           </div>
         </article>
 
-        <section className="py-16 border-t border-outline-variant/10">
+        <section className="py-16 border-t border-outline-variant">
           <div className="max-w-7xl mx-auto px-4 md:px-8">
             <h2 className="font-headline text-2xl font-black text-primary mb-8">MORE BUILD NOTES</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

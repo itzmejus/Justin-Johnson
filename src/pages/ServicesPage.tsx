@@ -148,7 +148,7 @@ export default function ServicesPage() {
               {services.map((service) => (
                 <div
                   key={service.title}
-                  className="bg-surface-container-low p-8 rounded-2xl border border-outline-variant/10 flex flex-col"
+                  className="bg-surface-container-low p-8 rounded-2xl border border-outline-variant flex flex-col"
                 >
                   <span className="material-symbols-outlined text-primary text-3xl mb-4">
                     {service.icon}
@@ -180,7 +180,7 @@ export default function ServicesPage() {
           </div>
         </section>
 
-        <section className="pb-24 border-t border-outline-variant/10 pt-24">
+        <section className="pb-24 border-t border-outline-variant pt-24">
           <div className="max-w-5xl mx-auto px-4 md:px-8">
             <p className="text-xs uppercase tracking-[0.2em] text-primary font-bold mb-3">In Depth</p>
             <h2 className="font-headline text-2xl md:text-3xl font-black mb-10">
@@ -222,7 +222,7 @@ export default function ServicesPage() {
                 <a
                   key={category}
                   href={CATEGORY_PATHS[category]}
-                  className="px-5 py-3 rounded-full border border-outline-variant/20 text-sm font-bold text-on-surface hover:bg-surface-container transition-colors"
+                  className="px-5 py-3 rounded-full border border-outline-variant text-sm font-bold text-on-surface hover:bg-surface-container-low transition-colors"
                 >
                   {CATEGORY_LABELS[category]}
                 </a>
@@ -243,7 +243,7 @@ export default function ServicesPage() {
             <div className="flex flex-wrap justify-center gap-4">
               <a
                 href="/freelance"
-                className="px-8 py-4 bg-gradient-to-br from-primary to-primary-container text-on-primary rounded-full font-bold text-lg hover:scale-105 transition-transform active:scale-95"
+                className="px-8 py-4 bg-gradient-to-br from-primary to-primary-container text-on-primary shadow-lg shadow-primary/25 rounded-full font-bold text-lg hover:scale-105 transition-transform active:scale-95"
               >
                 View Freelance Availability
               </a>
@@ -251,7 +251,7 @@ export default function ServicesPage() {
                 href={`https://wa.me/${profile.whatsapp}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-4 border border-outline-variant/20 text-on-surface rounded-full font-bold text-lg hover:bg-surface-container transition-colors"
+                className="px-8 py-4 border border-outline-variant text-on-surface rounded-full font-bold text-lg hover:bg-surface-container-low transition-colors"
               >
                 Message on WhatsApp
               </a>

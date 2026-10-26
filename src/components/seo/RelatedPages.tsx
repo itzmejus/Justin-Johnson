@@ -6,7 +6,7 @@ export default function RelatedPages({ pages, heading = "Related Reading" }: { p
   if (pages.length === 0) return null;
 
   return (
-    <section className="py-16 border-t border-outline-variant/10" aria-labelledby="related-heading">
+    <section className="py-16 border-t border-outline-variant" aria-labelledby="related-heading">
       <h2 id="related-heading" className="font-headline text-2xl font-black text-primary mb-8">
         {heading.toUpperCase()}
       </h2>
@@ -15,7 +15,7 @@ export default function RelatedPages({ pages, heading = "Related Reading" }: { p
           <a
             key={`${page.category}/${page.slug}`}
             href={seoPagePath(page)}
-            className="group bg-surface-container p-6 rounded-lg transition-all hover:bg-surface-bright border border-transparent hover:border-primary/20 flex flex-col"
+            className="group bg-surface-container p-6 rounded-lg transition-all hover:bg-surface-bright border border-outline-variant shadow-sm hover:border-primary/40 hover:shadow-lg flex flex-col"
           >
             <span className="text-[10px] uppercase tracking-widest text-primary font-bold mb-2">
               {CATEGORY_LABELS[page.category]}

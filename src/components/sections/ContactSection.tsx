@@ -60,7 +60,7 @@ function ContactMethod({
 }) {
   return (
     <div className="flex items-center gap-4 group">
-      <div className="w-12 h-12 bg-surface-container rounded-full flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+      <div className="w-12 h-12 bg-surface-container-high rounded-full flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
         <span className="material-symbols-outlined">{icon}</span>
       </div>
       <div>
@@ -91,7 +91,7 @@ function ContactForm() {
   };
 
   return (
-    <div className="bg-surface-container-low p-6 md:p-10 rounded-3xl border border-outline-variant/10">
+    <div className="bg-surface-container-low p-6 md:p-10 rounded-3xl border border-outline-variant shadow-sm">
       <form className="space-y-8" onSubmit={handleSubmit}>
         <FormField
           label="Full Name"
@@ -118,7 +118,7 @@ function ContactForm() {
         />
         <button
           type="submit"
-          className="w-full py-4 bg-primary text-on-primary font-black uppercase tracking-widest rounded-full hover:bg-primary-container transition-all active:scale-95 flex items-center justify-center gap-2"
+          className="w-full py-4 bg-primary text-on-primary font-black uppercase tracking-widest rounded-full shadow-lg shadow-primary/25 hover:bg-primary-container transition-all active:scale-95 flex items-center justify-center gap-2"
         >
           <span className="material-symbols-outlined text-base">send</span>
           Send via WhatsApp
@@ -154,7 +154,7 @@ function FormField({
         value={value}
         onChange={(e) => onChange(e.target.value)}
         required={required}
-        className="w-full bg-transparent border-b border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 text-on-surface placeholder:text-zinc-700 outline-none"
+        className="w-full bg-transparent border-b border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 text-on-surface placeholder:text-outline outline-none"
       />
     </div>
   );
@@ -184,7 +184,7 @@ function FormTextarea({
         value={value}
         onChange={(e) => onChange(e.target.value)}
         required={required}
-        className="w-full bg-transparent border-b border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 text-on-surface placeholder:text-zinc-700 outline-none resize-none"
+        className="w-full bg-transparent border-b border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 text-on-surface placeholder:text-outline outline-none resize-none"
       />
     </div>
   );

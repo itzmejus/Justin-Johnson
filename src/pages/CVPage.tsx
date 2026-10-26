@@ -32,7 +32,7 @@ export default function CVPage() {
 
   return (
     <div className="min-h-screen bg-background text-on-surface print:bg-white print:text-black">
-      <div className="print:hidden sticky top-0 z-50 bg-[#0e0e0e]/80 backdrop-blur-xl border-b border-zinc-800/30">
+      <div className="print:hidden sticky top-0 z-50 bg-white/85 backdrop-blur-xl border-b border-outline-variant">
         <div className="max-w-4xl mx-auto px-4 md:px-8 h-16 flex items-center justify-between gap-2">
           <a
             href="/"
@@ -44,7 +44,7 @@ export default function CVPage() {
           <div className="flex gap-2 sm:gap-3">
             <button
               onClick={() => window.print()}
-              className="px-3 py-1.5 sm:px-4 sm:py-2 rounded-full border border-outline-variant/30 text-xs sm:text-sm font-bold hover:bg-surface-container transition-colors whitespace-nowrap"
+              className="px-3 py-1.5 sm:px-4 sm:py-2 rounded-full border border-outline-variant text-xs sm:text-sm font-bold hover:bg-surface-container-low transition-colors whitespace-nowrap"
             >
               Print
             </button>
@@ -60,7 +60,7 @@ export default function CVPage() {
       </div>
 
       <main className="max-w-4xl mx-auto px-4 md:px-8 py-12 print:py-0 print:px-0 print:max-w-full">
-        <header className="mb-10 print:mb-6 border-b border-outline-variant/15 print:border-black pb-8 print:pb-4">
+        <header className="mb-10 print:mb-6 border-b border-outline-variant print:border-black pb-8 print:pb-4">
           <h1 className="font-headline text-4xl md:text-5xl font-black">{profile.name}</h1>
           <p className="text-xl text-primary print:text-black font-bold mt-1">{profile.jobTitle}</p>
           <div className="flex flex-wrap gap-x-6 gap-y-2 mt-4 text-sm text-on-surface-variant print:text-black">
@@ -174,7 +174,7 @@ export default function CVPage() {
 function Section({ title, children }: { title: string; children: ReactNode }) {
   return (
     <section className="mb-10 print:mb-6 print:break-inside-avoid">
-      <h2 className="text-xs uppercase tracking-[0.2em] font-black text-primary print:text-black border-b border-outline-variant/15 print:border-black pb-2 mb-4">
+      <h2 className="text-xs uppercase tracking-[0.2em] font-black text-primary print:text-black border-b border-outline-variant print:border-black pb-2 mb-4">
         {title}
       </h2>
       {children}

@@ -15,7 +15,7 @@ export default function ContactCta({
         <div className="flex flex-wrap justify-center gap-4">
           <a
             href="/freelance"
-            className="px-8 py-4 bg-gradient-to-br from-primary to-primary-container text-on-primary rounded-full font-bold text-lg hover:scale-105 transition-transform active:scale-95"
+            className="px-8 py-4 bg-gradient-to-br from-primary to-primary-container text-on-primary shadow-lg shadow-primary/25 rounded-full font-bold text-lg hover:scale-105 transition-transform active:scale-95"
           >
             View Freelance Availability
           </a>
@@ -23,7 +23,7 @@ export default function ContactCta({
             href={`https://wa.me/${profile.whatsapp}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-8 py-4 border border-outline-variant/20 text-on-surface rounded-full font-bold text-lg hover:bg-surface-container transition-colors"
+            className="px-8 py-4 border border-outline-variant text-on-surface rounded-full font-bold text-lg hover:bg-surface-container-low transition-colors"
           >
             Message on WhatsApp
           </a>

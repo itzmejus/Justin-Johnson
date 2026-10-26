@@ -125,7 +125,7 @@ export default function FreelancePage() {
       <main className="pt-20">
         <section className="py-24">
           <div className="max-w-5xl mx-auto px-4 md:px-8">
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-surface-container-highest rounded-full border border-outline-variant/15 mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-white rounded-full border border-outline-variant shadow-sm mb-6">
               <span className="w-2 h-2 rounded-full bg-green-400" />
               <span className="text-xs font-bold tracking-widest uppercase text-on-surface-variant">
                 Available for freelance work
@@ -149,13 +149,13 @@ export default function FreelancePage() {
                 href={`https://wa.me/${profile.whatsapp}?text=${encodeURIComponent("Hi Justin, I'd like to discuss a freelance project.")}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-4 bg-gradient-to-br from-primary to-primary-container text-on-primary rounded-full font-bold text-lg hover:scale-105 transition-transform active:scale-95"
+                className="px-8 py-4 bg-gradient-to-br from-primary to-primary-container text-on-primary shadow-lg shadow-primary/25 rounded-full font-bold text-lg hover:scale-105 transition-transform active:scale-95"
               >
                 Message on WhatsApp
               </a>
               <a
                 href={`mailto:${profile.email}?subject=${encodeURIComponent("Freelance project enquiry")}`}
-                className="px-8 py-4 border border-outline-variant/20 text-on-surface rounded-full font-bold text-lg hover:bg-surface-container transition-colors"
+                className="px-8 py-4 border border-outline-variant text-on-surface rounded-full font-bold text-lg hover:bg-surface-container-low transition-colors"
               >
                 Email Me
               </a>
@@ -170,7 +170,7 @@ export default function FreelancePage() {
             </h2>
             <div className="grid sm:grid-cols-3 gap-6">
               {engagementTypes.map((type) => (
-                <div key={type.title} className="bg-surface-container p-6 rounded-2xl border border-outline-variant/10">
+                <div key={type.title} className="bg-surface-container p-6 rounded-2xl border border-outline-variant shadow-sm">
                   <span className="material-symbols-outlined text-primary text-3xl mb-4 block">
                     {type.icon}
                   </span>
@@ -217,7 +217,7 @@ export default function FreelancePage() {
             </p>
             <div className="grid sm:grid-cols-3 gap-4">
               {highlightedCaseStudies.map((cs) => (
-                <div key={cs.slug} className="bg-surface-container p-6 rounded-2xl border border-outline-variant/10">
+                <div key={cs.slug} className="bg-surface-container p-6 rounded-2xl border border-outline-variant shadow-sm">
                   <span className="text-[10px] uppercase tracking-widest text-primary font-bold">
                     {cs.category}
                   </span>
@@ -236,7 +236,7 @@ export default function FreelancePage() {
             </h2>
             <div className="space-y-8">
               {faqs.map((faq) => (
-                <div key={faq.question} className="border-b border-outline-variant/10 pb-8">
+                <div key={faq.question} className="border-b border-outline-variant pb-8">
                   <h3 className="font-bold text-lg mb-2">{faq.question}</h3>
                   <p className="text-on-surface-variant leading-relaxed">{faq.answer}</p>
                 </div>
@@ -259,13 +259,13 @@ export default function FreelancePage() {
                 href={`https://wa.me/${profile.whatsapp}?text=${encodeURIComponent("Hi Justin, I'd like to discuss a freelance project.")}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-4 bg-gradient-to-br from-primary to-primary-container text-on-primary rounded-full font-bold text-lg hover:scale-105 transition-transform active:scale-95"
+                className="px-8 py-4 bg-gradient-to-br from-primary to-primary-container text-on-primary shadow-lg shadow-primary/25 rounded-full font-bold text-lg hover:scale-105 transition-transform active:scale-95"
               >
                 Message on WhatsApp
               </a>
               <a
                 href="/#contact"
-                className="px-8 py-4 border border-outline-variant/20 text-on-surface rounded-full font-bold text-lg hover:bg-surface-container transition-colors"
+                className="px-8 py-4 border border-outline-variant text-on-surface rounded-full font-bold text-lg hover:bg-surface-container-low transition-colors"
               >
                 Go to Contact Form
               </a>

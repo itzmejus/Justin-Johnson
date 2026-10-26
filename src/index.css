@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 body {
-  background-color: #0e0e0e;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #1b1b20;
   scroll-behavior: smooth;
 }
 
@@ -14,4 +14,40 @@ body {
 
 .no-scrollbar::-webkit-scrollbar {
   display: none;
+}
+
+/* Warm cream wash behind the hero, as on assist.siteselo.com */
+.site-hero {
+  background:
+    radial-gradient(60% 50% at 50% 0%, rgb(251 191 36 / 0.14), transparent 70%),
+    linear-gradient(to bottom, #fffaf0 0%, #ffffff 85%);
+}
+
+/* Fade the client strip out at both edges */
+.marquee-mask {
+  mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee,
+  .animate-caret,
+  .animate-hint-bob {
+    animation: none !important;
+  }
+
+  /* Without motion the client strip becomes a wrapped, centred list instead of a cut-off row */
+  .marquee-mask {
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+  .animate-marquee {
+    width: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 0.5rem;
+  }
+  .animate-marquee > [aria-hidden="true"] {
+    display: none;
+  }
 }

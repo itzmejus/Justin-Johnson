@@ -22,7 +22,7 @@ export default function ExperienceItem({
           isCurrent ? "bg-primary" : "bg-outline"
         }`}
       />
-      <div className="grid md:grid-cols-12 gap-4 md:gap-6 bg-surface-container p-5 md:p-8 rounded-lg">
+      <div className="grid md:grid-cols-12 gap-4 md:gap-6 bg-surface-container p-5 md:p-8 rounded-lg border border-outline-variant shadow-sm">
         <div className="md:col-span-3">
           <span className={`font-bold ${isCurrent ? "text-primary" : "text-on-surface-variant"}`}>
             {period}

@@ -37,7 +37,7 @@ function EducationItem({
   isCurrent?: boolean;
 }) {
   return (
-    <div className="border-l border-outline-variant/30 pl-8 relative">
+    <div className="border-l border-outline-variant pl-8 relative">
       <div
         className={`absolute -left-[5px] top-0 w-[10px] h-[10px] rounded-full ${
           isCurrent ? "bg-primary" : "bg-outline"
@@ -50,7 +50,7 @@ function EducationItem({
             href={institutionLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="underline decoration-outline-variant/40 underline-offset-4 hover:text-primary transition-colors"
+            className="underline decoration-outline underline-offset-4 hover:text-primary transition-colors"
           >
             {institution}
           </a>

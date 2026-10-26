@@ -17,7 +17,7 @@ export default function Header() {
   const onHome = window.location.pathname === "/";
 
   return (
-    <header className="fixed top-0 w-full z-50 bg-[#0e0e0e]/60 backdrop-blur-xl shadow-[0_0_32px_0_rgba(255,255,255,0.04)]">
+    <header className="fixed top-0 w-full z-50 bg-white/85 backdrop-blur-xl border-b border-outline-variant">
       <div className="flex justify-between items-center max-w-7xl mx-auto px-4 md:px-8 h-20">
         <a
           href="/"
@@ -27,7 +27,7 @@ export default function Header() {
               window.scrollTo({ top: 0, behavior: "smooth" });
             }
           }}
-          className="shrink-0 whitespace-nowrap text-lg sm:text-xl xl:text-2xl font-black text-cyan-400 tracking-tighter font-['Space_Grotesk']"
+          className="shrink-0 whitespace-nowrap text-lg sm:text-xl xl:text-2xl font-black text-primary tracking-tighter font-['Space_Grotesk']"
         >
           JUSTIN JOHNSON
         </a>
@@ -37,7 +37,7 @@ export default function Header() {
             <a
               key={link.href}
               href={link.href.startsWith("#") && !onHome ? `/${link.href}` : link.href}
-              className="text-zinc-400 font-medium hover:text-cyan-300 transition-colors whitespace-nowrap"
+              className="text-on-surface-variant font-medium hover:text-primary transition-colors whitespace-nowrap"
             >
               {link.label}
             </a>
@@ -51,7 +51,7 @@ export default function Header() {
           </a>
           <a
             href={onHome ? "#contact" : "/#contact"}
-            className="bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2 rounded-full font-bold transition-all duration-300 hover:scale-105 active:scale-95 whitespace-nowrap"
+            className="bg-gradient-to-br from-primary to-primary-container text-on-primary shadow-lg shadow-primary/25 px-6 py-2 rounded-full font-bold transition-all duration-300 hover:scale-105 active:scale-95 whitespace-nowrap"
           >
             Hire Me
           </a>
@@ -61,7 +61,7 @@ export default function Header() {
           <a
             href={`mailto:${profile.email}`}
             aria-label="Email Justin Johnson"
-            className="flex items-center justify-center w-5 h-5 text-zinc-400 hover:text-cyan-300 transition-colors"
+            className="flex items-center justify-center w-5 h-5 text-on-surface-variant hover:text-primary transition-colors"
           >
             <span className="material-symbols-outlined text-xl leading-none">mail</span>
           </a>
@@ -70,7 +70,7 @@ export default function Header() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Justin Johnson on LinkedIn"
-            className="flex items-center justify-center w-5 h-5 text-zinc-400 hover:text-cyan-300 transition-colors"
+            className="flex items-center justify-center w-5 h-5 text-on-surface-variant hover:text-primary transition-colors"
           >
             <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current">
               <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z" />
@@ -91,18 +91,18 @@ export default function Header() {
 
       {/* Mobile nav drawer */}
       {menuOpen && (
-        <div className="xl:hidden bg-[#0e0e0e]/95 backdrop-blur-xl border-t border-zinc-800/30 px-6 pb-6 pt-4 flex flex-col items-center text-center gap-5 font-['Space_Grotesk'] font-bold max-h-[calc(100vh-5rem)] overflow-y-auto">
+        <div className="xl:hidden bg-white/95 backdrop-blur-xl border-t border-outline-variant px-6 pb-6 pt-4 flex flex-col items-center text-center gap-5 font-['Space_Grotesk'] font-bold max-h-[calc(100vh-5rem)] overflow-y-auto">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href.startsWith("#") && !onHome ? `/${link.href}` : link.href}
-              className="text-zinc-400 text-lg hover:text-cyan-300 transition-colors"
+              className="text-on-surface-variant text-lg hover:text-primary transition-colors"
               onClick={() => setMenuOpen(false)}
             >
               {link.label}
             </a>
           ))}
-          <div className="w-full border-t border-zinc-800/30" />
+          <div className="w-full border-t border-outline-variant" />
           <a
             href="/cv"
             className="flex items-center gap-1.5 border border-primary/40 text-primary px-5 py-2 rounded-full font-bold transition-all duration-300 hover:bg-primary/10"
@@ -112,15 +112,15 @@ export default function Header() {
           </a>
           <a
             href={onHome ? "#contact" : "/#contact"}
-            className="bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2 rounded-full font-bold transition-all duration-300 hover:scale-105 active:scale-95"
+            className="bg-gradient-to-br from-primary to-primary-container text-on-primary shadow-lg shadow-primary/25 px-6 py-2 rounded-full font-bold transition-all duration-300 hover:scale-105 active:scale-95"
             onClick={() => setMenuOpen(false)}
           >
             Hire Me
           </a>
-          <div className="flex items-center justify-center gap-6 pt-1 border-t border-zinc-800/30 w-full">
+          <div className="flex items-center justify-center gap-6 pt-1 border-t border-outline-variant w-full">
             <a
               href={`mailto:${profile.email}`}
-              className="flex items-center gap-2 text-zinc-400 text-sm hover:text-cyan-300 transition-colors"
+              className="flex items-center gap-2 text-on-surface-variant text-sm hover:text-primary transition-colors"
             >
               <span className="material-symbols-outlined text-base leading-none">mail</span>
               Email
@@ -129,7 +129,7 @@ export default function Header() {
               href={profile.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-zinc-400 text-sm hover:text-cyan-300 transition-colors"
+              className="flex items-center gap-2 text-on-surface-variant text-sm hover:text-primary transition-colors"
             >
               <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current">
                 <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z" />

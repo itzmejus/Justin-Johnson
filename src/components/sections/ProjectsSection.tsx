@@ -64,6 +64,8 @@ const simpleProjects = [
   { category: "Scalp Micropigmentation", title: "SMP Nationwide", link: "https://www.smpnationwide.co.uk/", image: imgSmpNationwide },
   { category: "Handyman Services", title: "Franks Handyman Services", link: "https://www.frankhandyman.co.uk/", image: imgFranksHandyman },
   { category: "Hotel Reviews", title: "Maldives Hotel Reviews", link: "https://www.maldiveshotelreviews.com/", image: imgMaldivesHotelReviews },
+  { category: "Transport Operations", title: "Transport CRM", locked: true },
+  { category: "Business Centre CRM", title: "Total Business Centre CRM", locked: true },
 ];
 
 export default function ProjectsSection() {
@@ -73,11 +75,11 @@ export default function ProjectsSection() {
         <div className="mb-16">
           <h2 className="font-headline text-4xl font-black text-primary">SELECTED WORKS</h2>
           <p className="text-on-surface-variant uppercase tracking-[0.2em] text-xs mt-2">
-            19 Live Deployments
+            19 Live Deployments · 2 Internal Systems
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {featuredProjects.map((project) => (
             <ProjectCardFeatured key={project.title} {...project} />
           ))}

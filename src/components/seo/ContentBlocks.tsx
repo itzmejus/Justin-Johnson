@@ -49,7 +49,7 @@ function Block({ block }: { block: ContentBlock }) {
           {block.caption && (
             <p className="text-xs uppercase tracking-widest text-on-surface-variant mb-2">{block.caption}</p>
           )}
-          <pre className="bg-surface-container-lowest border border-outline-variant/15 rounded-lg p-4 overflow-x-auto text-sm">
+          <pre className="bg-surface-container-lowest border border-outline-variant rounded-lg p-4 overflow-x-auto text-sm">
             <code className={`language-${block.language}`}>{block.code}</code>
           </pre>
         </div>

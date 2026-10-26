@@ -2,7 +2,7 @@ import type { CaseStudy } from "../../data/caseStudies";
 
 export default function CaseStudyCard({ caseStudy }: { caseStudy: CaseStudy }) {
   return (
-    <article className="bg-surface-container-low border border-outline-variant/15 rounded-3xl p-8 md:p-10 space-y-8">
+    <article className="bg-white border border-outline-variant shadow-sm rounded-3xl p-8 md:p-10 space-y-8">
       <header className="flex flex-wrap items-start justify-between gap-4">
         <div>
           <p className="text-xs uppercase tracking-[0.2em] text-primary font-bold mb-2">
@@ -19,7 +19,7 @@ export default function CaseStudyCard({ caseStudy }: { caseStudy: CaseStudy }) {
         {caseStudy.stack.map((tech) => (
           <span
             key={tech}
-            className="text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full border border-outline-variant/20 text-on-surface-variant"
+            className="text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full border border-outline-variant text-on-surface-variant"
           >
             {tech}
           </span>
@@ -34,7 +34,7 @@ export default function CaseStudyCard({ caseStudy }: { caseStudy: CaseStudy }) {
       </div>
 
       {caseStudy.examples && caseStudy.examples.length > 0 && (
-        <div className="flex flex-wrap gap-4 pt-2 border-t border-outline-variant/10">
+        <div className="flex flex-wrap gap-4 pt-2 border-t border-outline-variant">
           <span className="text-xs uppercase tracking-widest text-on-surface-variant self-center">
             Live examples:
           </span>
