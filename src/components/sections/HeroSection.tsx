@@ -53,12 +53,6 @@ function HeroCopy() {
 
   return (
     <div className="space-y-8">
-      <div className="inline-flex items-center gap-2 px-3 py-1 bg-white rounded-full border border-outline-variant shadow-sm">
-        <span className="text-xs font-bold tracking-widest uppercase text-on-surface-variant">
-          Available for projects
-        </span>
-      </div>
-
       <div className="space-y-4">
         <div className="flex items-center justify-between gap-3">
           <h1 className="min-w-0 font-headline text-5xl sm:text-6xl md:text-8xl font-black leading-[0.9] tracking-tighter">
