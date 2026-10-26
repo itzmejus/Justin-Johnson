@@ -24,7 +24,7 @@ export default function SkillCard({ icon, title, tags }: SkillCardProps) {
         {tags.map((tag) => (
           <span
             key={tag}
-            className="px-3 py-1.5 rounded-[999px] bg-surface-container-low border border-outline-variant text-on-surface text-xs font-semibold transition-colors hover:border-primary/40 hover:text-primary"
+            className="px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-[999px] bg-surface-container-low border border-outline-variant text-on-surface text-[11px] sm:text-xs font-semibold transition-colors hover:border-primary/40 hover:text-primary"
           >
             {tag}
           </span>
