@@ -85,23 +85,46 @@ function startStaticServer() {
   });
 }
 
-async function prerenderRoute(browser, baseUrl, route) {
+const MAX_ATTEMPTS = 3;
+
+async function renderOnce(browser, baseUrl, route) {
   const page = await browser.newPage();
   try {
+    // Only the local build is needed to produce the HTML. Third-party requests (chat widget,
+    // Google Fonts, external site screenshots) are blocked: they can stall "network idle" on a
+    // slow CI network, and the widget would otherwise inject its own DOM into the snapshot.
+    // Their <script>/<link>/<img> tags stay in the HTML and load normally for real visitors.
+    await page.setRequestInterception(true);
+    page.on("request", (req) => {
+      if (req.url().startsWith(baseUrl) || req.url().startsWith("data:")) req.continue();
+      else req.abort();
+    });
+
     await page.goto(`${baseUrl}${route}`, { waitUntil: "networkidle0", timeout: 30000 });
+    await page.waitForSelector("h1", { timeout: 10000 });
     // Give useEffect-driven head mutations (useSEO) a beat past network idle.
     await new Promise((r) => setTimeout(r, 150));
-    const html = await page.content();
-
-    const outPath = outputPathFor(route);
-    mkdirSync(path.dirname(outPath), { recursive: true });
-    writeFileSync(outPath, html, "utf-8");
-    return { route, ok: true };
-  } catch (err) {
-    return { route, ok: false, error: err.message };
+    return await page.content();
   } finally {
     await page.close();
   }
+}
+
+async function prerenderRoute(browser, baseUrl, route) {
+  let lastError;
+  for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+    try {
+      const html = await renderOnce(browser, baseUrl, route);
+      const outPath = outputPathFor(route);
+      mkdirSync(path.dirname(outPath), { recursive: true });
+      writeFileSync(outPath, html, "utf-8");
+      return { route, ok: true };
+    } catch (err) {
+      lastError = err;
+      console.warn(`  retry ${route} (attempt ${attempt} failed: ${err.message})`);
+    }
+  }
+  return { route, ok: false, error: lastError.message };
 }
 
 async function runQueue(items, worker, concurrency) {
