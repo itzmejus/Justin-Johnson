@@ -1,8 +1,9 @@
 import type { BreadcrumbItem } from "../../lib/seoMeta";
+import { lp, t } from "../../i18n/locale";
 
 export default function Breadcrumbs({ items }: { items: BreadcrumbItem[] }) {
   return (
-    <nav className="text-xs text-on-surface-variant mb-8" aria-label="Breadcrumb">
+    <nav className="text-xs text-on-surface-variant mb-8" aria-label={t({ en: "Breadcrumb", de: "Brotkrümelnavigation" })}>
       <ol className="flex flex-wrap items-center gap-1">
         {items.map((item, index) => {
           const isLast = index === items.length - 1;
@@ -18,7 +19,7 @@ export default function Breadcrumbs({ items }: { items: BreadcrumbItem[] }) {
                   {item.label}
                 </span>
               ) : (
-                <a href={item.path} className="hover:text-primary transition-colors">
+                <a href={lp(item.path)} className="hover:text-primary transition-colors">
                   {item.label}
                 </a>
               )}

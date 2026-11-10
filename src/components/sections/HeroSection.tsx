@@ -1,14 +1,53 @@
 import { useEffect, useState } from 'react'
 import Profile from '../../assets/Profile.webp'
 import { useChatWidget } from '../../hooks/useChatWidget'
+import { t } from '../../i18n/locale'
 
-const roles = [
-  "Full Stack Developer",
-  "Founder of Selo Assist",
-  "E-commerce Specialist",
-  "Next.js & React Engineer",
-  "Payment Integration Expert",
-];
+const roles = t({
+  en: [
+    "Full Stack Developer",
+    "Founder of Selo Assist",
+    "E-commerce Specialist",
+    "Next.js & React Engineer",
+    "Payment Integration Expert",
+  ],
+  de: [
+    "Full Stack Entwickler",
+    "Gründer von Selo Assist",
+    "E-Commerce-Spezialist",
+    "Next.js- & React-Entwickler",
+    "Experte für Zahlungsintegration",
+  ],
+});
+
+const copy = t({
+  en: {
+    basedIn: "Based in",
+    location: "Abu Dhabi, UAE",
+    tagline: "Crafting high-performance digital ecosystems with precision and code.",
+    hire: "Hire Me",
+    portfolio: "View Portfolio",
+    askAi: "or ask my AI assistant a question",
+    rolesSr: "Full Stack Developer, founder of Selo Assist and e-commerce specialist",
+    clientsTitle: "Built for businesses across the UAE, UK & beyond",
+    yrs: "5+ yrs",
+    years: "5+ Years",
+    globalExperience: "Global Experience",
+  },
+  de: {
+    basedIn: "Ansässig in",
+    location: "Abu Dhabi, VAE",
+    tagline: "Ich entwickle leistungsstarke digitale Ökosysteme – präzise und mit sauberem Code.",
+    hire: "Projekt anfragen",
+    portfolio: "Portfolio ansehen",
+    askAi: "oder stellen Sie meinem KI-Assistenten eine Frage",
+    rolesSr: "Full Stack Entwickler, Gründer von Selo Assist und E-Commerce-Spezialist",
+    clientsTitle: "Entwickelt für Unternehmen in den VAE, Großbritannien & darüber hinaus",
+    yrs: "5+ J.",
+    years: "5+ Jahre",
+    globalExperience: "Internationale Erfahrung",
+  },
+});
 
 const clients = [
   "Jade Props",
@@ -65,9 +104,9 @@ function HeroCopy() {
       </div>
 
       <p className="text-base sm:text-xl md:text-2xl text-on-surface-variant max-w-lg font-light leading-relaxed">
-        Based in{" "}
-        <span className="text-on-surface font-semibold">Abu Dhabi, UAE</span>.
-        Crafting high-performance digital ecosystems with precision and code.
+        {copy.basedIn}{" "}
+        <span className="text-on-surface font-semibold">{copy.location}</span>.{" "}
+        {copy.tagline}
       </p>
 
       <div className="space-y-4 pt-4">
@@ -76,13 +115,13 @@ function HeroCopy() {
             href="#contact"
             className="px-8 py-4 bg-gradient-to-br from-primary to-primary-container text-on-primary shadow-lg shadow-primary/25 rounded-full font-bold text-lg hover:scale-105 transition-transform active:scale-95"
           >
-            Hire Me
+            {copy.hire}
           </a>
           <a
             href="#projects"
             className="px-8 py-4 border border-outline-variant text-on-surface rounded-full font-bold text-lg hover:bg-surface-container-low transition-colors"
           >
-            View Portfolio
+            {copy.portfolio}
           </a>
         </div>
 
@@ -94,7 +133,7 @@ function HeroCopy() {
             className="group inline-flex items-center gap-2 text-sm text-on-surface-variant hover:text-primary transition-colors"
           >
             <span className="material-symbols-outlined text-lg text-primary">forum</span>
-            or ask my AI assistant a question
+            {copy.askAi}
             <span className="material-symbols-outlined text-base transition-transform group-hover:translate-x-1">arrow_forward</span>
           </button>
         )}
@@ -142,7 +181,7 @@ function TypedRole() {
 
   return (
     <p className="font-headline text-xl sm:text-2xl md:text-3xl font-bold text-on-surface min-h-[1.5em]">
-      <span className="sr-only">Full Stack Developer, founder of Selo Assist and e-commerce specialist</span>
+      <span className="sr-only">{copy.rolesSr}</span>
       <span aria-hidden="true">
         {text}
         <span className="inline-block w-[3px] h-[0.9em] ml-1 align-[-0.1em] bg-primary animate-caret" />
@@ -158,7 +197,7 @@ function ClientMarquee() {
   return (
     <div className="relative z-10 border-t border-outline-variant bg-white/60 backdrop-blur-sm py-5">
       <p className="text-center text-[10px] uppercase tracking-[0.2em] font-bold text-on-surface-variant mb-4 px-4">
-        Built for businesses across the UAE, UK &amp; beyond
+        {copy.clientsTitle}
       </p>
       <div className="marquee-mask overflow-hidden group">
         <ul className="flex w-max animate-marquee group-hover:[animation-play-state:paused]">
@@ -192,7 +231,7 @@ function MobilePhoto() {
         />
       </div>
       <span className="absolute -bottom-2 -left-3 px-2 py-1 rounded-[999px] bg-primary text-on-primary text-[10px] font-bold uppercase tracking-wider shadow-lg shadow-primary/30 whitespace-nowrap">
-        5+ yrs
+        {copy.yrs}
       </span>
     </div>
   );
@@ -211,9 +250,9 @@ function HeroImage() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
         <div className="absolute bottom-8 left-8">
-          <div className="font-headline text-3xl font-bold text-white">5+ Years</div>
+          <div className="font-headline text-3xl font-bold text-white">{copy.years}</div>
           <div className="text-white/80 text-sm uppercase tracking-widest">
-            Global Experience
+            {copy.globalExperience}
           </div>
         </div>
       </div>

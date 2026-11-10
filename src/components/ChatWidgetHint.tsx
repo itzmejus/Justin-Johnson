@@ -1,5 +1,11 @@
 import { useEffect, useState } from "react";
 import { CHAT_LAUNCHER_BOX, useChatWidget } from "../hooks/useChatWidget";
+import { t } from "../i18n/locale";
+
+const copy = t({
+  en: { tryMe: "Try me!", ask: "Ask my AI assistant", hide: "Hide hint" },
+  de: { tryMe: "Probieren Sie's!", ask: "Fragen Sie meinen KI-Assistenten", hide: "Hinweis ausblenden" },
+});
 
 const DISMISS_KEY = "chat-hint-dismissed";
 
@@ -57,13 +63,13 @@ export default function ChatWidgetHint() {
           data-chat-open
           className={`block px-4 py-2 bg-white border border-outline-variant rounded-2xl shadow-lg shadow-primary/10 text-left hover:border-primary/40 transition-colors ${left ? "rotate-[3deg]" : "-rotate-[3deg]"}`}
         >
-          <span className="block font-headline font-bold text-primary text-base leading-tight">Try me!</span>
-          <span className="block text-[11px] text-on-surface-variant leading-tight">Ask my AI assistant</span>
+          <span className="block font-headline font-bold text-primary text-base leading-tight">{copy.tryMe}</span>
+          <span className="block text-[11px] text-on-surface-variant leading-tight">{copy.ask}</span>
         </button>
         <button
           type="button"
           onClick={dismiss}
-          aria-label="Hide hint"
+          aria-label={copy.hide}
           className={`absolute -top-2 ${left ? "-left-2" : "-right-2"} flex items-center justify-center w-5 h-5 rounded-[999px] bg-white border border-outline-variant text-on-surface-variant shadow-sm hover:text-primary`}
         >
           <span className="material-symbols-outlined text-[14px]">close</span>

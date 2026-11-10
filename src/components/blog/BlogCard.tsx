@@ -1,6 +1,7 @@
 import { useState } from "react";
 import type { BlogPost } from "../../data/blogPosts";
 import { getSiteScreenshot } from "../../lib/screenshot";
+import { lp, t } from "../../i18n/locale";
 
 export default function BlogCard({ post }: { post: BlogPost }) {
   const [imgFailed, setImgFailed] = useState(false);
@@ -8,7 +9,7 @@ export default function BlogCard({ post }: { post: BlogPost }) {
 
   return (
     <a
-      href={`/blog/${post.slug}`}
+      href={lp(`/blog/${post.slug}`)}
       className="group bg-surface-container p-6 rounded-lg transition-all hover:bg-surface-bright border border-outline-variant shadow-sm hover:border-primary/40 hover:shadow-lg flex flex-col"
     >
       <div className="aspect-video bg-surface-container-low mb-6 overflow-hidden rounded">
@@ -39,7 +40,7 @@ export default function BlogCard({ post }: { post: BlogPost }) {
           <span>{post.readTime}</span>
           <span aria-hidden="true">&middot;</span>
           <span className="inline-flex items-center gap-1 text-primary font-bold">
-            Read case study
+            {t({ en: "Read case study", de: "Fallstudie lesen" })}
             <span className="material-symbols-outlined text-sm">arrow_forward</span>
           </span>
         </div>

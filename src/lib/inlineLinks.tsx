@@ -1,4 +1,5 @@
 import { CATEGORY_PATHS, type SeoCategory } from "../data/seo/types";
+import { lp } from "../i18n/locale";
 
 /** Matches markdown-style links scoped to our own SEO routes: [label](category/slug) */
 const INLINE_LINK_PATTERN = /\[([^\]]+)\]\((services|technologies|solutions|resources|industries|guides)\/([a-z0-9-]+)\)/g;
@@ -21,7 +22,7 @@ export function renderInlineLinks(text: string): React.ReactNode[] {
     if (match.index > lastIndex) {
       nodes.push(text.slice(lastIndex, match.index));
     }
-    const href = `${CATEGORY_PATHS[category as SeoCategory]}/${slug}`;
+    const href = lp(`${CATEGORY_PATHS[category as SeoCategory]}/${slug}`);
     nodes.push(
       <a key={`link-${key++}`} href={href} className="text-primary font-bold hover:underline">
         {label}

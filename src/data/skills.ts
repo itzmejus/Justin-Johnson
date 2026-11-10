@@ -1,4 +1,6 @@
-export const skills = [
+import { t } from "../i18n/locale";
+
+const skillList = [
   {
     icon: "data_object",
     title: "FRONTEND",
@@ -30,3 +32,9 @@ export const skills = [
     tags: ["Git", "Jira", "Figma"],
   },
 ];
+
+const TITLES_DE: Record<string, string> = {
+  DATABASES: "DATENBANKEN",
+};
+
+export const skills = skillList.map((skill) => ({ ...skill, title: t({ en: skill.title, de: TITLES_DE[skill.title] ?? skill.title }) }));

@@ -1,3 +1,5 @@
+import { t } from "../../i18n/locale";
+
 interface ProjectCardFeaturedProps {
   category: string;
   title: string;
@@ -47,7 +49,7 @@ export default function ProjectCardFeatured({
             onClick={(e) => e.stopPropagation()}
             className="text-xs uppercase tracking-widest font-bold text-on-surface-variant hover:text-primary transition-colors"
           >
-            Live link
+            {t({ en: "Live link", de: "Live ansehen" })}
           </a>
           <span className="flex items-center justify-center w-9 h-9 rounded-[999px] bg-surface-container-highest text-on-surface-variant transition-all duration-300 group-hover:bg-primary group-hover:text-on-primary group-hover:shadow-lg group-hover:shadow-primary/25">
             <span className="material-symbols-outlined text-lg">arrow_outward</span>

@@ -1,14 +1,15 @@
 import SkillCard from "../skills/SkillCard";
 import { skills } from "../../data/skills";
+import { t } from "../../i18n/locale";
 
 export default function SkillsSection() {
   return (
     <section className="py-16 md:py-24" id="skills">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="mb-10 md:mb-16">
-          <h2 className="font-headline text-3xl md:text-4xl font-black text-primary">TECH STACK</h2>
+          <h2 className="font-headline text-3xl md:text-4xl font-black text-primary">{t({ en: "TECH STACK", de: "TECH-STACK" })}</h2>
           <p className="text-on-surface-variant uppercase tracking-[0.2em] text-xs mt-2">
-            Tools of the trade
+            {t({ en: "Tools of the trade", de: "Meine Werkzeuge" })}
           </p>
         </div>
 

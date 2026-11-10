@@ -1,3 +1,5 @@
+import { locale } from "../i18n/locale";
+import { getGermanContent } from "../i18n/germanContentStore";
 import imgExcursions from "../assets/excursionsdubai.webp";
 import imgJetsetVisas from "../assets/jetsetvisas.webp";
 import imgSafaris from "../assets/safaris.webp";
@@ -34,7 +36,7 @@ export type BlogPost = {
   sections: BlogSection[];
 };
 
-export const blogPosts: BlogPost[] = [
+const blogPostsEn: BlogPost[] = [
   {
     slug: "dubai-print-design",
     title: "Dubai Print Design: A Headless Storefront for a Print Studio",
@@ -1182,6 +1184,58 @@ export const blogPosts: BlogPost[] = [
     ],
   },
 ];
+
+/**
+ * German translation of one post. Sections mirror the English post one-to-one;
+ * slug, site URL, image, company, dates and tech stack come from the English post.
+ */
+export type BlogPostTranslation = {
+  slug: string;
+  title: string;
+  metaDescription: string;
+  category: string;
+  readTime: string;
+  excerpt: string;
+  sections: [heading: string, paragraphs: string[]][];
+};
+
+function translatePost(post: BlogPost, tr: BlogPostTranslation): BlogPost {
+  if (tr.sections.length !== post.sections.length) {
+    throw new Error(`[blog:de] ${post.slug} has ${tr.sections.length} sections, English has ${post.sections.length}`);
+  }
+  return {
+    ...post,
+    title: tr.title,
+    metaDescription: tr.metaDescription,
+    category: tr.category,
+    readTime: tr.readTime,
+    excerpt: tr.excerpt,
+    sections: tr.sections.map(([heading, paragraphs]) => ({ heading, paragraphs })),
+  };
+}
+
+/** Every English post must have a German translation; the build fails otherwise. */
+const REQUIRE_COMPLETE_TRANSLATIONS = true;
+
+/** Builds the German posts; throws on missing or misaligned translations (run at build time by the sitemap script). */
+export function buildGermanPosts(blogPostsDe: BlogPostTranslation[]): BlogPost[] {
+  const translations = new Map(blogPostsDe.map((tr) => [tr.slug, tr]));
+  for (const slug of translations.keys()) {
+    if (!blogPostsEn.some((p) => p.slug === slug)) throw new Error(`[blog:de] translation for unknown post ${slug}`);
+  }
+  return blogPostsEn.map((post) => {
+    const tr = translations.get(post.slug);
+    if (!tr) {
+      if (REQUIRE_COMPLETE_TRANSLATIONS) throw new Error(`[blog:de] missing German translation for ${post.slug}`);
+      return post;
+    }
+    return translatePost(post, tr);
+  });
+}
+
+export const englishBlogPosts = blogPostsEn;
+
+export const blogPosts: BlogPost[] = locale === "de" ? buildGermanPosts(getGermanContent().blog) : blogPostsEn;
 
 export function getBlogPost(slug: string): BlogPost | undefined {
   return blogPosts.find((post) => post.slug === slug);

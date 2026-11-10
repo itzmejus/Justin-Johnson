@@ -7,6 +7,36 @@ import { blogPosts, getBlogPost, type BlogPost } from "../data/blogPosts";
 import { profile } from "../data/profile";
 import { useSEO } from "../hooks/useSEO";
 import { getSiteScreenshot } from "../lib/screenshot";
+import { formatDate, lp, t } from "../i18n/locale";
+
+const copy = t({
+  en: {
+    developer: "developer",
+    freelance: "freelance full stack developer",
+    caseStudy: "web development case study",
+    buildNotes: "Build Notes",
+    visit: "Visit the live site",
+    more: "MORE BUILD NOTES",
+    notFoundTitle: "Post Not Found | Justin Johnson",
+    notFoundBody: "This build note doesn't exist or may have moved.",
+    notFoundHeading: "Post not found",
+    back: "Back to all build notes",
+    breadcrumb: "Breadcrumb",
+  },
+  de: {
+    developer: "Entwickler",
+    freelance: "freiberuflicher Full Stack Entwickler",
+    caseStudy: "Fallstudie Webentwicklung",
+    buildNotes: "Projekt-Notizen",
+    visit: "Live-Website besuchen",
+    more: "WEITERE PROJEKT-NOTIZEN",
+    notFoundTitle: "Beitrag nicht gefunden | Justin Johnson",
+    notFoundBody: "Diese Projekt-Notiz existiert nicht oder wurde verschoben.",
+    notFoundHeading: "Beitrag nicht gefunden",
+    back: "Zurück zu allen Projekt-Notizen",
+    breadcrumb: "Brotkrümelnavigation",
+  },
+});
 
 const SITE_URL = "https://www.justinjohnson.de";
 
@@ -27,10 +57,10 @@ function BlogPostContent({ post }: { post: BlogPost }) {
   const keywords = [
     ...post.techStack,
     post.category,
-    `${post.category} developer`,
+    `${post.category} ${copy.developer}`,
     "Justin Johnson",
-    "freelance full stack developer",
-    "web development case study",
+    copy.freelance,
+    copy.caseStudy,
   ].join(", ");
 
   const jsonLd = JSON.stringify({
@@ -41,6 +71,7 @@ function BlogPostContent({ post }: { post: BlogPost }) {
     datePublished: post.publishedDate,
     dateModified: post.publishedDate,
     articleSection: post.category,
+    inLanguage: t({ en: "en", de: "de" }),
     keywords,
     author: {
       "@type": "Person",
@@ -48,7 +79,7 @@ function BlogPostContent({ post }: { post: BlogPost }) {
       url: SITE_URL,
     },
     ...(post.image ? { image: `${SITE_URL}${post.image}` } : {}),
-    mainEntityOfPage: `${SITE_URL}/blog/${post.slug}`,
+    mainEntityOfPage: `${SITE_URL}${lp(`/blog/${post.slug}`)}`,
   });
 
   useSEO({
@@ -69,9 +100,9 @@ function BlogPostContent({ post }: { post: BlogPost }) {
       <main className="pt-20">
         <article className="py-16 md:py-24">
           <div className="max-w-3xl mx-auto px-4 md:px-8">
-            <nav className="text-xs text-on-surface-variant mb-8" aria-label="Breadcrumb">
-              <a href="/blog" className="hover:text-primary transition-colors">
-                Build Notes
+            <nav className="text-xs text-on-surface-variant mb-8" aria-label={copy.breadcrumb}>
+              <a href={lp("/blog")} className="hover:text-primary transition-colors">
+                {copy.buildNotes}
               </a>
               <span className="mx-2" aria-hidden="true">
                 /
@@ -90,11 +121,7 @@ function BlogPostContent({ post }: { post: BlogPost }) {
               <span>{post.company}</span>
               <span aria-hidden="true">&middot;</span>
               <time dateTime={post.publishedDate}>
-                {new Date(post.publishedDate).toLocaleDateString("en-GB", {
-                  day: "numeric",
-                  month: "long",
-                  year: "numeric",
-                })}
+                {formatDate(post.publishedDate)}
               </time>
               <span aria-hidden="true">&middot;</span>
               <span>{post.readTime}</span>
@@ -130,7 +157,7 @@ function BlogPostContent({ post }: { post: BlogPost }) {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-sm font-bold text-primary hover:underline mt-6"
             >
-              Visit the live site <span className="material-symbols-outlined text-base">open_in_new</span>
+              {copy.visit} <span className="material-symbols-outlined text-base">open_in_new</span>
             </a>
 
             <div className="prose-blog mt-12 space-y-10">
@@ -152,7 +179,7 @@ function BlogPostContent({ post }: { post: BlogPost }) {
 
         <section className="py-16 border-t border-outline-variant">
           <div className="max-w-7xl mx-auto px-4 md:px-8">
-            <h2 className="font-headline text-2xl font-black text-primary mb-8">MORE BUILD NOTES</h2>
+            <h2 className="font-headline text-2xl font-black text-primary mb-8">{copy.more}</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {related.map((p) => (
                 <BlogCard key={p.slug} post={p} />
@@ -169,9 +196,10 @@ function BlogPostContent({ post }: { post: BlogPost }) {
 
 function NotFound() {
   useSEO({
-    title: "Post Not Found | Justin Johnson",
-    description: "This build note doesn't exist or may have moved.",
+    title: copy.notFoundTitle,
+    description: copy.notFoundBody,
     path: "/blog",
+    alternates: false,
   });
 
   return (
@@ -179,10 +207,10 @@ function NotFound() {
       <Header />
       <main className="pt-20">
         <div className="max-w-3xl mx-auto px-4 md:px-8 py-32 text-center">
-          <h1 className="font-headline text-3xl font-black mb-4">Post not found</h1>
-          <p className="text-on-surface-variant mb-8">This build note doesn't exist or may have moved.</p>
-          <a href="/blog" className="text-primary font-bold hover:underline">
-            &larr; Back to all build notes
+          <h1 className="font-headline text-3xl font-black mb-4">{copy.notFoundHeading}</h1>
+          <p className="text-on-surface-variant mb-8">{copy.notFoundBody}</p>
+          <a href={lp("/blog")} className="text-primary font-bold hover:underline">
+            &larr; {copy.back}
           </a>
         </div>
       </main>

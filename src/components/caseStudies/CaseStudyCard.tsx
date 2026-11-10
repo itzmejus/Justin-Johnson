@@ -1,4 +1,10 @@
 import type { CaseStudy } from "../../data/caseStudies";
+import { t } from "../../i18n/locale";
+
+const copy = t({
+  en: { problem: "Problem", role: "My Role", architecture: "Architecture & Stack", outcome: "Business Outcome", examples: "Live examples" },
+  de: { problem: "Problem", role: "Meine Rolle", architecture: "Architektur & Stack", outcome: "Geschäftliches Ergebnis", examples: "Live-Beispiele" },
+});
 
 export default function CaseStudyCard({ caseStudy }: { caseStudy: CaseStudy }) {
   return (
@@ -30,16 +36,16 @@ export default function CaseStudyCard({ caseStudy }: { caseStudy: CaseStudy }) {
       </div>
 
       <div className="grid md:grid-cols-2 gap-5 md:gap-8">
-        <CaseStudyBlock label="Problem" text={caseStudy.problem} />
-        <CaseStudyBlock label="My Role" text={caseStudy.myRole} />
-        <CaseStudyBlock label="Architecture & Stack" text={caseStudy.architecture} />
-        <CaseStudyBlock label="Business Outcome" text={caseStudy.outcome} />
+        <CaseStudyBlock label={copy.problem} text={caseStudy.problem} />
+        <CaseStudyBlock label={copy.role} text={caseStudy.myRole} />
+        <CaseStudyBlock label={copy.architecture} text={caseStudy.architecture} />
+        <CaseStudyBlock label={copy.outcome} text={caseStudy.outcome} />
       </div>
 
       {caseStudy.examples && caseStudy.examples.length > 0 && (
         <div className="flex flex-col sm:flex-row sm:flex-wrap sm:items-center gap-x-4 gap-y-2 pt-5 border-t border-outline-variant">
           <span className="text-[10px] uppercase tracking-widest font-bold text-on-surface-variant">
-            Live examples
+            {copy.examples}
           </span>
           {caseStudy.examples.map((ex) => (
             <a

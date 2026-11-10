@@ -7,6 +7,7 @@ import { hubConfigs } from "../data/seo/hubs";
 import { getSeoPage } from "../data/seo";
 import { CATEGORY_LABELS, CATEGORY_PATHS, type SeoCategory } from "../data/seo/types";
 import { seoPagePath } from "../lib/seoMeta";
+import { lp, t } from "../i18n/locale";
 
 const OTHER_CATEGORIES: SeoCategory[] = ["technologies", "solutions", "resources", "industries", "guides"];
 
@@ -18,89 +19,210 @@ type Service = {
   proof: { label: string; href: string };
 };
 
-const services: Service[] = [
-  {
-    icon: "data_object",
-    title: "React & Next.js Frontend Development",
-    summary:
-      "Fast, SEO-friendly frontends built with React and Next.js — from single-page applications to server-rendered marketing sites.",
-    details: [
-      "Component-driven builds with TypeScript and Tailwind CSS",
-      "Server-side rendering with Next.js for content-heavy, search-driven sites",
-      "Multi-tenant, config-driven frontends for brands running several localized sites off one codebase",
-    ],
-    proof: { label: "See the multi-city minibus network build", href: "/blog/minibus-hire-london" },
+const copy = t({
+  en: {
+    seoTitle: "Web Development Services | React, Next.js, Node.js, AWS & Shopify",
+    seoDescription:
+      "Web development services from Justin Johnson: React & Next.js frontends, Node.js & AWS backends, Shopify headless commerce, booking platforms, WhatsApp integrations, and SEO-friendly builds.",
+    seoKeywords:
+      "React development services, Next.js development services, Node.js backend development, AWS cloud integration services, Shopify headless commerce developer, booking platform development, WhatsApp API integration, SEO-friendly web development",
+    eyebrow: "Services",
+    h1a: "WEB DEVELOPMENT",
+    h1b: "SERVICES",
+    introA:
+      "Full stack development across React, Next.js, Node.js, and AWS — with particular depth in Shopify headless commerce and booking platform architecture. Available for",
+    introLink: "freelance and contract work",
+    inDepth: "In Depth",
+    brokenDown: "EVERY SERVICE, BROKEN DOWN",
+    more: "More",
+    byCategory: "EXPLORE BY CATEGORY",
+    ctaHeading: "NEED ONE OF THESE FOR YOUR PROJECT?",
+    ctaBody:
+      "I'm currently available for freelance and contract work. Check availability and engagement options, or reach out directly.",
+    availability: "View Freelance Availability",
+    whatsapp: "Message on WhatsApp",
   },
-  {
-    icon: "dns",
-    title: "Node.js & AWS Backend Development",
-    summary:
-      "Backend systems and cloud infrastructure on Node.js and AWS — APIs, serverless pipelines, and database design.",
-    details: [
-      "REST API design and integration",
-      "Event-driven pipelines with AWS Lambda and Step Functions",
-      "Data layer design across DynamoDB, RDS, and PostgreSQL",
-    ],
-    proof: { label: "See the KORE Digital ecommerce platform case study", href: "/#case-studies" },
+  de: {
+    seoTitle: "Webentwicklung | React, Next.js, Node.js, AWS & Shopify",
+    seoDescription:
+      "Webentwicklung von Justin Johnson: React- & Next.js-Frontends, Node.js- & AWS-Backends, Shopify Headless Commerce, Buchungsplattformen, WhatsApp-Integrationen und SEO-freundliche Websites.",
+    seoKeywords:
+      "React Entwicklung, Next.js Entwicklung, Node.js Backend Entwicklung, AWS Cloud Integration, Shopify Headless Commerce Entwickler, Buchungsplattform Entwicklung, WhatsApp API Integration, SEO-freundliche Webentwicklung",
+    eyebrow: "Leistungen",
+    h1a: "WEBENTWICKLUNG",
+    h1b: "LEISTUNGEN",
+    introA:
+      "Full-Stack-Entwicklung mit React, Next.js, Node.js und AWS – mit besonderer Tiefe bei Shopify Headless Commerce und der Architektur von Buchungsplattformen. Verfügbar für",
+    introLink: "Freelance- und Projektarbeit",
+    inDepth: "Im Detail",
+    brokenDown: "ALLE LEISTUNGEN IM ÜBERBLICK",
+    more: "Mehr",
+    byCategory: "NACH KATEGORIE ENTDECKEN",
+    ctaHeading: "BRAUCHEN SIE EINE DIESER LEISTUNGEN?",
+    ctaBody:
+      "Ich bin derzeit für Freelance- und Projektarbeit verfügbar. Prüfen Sie Verfügbarkeit und Formen der Zusammenarbeit oder kontaktieren Sie mich direkt.",
+    availability: "Verfügbarkeit ansehen",
+    whatsapp: "Nachricht per WhatsApp",
   },
-  {
-    icon: "shopping_cart",
-    title: "Shopify Headless Commerce",
-    summary:
-      "Shopify's Storefront API wired into fully custom React frontends — full control over UX while keeping Shopify's product, inventory, and checkout infrastructure.",
-    details: [
-      "Headless storefronts with custom booking and cart flows",
-      "Multi-currency checkout for international audiences",
-      "Shopify's product model repurposed as a flexible backend for listings and directories",
-    ],
-    proof: { label: "See how Excursions Dubai was built", href: "/blog/excursions-dubai" },
-  },
-  {
-    icon: "event_available",
-    title: "Booking & Marketplace Platforms",
-    summary:
-      "Booking flows, multi-step forms, and marketplace logic for travel, transport, and services businesses.",
-    details: [
-      "Interactive map-based pickup and drop-off selection",
-      "Multi-step booking forms with validation and payment options",
-      "Listing submission and moderation flows for marketplaces",
-    ],
-    proof: { label: "See the UAE Transfers map-based booking flow", href: "/blog/uae-transfers" },
-  },
-  {
-    icon: "chat",
-    title: "WhatsApp & Third-Party API Integrations",
-    summary:
-      "WhatsApp ordering and enquiry flows built into the codebase, plus integrations with payment gateways, ERPs, and logistics providers.",
-    details: [
-      "WhatsApp Business API integration for orders and enquiries",
-      "Payment gateway integration (Stripe, PayPal, HyperPay)",
-      "ERP and fulfillment automation (NetSuite, carrier APIs)",
-    ],
-    proof: { label: "See the Tawaf Essentials WhatsApp checkout", href: "/blog/tawaf-essentials" },
-  },
-  {
-    icon: "search",
-    title: "SEO-Friendly, Performance-First Builds",
-    summary:
-      "Sites structured for search from the start — clean semantic markup, structured data, and fast load times.",
-    details: [
-      "Per-page metadata, canonical tags, and structured data (Schema.org)",
-      "Sitemap and robots.txt setup for search engine discovery",
-      "Large-scale local-SEO page structures for multi-location businesses",
-    ],
-    proof: { label: "See the 100+ location-page SMP Nationwide build", href: "/blog/smp-nationwide" },
-  },
-];
+});
+
+const services: Service[] = t({
+  en: [
+    {
+      icon: "data_object",
+      title: "React & Next.js Frontend Development",
+      summary:
+        "Fast, SEO-friendly frontends built with React and Next.js — from single-page applications to server-rendered marketing sites.",
+      details: [
+        "Component-driven builds with TypeScript and Tailwind CSS",
+        "Server-side rendering with Next.js for content-heavy, search-driven sites",
+        "Multi-tenant, config-driven frontends for brands running several localized sites off one codebase",
+      ],
+      proof: { label: "See the multi-city minibus network build", href: "/blog/minibus-hire-london" },
+    },
+    {
+      icon: "dns",
+      title: "Node.js & AWS Backend Development",
+      summary:
+        "Backend systems and cloud infrastructure on Node.js and AWS — APIs, serverless pipelines, and database design.",
+      details: [
+        "REST API design and integration",
+        "Event-driven pipelines with AWS Lambda and Step Functions",
+        "Data layer design across DynamoDB, RDS, and PostgreSQL",
+      ],
+      proof: { label: "See the KORE Digital ecommerce platform case study", href: "/#case-studies" },
+    },
+    {
+      icon: "shopping_cart",
+      title: "Shopify Headless Commerce",
+      summary:
+        "Shopify's Storefront API wired into fully custom React frontends — full control over UX while keeping Shopify's product, inventory, and checkout infrastructure.",
+      details: [
+        "Headless storefronts with custom booking and cart flows",
+        "Multi-currency checkout for international audiences",
+        "Shopify's product model repurposed as a flexible backend for listings and directories",
+      ],
+      proof: { label: "See how Excursions Dubai was built", href: "/blog/excursions-dubai" },
+    },
+    {
+      icon: "event_available",
+      title: "Booking & Marketplace Platforms",
+      summary:
+        "Booking flows, multi-step forms, and marketplace logic for travel, transport, and services businesses.",
+      details: [
+        "Interactive map-based pickup and drop-off selection",
+        "Multi-step booking forms with validation and payment options",
+        "Listing submission and moderation flows for marketplaces",
+      ],
+      proof: { label: "See the UAE Transfers map-based booking flow", href: "/blog/uae-transfers" },
+    },
+    {
+      icon: "chat",
+      title: "WhatsApp & Third-Party API Integrations",
+      summary:
+        "WhatsApp ordering and enquiry flows built into the codebase, plus integrations with payment gateways, ERPs, and logistics providers.",
+      details: [
+        "WhatsApp Business API integration for orders and enquiries",
+        "Payment gateway integration (Stripe, PayPal, HyperPay)",
+        "ERP and fulfillment automation (NetSuite, carrier APIs)",
+      ],
+      proof: { label: "See the Tawaf Essentials WhatsApp checkout", href: "/blog/tawaf-essentials" },
+    },
+    {
+      icon: "search",
+      title: "SEO-Friendly, Performance-First Builds",
+      summary:
+        "Sites structured for search from the start — clean semantic markup, structured data, and fast load times.",
+      details: [
+        "Per-page metadata, canonical tags, and structured data (Schema.org)",
+        "Sitemap and robots.txt setup for search engine discovery",
+        "Large-scale local-SEO page structures for multi-location businesses",
+      ],
+      proof: { label: "See the 100+ location-page SMP Nationwide build", href: "/blog/smp-nationwide" },
+    },
+  ],
+  de: [
+    {
+      icon: "data_object",
+      title: "Frontend-Entwicklung mit React & Next.js",
+      summary:
+        "Schnelle, SEO-freundliche Frontends mit React und Next.js – von Single-Page-Anwendungen bis zu serverseitig gerenderten Marketing-Websites.",
+      details: [
+        "Komponentenbasierte Entwicklung mit TypeScript und Tailwind CSS",
+        "Serverseitiges Rendering mit Next.js für inhaltsreiche, suchmaschinenrelevante Websites",
+        "Mandantenfähige, konfigurationsgesteuerte Frontends für Marken mit mehreren lokalisierten Websites auf einer Codebasis",
+      ],
+      proof: { label: "Zum Minibus-Netzwerk über mehrere Städte", href: "/blog/minibus-hire-london" },
+    },
+    {
+      icon: "dns",
+      title: "Backend-Entwicklung mit Node.js & AWS",
+      summary:
+        "Backend-Systeme und Cloud-Infrastruktur mit Node.js und AWS – APIs, Serverless-Pipelines und Datenbankdesign.",
+      details: [
+        "Design und Integration von REST-APIs",
+        "Ereignisgesteuerte Pipelines mit AWS Lambda und Step Functions",
+        "Datenschicht mit DynamoDB, RDS und PostgreSQL",
+      ],
+      proof: { label: "Zur Fallstudie KORE Digital E-Commerce-Plattform", href: "/#case-studies" },
+    },
+    {
+      icon: "shopping_cart",
+      title: "Shopify Headless Commerce",
+      summary:
+        "Die Shopify Storefront API in vollständig individuellen React-Frontends – volle Kontrolle über die UX bei gleichzeitiger Nutzung der Produkt-, Bestands- und Checkout-Infrastruktur von Shopify.",
+      details: [
+        "Headless-Shops mit individuellen Buchungs- und Warenkorbabläufen",
+        "Checkout in mehreren Währungen für internationale Zielgruppen",
+        "Das Produktmodell von Shopify als flexibles Backend für Inserate und Verzeichnisse",
+      ],
+      proof: { label: "So wurde Excursions Dubai umgesetzt", href: "/blog/excursions-dubai" },
+    },
+    {
+      icon: "event_available",
+      title: "Buchungs- & Marktplatzplattformen",
+      summary:
+        "Buchungsabläufe, mehrstufige Formulare und Marktplatzlogik für Reise-, Transport- und Dienstleistungsunternehmen.",
+      details: [
+        "Interaktive, kartenbasierte Auswahl von Abhol- und Zielorten",
+        "Mehrstufige Buchungsformulare mit Validierung und Zahlungsoptionen",
+        "Einreichung und Moderation von Inseraten für Marktplätze",
+      ],
+      proof: { label: "Zum kartenbasierten Buchungsablauf von UAE Transfers", href: "/blog/uae-transfers" },
+    },
+    {
+      icon: "chat",
+      title: "WhatsApp- & Drittanbieter-API-Integrationen",
+      summary:
+        "Bestell- und Anfrageabläufe über WhatsApp direkt in der Codebasis, dazu Integrationen mit Payment-Gateways, ERP-Systemen und Logistikdienstleistern.",
+      details: [
+        "Integration der WhatsApp Business API für Bestellungen und Anfragen",
+        "Anbindung von Payment-Gateways (Stripe, PayPal, HyperPay)",
+        "ERP- und Fulfillment-Automatisierung (NetSuite, Carrier-APIs)",
+      ],
+      proof: { label: "Zum WhatsApp-Checkout von Tawaf Essentials", href: "/blog/tawaf-essentials" },
+    },
+    {
+      icon: "search",
+      title: "SEO-freundliche, performanceorientierte Websites",
+      summary:
+        "Websites, die von Anfang an für Suchmaschinen strukturiert sind – sauberes semantisches Markup, strukturierte Daten und kurze Ladezeiten.",
+      details: [
+        "Metadaten pro Seite, Canonical-Tags und strukturierte Daten (Schema.org)",
+        "Einrichtung von Sitemap und robots.txt für die Auffindbarkeit in Suchmaschinen",
+        "Umfangreiche Local-SEO-Seitenstrukturen für Unternehmen mit mehreren Standorten",
+      ],
+      proof: { label: "Zum SMP-Nationwide-Projekt mit über 100 Standortseiten", href: "/blog/smp-nationwide" },
+    },
+  ],
+});
 
 export default function ServicesPage() {
   useSEO({
-    title: "Web Development Services | React, Next.js, Node.js, AWS & Shopify",
-    description:
-      "Web development services from Justin Johnson: React & Next.js frontends, Node.js & AWS backends, Shopify headless commerce, booking platforms, WhatsApp integrations, and SEO-friendly builds.",
+    title: copy.seoTitle,
+    description: copy.seoDescription,
     path: "/services",
-    keywords:
-      "React development services, Next.js development services, Node.js backend development, AWS cloud integration services, Shopify headless commerce developer, booking platform development, WhatsApp API integration, SEO-friendly web development",
+    keywords: copy.seoKeywords,
     jsonLd: JSON.stringify({
       "@context": "https://schema.org",
       "@type": "ItemList",
@@ -124,18 +246,15 @@ export default function ServicesPage() {
       <main className="pt-20">
         <section className="py-24">
           <div className="max-w-5xl mx-auto px-4 md:px-8">
-            <p className="text-xs uppercase tracking-[0.2em] text-primary font-bold mb-3">
-              Services
-            </p>
+            <p className="text-xs uppercase tracking-[0.2em] text-primary font-bold mb-3">{copy.eyebrow}</p>
             <h1 className="font-headline text-4xl md:text-6xl font-black leading-[1.05] tracking-tighter">
-              WEB DEVELOPMENT <br />
-              <span className="text-primary">SERVICES</span>
+              {copy.h1a} <br />
+              <span className="text-primary">{copy.h1b}</span>
             </h1>
             <p className="text-lg md:text-xl text-on-surface-variant leading-relaxed mt-6 max-w-3xl">
-              Full stack development across React, Next.js, Node.js, and AWS — with particular depth in
-              Shopify headless commerce and booking platform architecture. Available for{" "}
-              <a href="/freelance" className="text-primary font-bold hover:underline">
-                freelance and contract work
+              {copy.introA}{" "}
+              <a href={lp("/freelance")} className="text-primary font-bold hover:underline">
+                {copy.introLink}
               </a>
               .
             </p>
@@ -150,25 +269,19 @@ export default function ServicesPage() {
                   key={service.title}
                   className="bg-surface-container-low p-8 rounded-2xl border border-outline-variant flex flex-col"
                 >
-                  <span className="material-symbols-outlined text-primary text-3xl mb-4">
-                    {service.icon}
-                  </span>
+                  <span className="material-symbols-outlined text-primary text-3xl mb-4">{service.icon}</span>
                   <h2 className="font-headline text-xl font-bold mb-3">{service.title}</h2>
-                  <p className="text-sm text-on-surface-variant leading-relaxed mb-4">
-                    {service.summary}
-                  </p>
+                  <p className="text-sm text-on-surface-variant leading-relaxed mb-4">{service.summary}</p>
                   <ul className="space-y-2 mb-6 flex-1">
                     {service.details.map((detail) => (
                       <li key={detail} className="text-sm text-on-surface-variant flex gap-2">
-                        <span className="material-symbols-outlined text-primary text-base shrink-0">
-                          check
-                        </span>
+                        <span className="material-symbols-outlined text-primary text-base shrink-0">check</span>
                         {detail}
                       </li>
                     ))}
                   </ul>
                   <a
-                    href={service.proof.href}
+                    href={lp(service.proof.href)}
                     className="inline-flex items-center gap-2 text-sm font-bold text-primary hover:underline"
                   >
                     {service.proof.label}
@@ -182,10 +295,8 @@ export default function ServicesPage() {
 
         <section className="pb-24 border-t border-outline-variant pt-24">
           <div className="max-w-5xl mx-auto px-4 md:px-8">
-            <p className="text-xs uppercase tracking-[0.2em] text-primary font-bold mb-3">In Depth</p>
-            <h2 className="font-headline text-2xl md:text-3xl font-black mb-10">
-              EVERY SERVICE, BROKEN DOWN
-            </h2>
+            <p className="text-xs uppercase tracking-[0.2em] text-primary font-bold mb-3">{copy.inDepth}</p>
+            <h2 className="font-headline text-2xl md:text-3xl font-black mb-10">{copy.brokenDown}</h2>
             <div className="space-y-12">
               {hubConfigs.services.groups.map((group) => (
                 <div key={group.heading}>
@@ -197,7 +308,7 @@ export default function ServicesPage() {
                       return (
                         <a
                           key={slug}
-                          href={seoPagePath(page)}
+                          href={lp(seoPagePath(page))}
                           className="text-sm font-bold text-on-surface-variant hover:text-primary transition-colors bg-surface-container-low rounded-lg px-4 py-3"
                         >
                           {page.h1}
@@ -213,15 +324,13 @@ export default function ServicesPage() {
 
         <section className="pb-24">
           <div className="max-w-5xl mx-auto px-4 md:px-8">
-            <p className="text-xs uppercase tracking-[0.2em] text-primary font-bold mb-3">More</p>
-            <h2 className="font-headline text-2xl md:text-3xl font-black mb-6">
-              EXPLORE BY CATEGORY
-            </h2>
+            <p className="text-xs uppercase tracking-[0.2em] text-primary font-bold mb-3">{copy.more}</p>
+            <h2 className="font-headline text-2xl md:text-3xl font-black mb-6">{copy.byCategory}</h2>
             <div className="flex flex-wrap gap-3">
               {OTHER_CATEGORIES.map((category) => (
                 <a
                   key={category}
-                  href={CATEGORY_PATHS[category]}
+                  href={lp(CATEGORY_PATHS[category])}
                   className="px-5 py-3 rounded-full border border-outline-variant text-sm font-bold text-on-surface hover:bg-surface-container-low transition-colors"
                 >
                   {CATEGORY_LABELS[category]}
@@ -233,19 +342,14 @@ export default function ServicesPage() {
 
         <section className="py-24 bg-surface-container-low">
           <div className="max-w-3xl mx-auto px-4 md:px-8 text-center">
-            <h2 className="font-headline text-3xl md:text-5xl font-black text-primary mb-6">
-              NEED ONE OF THESE FOR YOUR PROJECT?
-            </h2>
-            <p className="text-on-surface-variant leading-relaxed mb-10">
-              I'm currently available for freelance and contract work. Check availability and engagement
-              options, or reach out directly.
-            </p>
+            <h2 className="font-headline text-3xl md:text-5xl font-black text-primary mb-6">{copy.ctaHeading}</h2>
+            <p className="text-on-surface-variant leading-relaxed mb-10">{copy.ctaBody}</p>
             <div className="flex flex-wrap justify-center gap-4">
               <a
-                href="/freelance"
+                href={lp("/freelance")}
                 className="px-8 py-4 bg-gradient-to-br from-primary to-primary-container text-on-primary shadow-lg shadow-primary/25 rounded-full font-bold text-lg hover:scale-105 transition-transform active:scale-95"
               >
-                View Freelance Availability
+                {copy.availability}
               </a>
               <a
                 href={`https://wa.me/${profile.whatsapp}`}
@@ -253,7 +357,7 @@ export default function ServicesPage() {
                 rel="noopener noreferrer"
                 className="px-8 py-4 border border-outline-variant text-on-surface rounded-full font-bold text-lg hover:bg-surface-container-low transition-colors"
               >
-                Message on WhatsApp
+                {copy.whatsapp}
               </a>
             </div>
           </div>

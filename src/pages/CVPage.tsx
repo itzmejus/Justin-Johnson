@@ -6,17 +6,53 @@ import { skills } from "../data/skills";
 import { languages } from "../data/languages";
 import { caseStudies } from "../data/caseStudies";
 import { useSEO } from "../hooks/useSEO";
+import { lp, t } from "../i18n/locale";
+
+const copy = t({
+  en: {
+    title: "Justin Johnson | Full Stack Developer CV & Resume",
+    description:
+      "View and download the CV of Justin Johnson, a Full Stack Developer specializing in React, Next.js, Node.js, and AWS, with experience across e-commerce, cloud integrations, and multi-market booking platforms.",
+    keywords:
+      "Justin Johnson CV, Justin Johnson resume, Full Stack Developer resume, React developer CV, Next.js developer resume, hire full stack developer",
+    back: "← Back",
+    backLong: "← Back to Portfolio",
+    print: "Print",
+    download: "Download PDF",
+    profile: "Profile",
+    experience: "Experience",
+    caseStudies: "Selected Project Case Studies",
+    skills: "Skills",
+    education: "Education",
+    languages: "Languages",
+  },
+  de: {
+    title: "Justin Johnson | Lebenslauf – Full Stack Entwickler",
+    description:
+      "Lebenslauf von Justin Johnson ansehen und herunterladen: Full Stack Entwickler für React, Next.js, Node.js und AWS mit Erfahrung in E-Commerce, Cloud-Integrationen und Buchungsplattformen.",
+    keywords:
+      "Justin Johnson Lebenslauf, Justin Johnson CV, Full Stack Entwickler Lebenslauf, React Entwickler CV, Next.js Entwickler Lebenslauf, Full Stack Entwickler einstellen",
+    back: "← Zurück",
+    backLong: "← Zurück zum Portfolio",
+    print: "Drucken",
+    download: "PDF herunterladen",
+    profile: "Profil",
+    experience: "Berufserfahrung",
+    caseStudies: "Ausgewählte Fallstudien",
+    skills: "Kenntnisse",
+    education: "Ausbildung",
+    languages: "Sprachen",
+  },
+});
 
 export const CV_PDF_PATH = "/cv/Justin-Johnson-CV.pdf";
 
 export default function CVPage() {
   useSEO({
-    title: "Justin Johnson | Full Stack Developer CV & Resume",
-    description:
-      "View and download the CV of Justin Johnson, a Full Stack Developer specializing in React, Next.js, Node.js, and AWS, with experience across e-commerce, cloud integrations, and multi-market booking platforms.",
+    title: copy.title,
+    description: copy.description,
     path: "/cv",
-    keywords:
-      "Justin Johnson CV, Justin Johnson resume, Full Stack Developer resume, React developer CV, Next.js developer resume, hire full stack developer",
+    keywords: copy.keywords,
     jsonLd: JSON.stringify({
       "@context": "https://schema.org",
       "@type": "ProfilePage",
@@ -35,25 +71,25 @@ export default function CVPage() {
       <div className="print:hidden sticky top-0 z-50 bg-white/85 backdrop-blur-xl border-b border-outline-variant">
         <div className="max-w-4xl mx-auto px-4 md:px-8 h-16 flex items-center justify-between gap-2">
           <a
-            href="/"
+            href={lp("/")}
             className="text-xs sm:text-sm font-bold text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap"
           >
-            <span className="sm:hidden">← Back</span>
-            <span className="hidden sm:inline">← Back to Portfolio</span>
+            <span className="sm:hidden">{copy.back}</span>
+            <span className="hidden sm:inline">{copy.backLong}</span>
           </a>
           <div className="flex gap-2 sm:gap-3">
             <button
               onClick={() => window.print()}
               className="px-3 py-1.5 sm:px-4 sm:py-2 rounded-full border border-outline-variant text-xs sm:text-sm font-bold hover:bg-surface-container-low transition-colors whitespace-nowrap"
             >
-              Print
+              {copy.print}
             </button>
             <a
               href={CV_PDF_PATH}
               download
               className="px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-primary text-on-primary text-xs sm:text-sm font-black uppercase tracking-wide hover:bg-primary-container transition-colors whitespace-nowrap"
             >
-              Download PDF
+              {copy.download}
             </a>
           </div>
         </div>
@@ -90,11 +126,11 @@ export default function CVPage() {
           </div>
         </header>
 
-        <Section title="Profile">
+        <Section title={copy.profile}>
           <p className="leading-relaxed text-on-surface-variant print:text-black">{profile.summary}</p>
         </Section>
 
-        <Section title="Experience">
+        <Section title={copy.experience}>
           <div className="space-y-6">
             {experiences.map((exp) => (
               <div key={exp.company}>
@@ -113,7 +149,7 @@ export default function CVPage() {
           </div>
         </Section>
 
-        <Section title="Selected Project Case Studies">
+        <Section title={copy.caseStudies}>
           <div className="space-y-4">
             {caseStudies.map((cs) => (
               <div key={cs.slug}>
@@ -129,7 +165,7 @@ export default function CVPage() {
           </div>
         </Section>
 
-        <Section title="Skills">
+        <Section title={copy.skills}>
           <div className="grid sm:grid-cols-2 gap-x-8 gap-y-3">
             {skills.map((skill) => (
               <div key={skill.title}>
@@ -142,7 +178,7 @@ export default function CVPage() {
           </div>
         </Section>
 
-        <Section title="Education">
+        <Section title={copy.education}>
           <div className="space-y-3">
             {education.map((edu) => (
               <div key={edu.degree} className="flex flex-wrap justify-between gap-x-4">
@@ -155,7 +191,7 @@ export default function CVPage() {
           </div>
         </Section>
 
-        <Section title="Languages">
+        <Section title={copy.languages}>
           <div className="flex flex-wrap gap-x-8 gap-y-2">
             {languages.map((lang) => (
               <span key={lang.name} className="text-on-surface-variant print:text-black">

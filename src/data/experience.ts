@@ -1,4 +1,6 @@
-export const experiences = [
+import { t } from "../i18n/locale";
+
+const experiencesEn = [
   {
     period: "Sep 2025 – Present",
     company: "Global Web Marketing LLC",
@@ -25,3 +27,33 @@ export const experiences = [
       "Assisted in the development of modular e-commerce components. Gained deep proficiency in modern CSS frameworks and React fundamentals.",
   },
 ];
+
+const experiencesDe: typeof experiencesEn = [
+  {
+    period: "Sep. 2025 – heute",
+    company: "Global Web Marketing LLC",
+    location: "Abu Dhabi, VAE",
+    role: "Full Stack Entwickler",
+    description:
+      "Leitung von Full-Stack-Entwicklungsprojekten für regionale Unternehmen mit Schwerpunkt auf hochfrequentierten Reise- und Buchungsplattformen auf Basis von Next.js und speziellen Zahlungsintegrationen für die VAE.",
+    isCurrent: true,
+  },
+  {
+    period: "Okt. 2022 – Jul. 2025",
+    company: "Gadgeon Systems Inc",
+    location: "Kochi, Indien",
+    role: "Software Engineer",
+    description:
+      "Entwicklung robuster IoT-fähiger Web-Dashboards und Unternehmenswerkzeuge, darunter die KORE Digital E-Commerce-Plattform (React/Next.js-Frontend auf einem Backend mit AWS Lambda und Step Functions) mit automatisierter Anbindung von Zahlungs-, ERP- und Logistikdienstleistern. Verbesserung der Systemlatenz um 30 % durch Datenbankoptimierung und überarbeitetes State-Management.",
+  },
+  {
+    period: "Mär. 2022 – Sep. 2022",
+    company: "Techzera Infologies Pvt Ltd",
+    location: "Malappuram, Indien",
+    role: "Junior Developer",
+    description:
+      "Mitarbeit an der Entwicklung modularer E-Commerce-Komponenten. Fundierte Kenntnisse in modernen CSS-Frameworks und den Grundlagen von React erworben.",
+  },
+];
+
+export const experiences = t({ en: experiencesEn, de: experiencesDe });

@@ -1,7 +1,41 @@
 import { useState } from "react";
 import { profile } from "../../data/profile";
+import { t } from "../../i18n/locale";
 
 const WHATSAPP_NUMBER = profile.whatsapp;
+
+const copy = t({
+  en: {
+    heading: ["LET'S BUILD", "SOMETHING", "EXTRAORDINARY"],
+    directEmail: "Direct Email",
+    callWhatsapp: "Call / WhatsApp",
+    connect: "Connect on LinkedIn",
+    fullName: "Full Name",
+    namePlaceholder: "John Doe",
+    emailAddress: "Email Address",
+    emailPlaceholder: "john@example.com",
+    message: "Message",
+    messagePlaceholder: "Tell me about your project...",
+    send: "Send via WhatsApp",
+    waEmail: "Email",
+    waMessage: "Message",
+  },
+  de: {
+    heading: ["LASSEN SIE UNS", "ETWAS BESONDERES", "ENTWICKELN"],
+    directEmail: "E-Mail",
+    callWhatsapp: "Telefon / WhatsApp",
+    connect: "Auf LinkedIn vernetzen",
+    fullName: "Vollständiger Name",
+    namePlaceholder: "Max Mustermann",
+    emailAddress: "E-Mail-Adresse",
+    emailPlaceholder: "max@beispiel.de",
+    message: "Nachricht",
+    messagePlaceholder: "Erzählen Sie mir von Ihrem Projekt ...",
+    send: "Per WhatsApp senden",
+    waEmail: "E-Mail",
+    waMessage: "Nachricht",
+  },
+});
 
 export default function ContactSection() {
   return (
@@ -20,26 +54,26 @@ function ContactInfo() {
   return (
     <div>
       <h2 className="font-headline text-4xl md:text-6xl font-black text-primary mb-8 tracking-tighter">
-        LET'S BUILD <br /> SOMETHING <br /> EXTRAORDINARY
+        {copy.heading[0]} <br /> {copy.heading[1]} <br /> {copy.heading[2]}
       </h2>
 
       <div className="space-y-6 mt-12">
         <ContactMethod
           icon="mail"
-          label="Direct Email"
+          label={copy.directEmail}
           display={profile.email}
           href={`mailto:${profile.email}`}
         />
         <ContactMethod
           icon="call"
-          label="Call / WhatsApp"
+          label={copy.callWhatsapp}
           display={profile.phoneDisplay}
           href={`tel:${profile.phone}`}
         />
         <ContactMethod
           icon="link"
           label="LinkedIn"
-          display="Connect on LinkedIn"
+          display={copy.connect}
           href={profile.linkedin}
         />
       </div>
@@ -85,7 +119,7 @@ function ContactForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const text = `Hi Justin,\n\nName: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
+    const text = `Hi Justin,\n\nName: ${name}\n${copy.waEmail}: ${email}\n\n${copy.waMessage}:\n${message}`;
     const encoded = encodeURIComponent(text);
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encoded}`, "_blank");
   };
@@ -94,24 +128,24 @@ function ContactForm() {
     <div className="bg-surface-container-low p-6 md:p-10 rounded-3xl border border-outline-variant shadow-sm">
       <form className="space-y-8" onSubmit={handleSubmit}>
         <FormField
-          label="Full Name"
+          label={copy.fullName}
           type="text"
-          placeholder="John Doe"
+          placeholder={copy.namePlaceholder}
           value={name}
           onChange={setName}
           required
         />
         <FormField
-          label="Email Address"
+          label={copy.emailAddress}
           type="email"
-          placeholder="john@example.com"
+          placeholder={copy.emailPlaceholder}
           value={email}
           onChange={setEmail}
           required
         />
         <FormTextarea
-          label="Message"
-          placeholder="Tell me about your project..."
+          label={copy.message}
+          placeholder={copy.messagePlaceholder}
           value={message}
           onChange={setMessage}
           required
@@ -121,7 +155,7 @@ function ContactForm() {
           className="w-full py-4 bg-primary text-on-primary font-black uppercase tracking-widest rounded-full shadow-lg shadow-primary/25 hover:bg-primary-container transition-all active:scale-95 flex items-center justify-center gap-2"
         >
           <span className="material-symbols-outlined text-base">send</span>
-          Send via WhatsApp
+          {copy.send}
         </button>
       </form>
     </div>

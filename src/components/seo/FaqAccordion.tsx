@@ -1,10 +1,11 @@
 import type { Faq } from "../../data/seo/types";
+import { t } from "../../i18n/locale";
 
 export default function FaqAccordion({ faqs }: { faqs: Faq[] }) {
   return (
     <section aria-labelledby="faq-heading">
       <h2 id="faq-heading" className="font-headline text-xl md:text-2xl font-black mb-6">
-        Frequently Asked Questions
+        {t({ en: "Frequently Asked Questions", de: "Häufig gestellte Fragen" })}
       </h2>
       <div className="divide-y divide-outline-variant border-y border-outline-variant">
         {faqs.map((faq) => (

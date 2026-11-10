@@ -42,6 +42,11 @@ function outputPathFor(route) {
 }
 
 function startStaticServer() {
+  // Snapshot the pristine SPA shell up front: dist/index.html is overwritten by the prerendered
+  // "/" route during the run, and serving that as the fallback would leak the home page's
+  // injected head tags (hreflang alternates etc.) into every route rendered afterwards.
+  const shell = readFileSync(path.join(distDir, "index.html"));
+
   const mimeTypes = {
     ".html": "text/html; charset=utf-8",
     ".js": "text/javascript",
@@ -64,11 +69,15 @@ function startStaticServer() {
     // this script's output, written after the fact), so every extensionless route
     // correctly falls back to the pristine SPA shell and renders client-side.
     const filePath = hasExtension ? path.join(distDir, urlPath) : path.join(distDir, `${urlPath}.html`);
-    const fallback = path.join(distDir, "index.html");
-    const target = existsSync(filePath) ? filePath : fallback;
-    const ext = path.extname(target);
+    const isShellRequest = urlPath === "/" || urlPath === "/index.html" || !existsSync(filePath);
+    if (isShellRequest) {
+      res.writeHead(200, { "Content-Type": mimeTypes[".html"] });
+      res.end(shell);
+      return;
+    }
+    const ext = path.extname(filePath);
     res.writeHead(200, { "Content-Type": mimeTypes[ext] ?? "application/octet-stream" });
-    res.end(readFileSync(target));
+    res.end(readFileSync(filePath));
   });
 
   return new Promise((resolve) => {

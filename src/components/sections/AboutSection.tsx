@@ -1,9 +1,21 @@
-const stats = [
-  { value: "5+", label: "Years Exp" },
-  { value: "16+", label: "Projects Delivered" },
-  { value: "AWS", label: "Cloud Certified" },
-  { value: "GCC", label: "Operational Base" },
-];
+import { t } from "../../i18n/locale";
+
+const stats = t({
+  en: [
+    { value: "5+", label: "Years Exp" },
+    { value: "16+", label: "Projects Delivered" },
+    { value: "AWS", label: "Cloud Certified" },
+    { value: "GCC", label: "Operational Base" },
+  ],
+  de: [
+    { value: "5+", label: "Jahre Erfahrung" },
+    { value: "16+", label: "Umgesetzte Projekte" },
+    { value: "AWS", label: "Cloud-zertifiziert" },
+    { value: "GCC", label: "Operative Basis" },
+  ],
+});
+
+const german = t({ en: false, de: true });
 
 export default function AboutSection() {
   return (
@@ -13,11 +25,31 @@ export default function AboutSection() {
           <div className="md:col-span-4">
             {/* Sticky only beside the text on wider screens; on phones it would pin under the header */}
             <h2 className="font-headline text-3xl md:text-4xl font-black text-primary md:sticky md:top-32">
-              THE <br className="hidden md:block" /> PHILOSOPHY
+              {german ? (
+                <>
+                  MEINE <br className="hidden md:block" /> PHILOSOPHIE
+                </>
+              ) : (
+                <>
+                  THE <br className="hidden md:block" /> PHILOSOPHY
+                </>
+              )}
             </h2>
           </div>
 
           <div className="md:col-span-8 space-y-8 md:space-y-12">
+            {german ? (
+            <p className="text-lg sm:text-xl md:text-2xl text-on-surface-variant leading-relaxed font-light">
+              Ich bin spezialisiert auf{" "}
+              <span className="text-on-surface font-normal">skalierbare Webanwendungen</span>
+              , die komplexe Backend-Architekturen mit nahtlosen Nutzererlebnissen verbinden. Meine
+              Expertise liegt in React, Next.js und Node.js, mit klarem Schwerpunkt auf{" "}
+              <span className="text-on-surface font-normal">
+                E-Commerce, Cloud-Integrationen und Payment-Gateways
+              </span>
+              .
+            </p>
+            ) : (
             <p className="text-lg sm:text-xl md:text-2xl text-on-surface-variant leading-relaxed font-light">
               I specialize in building{" "}
               <span className="text-on-surface font-normal">scalable web applications</span>{" "}
@@ -29,6 +61,7 @@ export default function AboutSection() {
               </span>
               .
             </p>
+            )}
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
               {stats.map((stat) => (

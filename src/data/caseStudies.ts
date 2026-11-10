@@ -1,3 +1,5 @@
+import { t } from "../i18n/locale";
+
 export type CaseStudy = {
   slug: string;
   title: string;
@@ -13,7 +15,7 @@ export type CaseStudy = {
   examples?: { label: string; href: string }[];
 };
 
-export const caseStudies: CaseStudy[] = [
+const caseStudiesEn: CaseStudy[] = [
   {
     slug: "multi-country-booking-platform",
     title: "Multi-Country Transportation Booking Platform",
@@ -74,3 +76,55 @@ export const caseStudies: CaseStudy[] = [
     ],
   },
 ];
+
+const caseStudiesDe: CaseStudy[] = [
+  {
+    ...caseStudiesEn[0],
+    title: "Buchungsplattform für Transportleistungen in mehreren Ländern",
+    category: "Reisen & Transport",
+    period: "Sep. 2025 – heute",
+    role: "Full Stack Entwickler",
+    stack: ["React", "Next.js", "PHP", "Mandantenfähiges Theming"],
+    problem:
+      "Das Unternehmen betreibt über 100 lokalisierte Buchungswebsites in Großbritannien und Europa (Mietwagen, Transfers, Minibusvermietung, Touren), und jeder neue Markt oder jede neue Marke drohte zu einer einmaligen Neuentwicklung statt zu einem wiederholbaren Prozess zu werden.",
+    myRole:
+      "Konzeption und Entwicklung einer zentralen React/Next.js-Frontend-Architektur auf einem gemeinsamen PHP-Backend, sodass neue Länder- und Markenwebsites aus einer gemeinsamen Komponentenbibliothek und einem einheitlichen Content-Modell gestartet werden konnten, statt jedes Mal individuell entwickelt zu werden.",
+    architecture:
+      "Eine gemeinsame Next.js/React-Komponentenbibliothek übernimmt Buchungsabläufe, Suche und Checkout-Oberfläche für alle Websites, ergänzt durch eine konfigurationsgesteuerte Schicht für marktspezifisches Branding, Währungen und lokalisierte Inhalte. Ein gemeinsames PHP-Backend verarbeitet Buchungs-, Bestands- und Zahlungslogik, sodass jede Website auf zentrale Dienste zugreift, statt Backend-Logik zu duplizieren.",
+    outcome:
+      "Der Start einer neuen Länder- oder Markenwebsite wurde zu einer Konfigurationsaufgabe statt einer kompletten Neuentwicklung – das Unternehmen konnte in neue Märkte in Großbritannien und Europa expandieren und dabei eine einzige Codebasis pflegen und weiterentwickeln.",
+  },
+  {
+    ...caseStudiesEn[1],
+    title: "KORE Digital E-Commerce-Plattform",
+    category: "E-Commerce & Cloud",
+    period: "Okt. 2022 – Jul. 2025",
+    role: "Software Engineer",
+    problem:
+      "KORE Digital brauchte einen Onlineshop, in dem Checkout, ERP-Auftragssynchronisierung und Versand über mehrere Carrier automatisch zusammenspielen, statt manuelle Abstimmung zwischen Zahlungs-, ERP- und Versandsystemen zu erfordern.",
+    myRole:
+      "Entwicklung des React/Next.js-Shops und Mitarbeit am AWS-Backend, wobei Zahlungs-, ERP- und Logistikanbieter zu einer einzigen automatisierten Auftragspipeline verbunden wurden.",
+    architecture:
+      "React/Next.js-Frontend auf einer ereignisgesteuerten AWS-Architektur: Lambda-Funktionen und Step Functions orchestrieren den Auftragslebenszyklus, DynamoDB und RDS verwalten Anwendungs- und Transaktionsdaten. Stripe und Shopify übernehmen Zahlungen und Commerce, NetSuite hält Aufträge mit dem ERP synchron, und Integrationen mit UPS, FedEx und 3PL automatisieren die Erstellung von Versandetiketten und Tracking-Updates.",
+    outcome:
+      "Die manuelle Koordination von Versand und Auftragsabwicklung wurde durch eine automatisierte, ereignisgesteuerte Pipeline über Zahlung, ERP und mehrere Carrier ersetzt – mit einem einheitlichen Fulfillment-Prozess über alle Vertriebskanäle hinweg.",
+  },
+  {
+    ...caseStudiesEn[2],
+    title: "Plattformen für Tourenbuchung & Reisen",
+    category: "Headless Commerce",
+    period: "Sep. 2025 – heute",
+    role: "Full Stack Entwickler",
+    stack: ["Shopify Storefront API", "React", "Redux", "Checkout in mehreren Währungen", "WhatsApp API"],
+    problem:
+      "Websites für Touren- und Ausflugsbuchungen brauchten flexible Produkt- und Bestandsverwaltung, einen Checkout in mehreren Währungen für internationale Kunden und einen einfachen Buchungsweg für Kunden, die Messaging gegenüber Webformularen bevorzugen.",
+    myRole:
+      "Umsetzung der Buchungsabläufe auf Basis der Shopify Storefront API mit Redux für das State-Management, Implementierung des Mehrwährungs-Checkouts und Ergänzung eines WhatsApp-basierten Buchungsablaufs als alternativen Weg zur Conversion.",
+    architecture:
+      "Headless-Commerce-Setup mit der Shopify Storefront API für Produkt- und Bestandsverwaltung und einem React/Redux-Frontend, das Buchungsstatus und Preise in mehreren Währungen im Checkout verarbeitet. Eine WhatsApp-Integration ermöglicht es Kunden, eine Buchung per Chat zu beginnen oder abzuschließen, wobei die Bestätigungen in denselben Bestellprozess zurückfließen.",
+    outcome:
+      "Kunden erhielten zwei vollständige Buchungswege – den klassischen Web-Checkout oder WhatsApp –, während Produkte, Bestände und Mehrwährungspreise zentral über eine einzige Headless-Commerce-Schicht verwaltet werden.",
+  },
+];
+
+export const caseStudies: CaseStudy[] = t({ en: caseStudiesEn, de: caseStudiesDe });

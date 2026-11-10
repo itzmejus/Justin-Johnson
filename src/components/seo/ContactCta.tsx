@@ -1,4 +1,5 @@
 import { profile } from "../../data/profile";
+import { lp, t } from "../../i18n/locale";
 
 export default function ContactCta({
   heading,
@@ -14,10 +15,10 @@ export default function ContactCta({
         <p className="text-on-surface-variant leading-relaxed mb-10">{body}</p>
         <div className="flex flex-wrap justify-center gap-4">
           <a
-            href="/freelance"
+            href={lp("/freelance")}
             className="px-8 py-4 bg-gradient-to-br from-primary to-primary-container text-on-primary shadow-lg shadow-primary/25 rounded-full font-bold text-lg hover:scale-105 transition-transform active:scale-95"
           >
-            View Freelance Availability
+            {t({ en: "View Freelance Availability", de: "Verfügbarkeit ansehen" })}
           </a>
           <a
             href={`https://wa.me/${profile.whatsapp}`}
@@ -25,7 +26,7 @@ export default function ContactCta({
             rel="noopener noreferrer"
             className="px-8 py-4 border border-outline-variant text-on-surface rounded-full font-bold text-lg hover:bg-surface-container-low transition-colors"
           >
-            Message on WhatsApp
+            {t({ en: "Message on WhatsApp", de: "Nachricht per WhatsApp" })}
           </a>
         </div>
       </div>

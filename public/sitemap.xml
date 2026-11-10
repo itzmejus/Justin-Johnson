@@ -1,859 +1,2575 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.justinjohnson.de/</loc>
-    <lastmod>2026-07-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/"/>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/"/>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/freelance</loc>
-    <lastmod>2026-07-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/freelance"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/freelance"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/freelance"/>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/freelance</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/freelance"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/freelance"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/freelance"/>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/services</loc>
-    <lastmod>2026-07-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/services"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/services"/>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/services"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/services"/>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/cv</loc>
-    <lastmod>2026-07-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/cv"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/cv"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/cv"/>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/cv</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/cv"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/cv"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/cv"/>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/blog</loc>
-    <lastmod>2026-07-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog"/>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/blog</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog"/>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/technologies</loc>
-    <lastmod>2026-07-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies"/>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/technologies</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies"/>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/solutions</loc>
-    <lastmod>2026-07-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/solutions"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/solutions"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/solutions"/>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/solutions</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/solutions"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/solutions"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/solutions"/>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/resources</loc>
-    <lastmod>2026-07-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/resources"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/resources"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/resources"/>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/resources</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/resources"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/resources"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/resources"/>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/industries</loc>
-    <lastmod>2026-07-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries"/>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/industries</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries"/>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/guides</loc>
-    <lastmod>2026-07-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides"/>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/guides</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides"/>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/blog/dubai-print-design</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/dubai-print-design"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/dubai-print-design"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/dubai-print-design"/>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/blog/dubai-print-design</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/dubai-print-design"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/dubai-print-design"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/dubai-print-design"/>
     <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/blog/uae-transfers</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/uae-transfers"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/uae-transfers"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/uae-transfers"/>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/blog/uae-transfers</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/uae-transfers"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/uae-transfers"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/uae-transfers"/>
     <lastmod>2026-07-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/blog/daisys-paws</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/daisys-paws"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/daisys-paws"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/daisys-paws"/>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/blog/daisys-paws</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/daisys-paws"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/daisys-paws"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/daisys-paws"/>
     <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/blog/minibus-hire-london</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/minibus-hire-london"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/minibus-hire-london"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/minibus-hire-london"/>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/blog/minibus-hire-london</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/minibus-hire-london"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/minibus-hire-london"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/minibus-hire-london"/>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/blog/tawaf-essentials</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/tawaf-essentials"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/tawaf-essentials"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/tawaf-essentials"/>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/blog/tawaf-essentials</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/tawaf-essentials"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/tawaf-essentials"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/tawaf-essentials"/>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/blog/compare-transport-uk</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/compare-transport-uk"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/compare-transport-uk"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/compare-transport-uk"/>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/blog/compare-transport-uk</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/compare-transport-uk"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/compare-transport-uk"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/compare-transport-uk"/>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/blog/jetset-visas-app</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/jetset-visas-app"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/jetset-visas-app"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/jetset-visas-app"/>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/blog/jetset-visas-app</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/jetset-visas-app"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/jetset-visas-app"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/jetset-visas-app"/>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/blog/abc-minibuses-edinburgh</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/abc-minibuses-edinburgh"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/abc-minibuses-edinburgh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/abc-minibuses-edinburgh"/>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/blog/abc-minibuses-edinburgh</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/abc-minibuses-edinburgh"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/abc-minibuses-edinburgh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/abc-minibuses-edinburgh"/>
     <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/blog/minibuses-manchester</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/minibuses-manchester"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/minibuses-manchester"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/minibuses-manchester"/>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/blog/minibuses-manchester</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/minibuses-manchester"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/minibuses-manchester"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/minibuses-manchester"/>
     <lastmod>2026-05-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/blog/minibuses-glasgow</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/minibuses-glasgow"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/minibuses-glasgow"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/minibuses-glasgow"/>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/blog/minibuses-glasgow</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/minibuses-glasgow"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/minibuses-glasgow"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/minibuses-glasgow"/>
     <lastmod>2026-05-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/blog/minibuses-liverpool</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/minibuses-liverpool"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/minibuses-liverpool"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/minibuses-liverpool"/>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/blog/minibuses-liverpool</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/minibuses-liverpool"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/minibuses-liverpool"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/minibuses-liverpool"/>
     <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/blog/minibuses-birmingham</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/minibuses-birmingham"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/minibuses-birmingham"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/minibuses-birmingham"/>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/blog/minibuses-birmingham</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/minibuses-birmingham"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/minibuses-birmingham"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/minibuses-birmingham"/>
     <lastmod>2026-05-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/blog/minibuses-cardiff</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/minibuses-cardiff"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/minibuses-cardiff"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/minibuses-cardiff"/>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/blog/minibuses-cardiff</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/minibuses-cardiff"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/minibuses-cardiff"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/minibuses-cardiff"/>
     <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/blog/minibus-leeds</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/minibus-leeds"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/minibus-leeds"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/minibus-leeds"/>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/blog/minibus-leeds</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/minibus-leeds"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/minibus-leeds"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/minibus-leeds"/>
     <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/blog/cheap-minibus</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/cheap-minibus"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/cheap-minibus"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/cheap-minibus"/>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/blog/cheap-minibus</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/cheap-minibus"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/cheap-minibus"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/cheap-minibus"/>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/blog/gb-coach-hire</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/gb-coach-hire"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/gb-coach-hire"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/gb-coach-hire"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/blog/gb-coach-hire</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/gb-coach-hire"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/gb-coach-hire"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/gb-coach-hire"/>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/blog/sell-my-business-ae</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/sell-my-business-ae"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/sell-my-business-ae"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/sell-my-business-ae"/>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/blog/sell-my-business-ae</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/sell-my-business-ae"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/sell-my-business-ae"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/sell-my-business-ae"/>
     <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/blog/compare-movers-ae</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/compare-movers-ae"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/compare-movers-ae"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/compare-movers-ae"/>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/blog/compare-movers-ae</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/compare-movers-ae"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/compare-movers-ae"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/compare-movers-ae"/>
     <lastmod>2026-04-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/blog/franks-handyman</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/franks-handyman"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/franks-handyman"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/franks-handyman"/>
+    <lastmod>2026-04-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/blog/franks-handyman</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/franks-handyman"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/franks-handyman"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/franks-handyman"/>
     <lastmod>2026-04-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/blog/smp-nationwide</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/smp-nationwide"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/smp-nationwide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/smp-nationwide"/>
+    <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/blog/smp-nationwide</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/smp-nationwide"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/smp-nationwide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/smp-nationwide"/>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/blog/maldives-hotel-reviews</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/maldives-hotel-reviews"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/maldives-hotel-reviews"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/maldives-hotel-reviews"/>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/blog/maldives-hotel-reviews</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/maldives-hotel-reviews"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/maldives-hotel-reviews"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/maldives-hotel-reviews"/>
     <lastmod>2026-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/blog/total-property-ae</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/total-property-ae"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/total-property-ae"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/total-property-ae"/>
+    <lastmod>2026-03-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/blog/total-property-ae</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/total-property-ae"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/total-property-ae"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/total-property-ae"/>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/blog/office-broker-ae</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/office-broker-ae"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/office-broker-ae"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/office-broker-ae"/>
+    <lastmod>2026-03-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/blog/office-broker-ae</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/office-broker-ae"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/office-broker-ae"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/office-broker-ae"/>
     <lastmod>2026-03-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/blog/excursions-dubai</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/excursions-dubai"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/excursions-dubai"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/excursions-dubai"/>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/blog/excursions-dubai</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/excursions-dubai"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/excursions-dubai"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/excursions-dubai"/>
     <lastmod>2026-03-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/blog/jetset-visas</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/jetset-visas"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/jetset-visas"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/jetset-visas"/>
+    <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/blog/jetset-visas</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/jetset-visas"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/jetset-visas"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/jetset-visas"/>
     <lastmod>2026-03-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/blog/safaris-ae</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/safaris-ae"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/safaris-ae"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/safaris-ae"/>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/blog/safaris-ae</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/safaris-ae"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/safaris-ae"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/safaris-ae"/>
     <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/blog/uae-luxury-car-hire</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/uae-luxury-car-hire"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/uae-luxury-car-hire"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/uae-luxury-car-hire"/>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/blog/uae-luxury-car-hire</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/uae-luxury-car-hire"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/uae-luxury-car-hire"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/uae-luxury-car-hire"/>
     <lastmod>2026-03-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/blog/compare-flights-ae</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/compare-flights-ae"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/compare-flights-ae"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/compare-flights-ae"/>
+    <lastmod>2026-02-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/blog/compare-flights-ae</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/blog/compare-flights-ae"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/blog/compare-flights-ae"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/blog/compare-flights-ae"/>
     <lastmod>2026-02-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/services/nextjs-development-services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/services/nextjs-development-services"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/services/nextjs-development-services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/services/nextjs-development-services"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/services/nextjs-development-services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/services/nextjs-development-services"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/services/nextjs-development-services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/services/nextjs-development-services"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/services/react-development-services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/services/react-development-services"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/services/react-development-services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/services/react-development-services"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/services/react-development-services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/services/react-development-services"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/services/react-development-services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/services/react-development-services"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/services/full-stack-development-services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/services/full-stack-development-services"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/services/full-stack-development-services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/services/full-stack-development-services"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/services/full-stack-development-services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/services/full-stack-development-services"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/services/full-stack-development-services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/services/full-stack-development-services"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/services/typescript-development-services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/services/typescript-development-services"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/services/typescript-development-services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/services/typescript-development-services"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/services/typescript-development-services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/services/typescript-development-services"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/services/typescript-development-services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/services/typescript-development-services"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/services/supabase-development-services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/services/supabase-development-services"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/services/supabase-development-services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/services/supabase-development-services"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/services/supabase-development-services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/services/supabase-development-services"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/services/supabase-development-services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/services/supabase-development-services"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/services/saas-application-development</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/services/saas-application-development"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/services/saas-application-development"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/services/saas-application-development"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/services/saas-application-development</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/services/saas-application-development"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/services/saas-application-development"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/services/saas-application-development"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/services/crm-development-services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/services/crm-development-services"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/services/crm-development-services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/services/crm-development-services"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/services/crm-development-services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/services/crm-development-services"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/services/crm-development-services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/services/crm-development-services"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/services/admin-dashboard-development</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/services/admin-dashboard-development"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/services/admin-dashboard-development"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/services/admin-dashboard-development"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/services/admin-dashboard-development</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/services/admin-dashboard-development"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/services/admin-dashboard-development"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/services/admin-dashboard-development"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/services/custom-web-application-development</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/services/custom-web-application-development"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/services/custom-web-application-development"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/services/custom-web-application-development"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/services/custom-web-application-development</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/services/custom-web-application-development"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/services/custom-web-application-development"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/services/custom-web-application-development"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/services/api-development-integration</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/services/api-development-integration"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/services/api-development-integration"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/services/api-development-integration"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/services/api-development-integration</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/services/api-development-integration"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/services/api-development-integration"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/services/api-development-integration"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/services/website-redesign-services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/services/website-redesign-services"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/services/website-redesign-services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/services/website-redesign-services"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/services/website-redesign-services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/services/website-redesign-services"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/services/website-redesign-services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/services/website-redesign-services"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/services/website-maintenance-services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/services/website-maintenance-services"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/services/website-maintenance-services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/services/website-maintenance-services"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/services/website-maintenance-services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/services/website-maintenance-services"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/services/website-maintenance-services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/services/website-maintenance-services"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/services/ecommerce-development</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/services/ecommerce-development"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/services/ecommerce-development"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/services/ecommerce-development"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/services/ecommerce-development</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/services/ecommerce-development"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/services/ecommerce-development"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/services/ecommerce-development"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/services/progressive-web-app-development</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/services/progressive-web-app-development"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/services/progressive-web-app-development"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/services/progressive-web-app-development"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/services/progressive-web-app-development</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/services/progressive-web-app-development"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/services/progressive-web-app-development"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/services/progressive-web-app-development"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/services/headless-cms-development</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/services/headless-cms-development"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/services/headless-cms-development"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/services/headless-cms-development"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/services/headless-cms-development</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/services/headless-cms-development"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/services/headless-cms-development"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/services/headless-cms-development"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/technologies/nextjs-app-router</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies/nextjs-app-router"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies/nextjs-app-router"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies/nextjs-app-router"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/technologies/nextjs-app-router</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies/nextjs-app-router"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies/nextjs-app-router"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies/nextjs-app-router"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/technologies/react-server-components</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies/react-server-components"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies/react-server-components"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies/react-server-components"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/technologies/react-server-components</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies/react-server-components"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies/react-server-components"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies/react-server-components"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/technologies/nextjs-server-side-rendering</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies/nextjs-server-side-rendering"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies/nextjs-server-side-rendering"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies/nextjs-server-side-rendering"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/technologies/nextjs-server-side-rendering</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies/nextjs-server-side-rendering"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies/nextjs-server-side-rendering"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies/nextjs-server-side-rendering"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/technologies/nextjs-static-site-generation</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies/nextjs-static-site-generation"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies/nextjs-static-site-generation"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies/nextjs-static-site-generation"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/technologies/nextjs-static-site-generation</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies/nextjs-static-site-generation"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies/nextjs-static-site-generation"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies/nextjs-static-site-generation"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/technologies/nextjs-incremental-static-regeneration</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies/nextjs-incremental-static-regeneration"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies/nextjs-incremental-static-regeneration"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies/nextjs-incremental-static-regeneration"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/technologies/nextjs-incremental-static-regeneration</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies/nextjs-incremental-static-regeneration"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies/nextjs-incremental-static-regeneration"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies/nextjs-incremental-static-regeneration"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/technologies/nextjs-authentication</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies/nextjs-authentication"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies/nextjs-authentication"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies/nextjs-authentication"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/technologies/nextjs-authentication</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies/nextjs-authentication"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies/nextjs-authentication"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies/nextjs-authentication"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/technologies/nextjs-seo</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies/nextjs-seo"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies/nextjs-seo"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies/nextjs-seo"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/technologies/nextjs-seo</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies/nextjs-seo"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies/nextjs-seo"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies/nextjs-seo"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/technologies/nextjs-performance-optimization</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies/nextjs-performance-optimization"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies/nextjs-performance-optimization"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies/nextjs-performance-optimization"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/technologies/nextjs-performance-optimization</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies/nextjs-performance-optimization"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies/nextjs-performance-optimization"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies/nextjs-performance-optimization"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/technologies/react-performance-optimization</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies/react-performance-optimization"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies/react-performance-optimization"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies/react-performance-optimization"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/technologies/react-performance-optimization</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies/react-performance-optimization"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies/react-performance-optimization"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies/react-performance-optimization"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/technologies/typescript-for-web-applications</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies/typescript-for-web-applications"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies/typescript-for-web-applications"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies/typescript-for-web-applications"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/technologies/typescript-for-web-applications</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies/typescript-for-web-applications"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies/typescript-for-web-applications"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies/typescript-for-web-applications"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/technologies/supabase-authentication</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies/supabase-authentication"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies/supabase-authentication"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies/supabase-authentication"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/technologies/supabase-authentication</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies/supabase-authentication"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies/supabase-authentication"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies/supabase-authentication"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/technologies/supabase-database-development</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies/supabase-database-development"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies/supabase-database-development"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies/supabase-database-development"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/technologies/supabase-database-development</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies/supabase-database-development"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies/supabase-database-development"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies/supabase-database-development"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/technologies/postgresql-development</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies/postgresql-development"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies/postgresql-development"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies/postgresql-development"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/technologies/postgresql-development</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies/postgresql-development"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies/postgresql-development"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies/postgresql-development"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/technologies/tailwind-css-development</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies/tailwind-css-development"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies/tailwind-css-development"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies/tailwind-css-development"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/technologies/tailwind-css-development</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies/tailwind-css-development"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies/tailwind-css-development"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies/tailwind-css-development"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/technologies/rest-api-development</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies/rest-api-development"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies/rest-api-development"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies/rest-api-development"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/technologies/rest-api-development</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies/rest-api-development"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies/rest-api-development"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies/rest-api-development"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/technologies/graphql-development</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies/graphql-development"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies/graphql-development"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies/graphql-development"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/technologies/graphql-development</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies/graphql-development"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies/graphql-development"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies/graphql-development"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/technologies/google-maps-api-integration</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies/google-maps-api-integration"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies/google-maps-api-integration"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies/google-maps-api-integration"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/technologies/google-maps-api-integration</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies/google-maps-api-integration"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies/google-maps-api-integration"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies/google-maps-api-integration"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/technologies/stripe-payment-integration</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies/stripe-payment-integration"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies/stripe-payment-integration"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies/stripe-payment-integration"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/technologies/stripe-payment-integration</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies/stripe-payment-integration"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies/stripe-payment-integration"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies/stripe-payment-integration"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/technologies/vercel-deployment</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies/vercel-deployment"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies/vercel-deployment"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies/vercel-deployment"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/technologies/vercel-deployment</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies/vercel-deployment"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies/vercel-deployment"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies/vercel-deployment"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/technologies/docker-deployment</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies/docker-deployment"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies/docker-deployment"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies/docker-deployment"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/technologies/docker-deployment</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/technologies/docker-deployment"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/technologies/docker-deployment"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/technologies/docker-deployment"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/solutions/ai-development-services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/solutions/ai-development-services"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/solutions/ai-development-services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/solutions/ai-development-services"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/solutions/ai-development-services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/solutions/ai-development-services"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/solutions/ai-development-services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/solutions/ai-development-services"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/solutions/ai-chatbot-development</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/solutions/ai-chatbot-development"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/solutions/ai-chatbot-development"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/solutions/ai-chatbot-development"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/solutions/ai-chatbot-development</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/solutions/ai-chatbot-development"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/solutions/ai-chatbot-development"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/solutions/ai-chatbot-development"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/solutions/ai-automation-services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/solutions/ai-automation-services"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/solutions/ai-automation-services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/solutions/ai-automation-services"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/solutions/ai-automation-services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/solutions/ai-automation-services"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/solutions/ai-automation-services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/solutions/ai-automation-services"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/solutions/openai-api-integration</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/solutions/openai-api-integration"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/solutions/openai-api-integration"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/solutions/openai-api-integration"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/solutions/openai-api-integration</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/solutions/openai-api-integration"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/solutions/openai-api-integration"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/solutions/openai-api-integration"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/solutions/ai-customer-support-automation</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/solutions/ai-customer-support-automation"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/solutions/ai-customer-support-automation"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/solutions/ai-customer-support-automation"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/solutions/ai-customer-support-automation</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/solutions/ai-customer-support-automation"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/solutions/ai-customer-support-automation"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/solutions/ai-customer-support-automation"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/solutions/ai-lead-generation-systems</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/solutions/ai-lead-generation-systems"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/solutions/ai-lead-generation-systems"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/solutions/ai-lead-generation-systems"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/solutions/ai-lead-generation-systems</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/solutions/ai-lead-generation-systems"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/solutions/ai-lead-generation-systems"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/solutions/ai-lead-generation-systems"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/solutions/ai-powered-crm-solutions</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/solutions/ai-powered-crm-solutions"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/solutions/ai-powered-crm-solutions"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/solutions/ai-powered-crm-solutions"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/solutions/ai-powered-crm-solutions</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/solutions/ai-powered-crm-solutions"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/solutions/ai-powered-crm-solutions"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/solutions/ai-powered-crm-solutions"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/solutions/ai-workflow-automation</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/solutions/ai-workflow-automation"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/solutions/ai-workflow-automation"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/solutions/ai-workflow-automation"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/solutions/ai-workflow-automation</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/solutions/ai-workflow-automation"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/solutions/ai-workflow-automation"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/solutions/ai-workflow-automation"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/solutions/ai-document-processing</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/solutions/ai-document-processing"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/solutions/ai-document-processing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/solutions/ai-document-processing"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/solutions/ai-document-processing</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/solutions/ai-document-processing"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/solutions/ai-document-processing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/solutions/ai-document-processing"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/solutions/ai-email-automation</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/solutions/ai-email-automation"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/solutions/ai-email-automation"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/solutions/ai-email-automation"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/solutions/ai-email-automation</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/solutions/ai-email-automation"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/solutions/ai-email-automation"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/solutions/ai-email-automation"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/solutions/ai-appointment-scheduling</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/solutions/ai-appointment-scheduling"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/solutions/ai-appointment-scheduling"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/solutions/ai-appointment-scheduling"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/solutions/ai-appointment-scheduling</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/solutions/ai-appointment-scheduling"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/solutions/ai-appointment-scheduling"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/solutions/ai-appointment-scheduling"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/solutions/ai-knowledge-base-development</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/solutions/ai-knowledge-base-development"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/solutions/ai-knowledge-base-development"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/solutions/ai-knowledge-base-development"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/solutions/ai-knowledge-base-development</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/solutions/ai-knowledge-base-development"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/solutions/ai-knowledge-base-development"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/solutions/ai-knowledge-base-development"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/solutions/retrieval-augmented-generation-systems</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/solutions/retrieval-augmented-generation-systems"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/solutions/retrieval-augmented-generation-systems"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/solutions/retrieval-augmented-generation-systems"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/solutions/retrieval-augmented-generation-systems</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/solutions/retrieval-augmented-generation-systems"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/solutions/retrieval-augmented-generation-systems"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/solutions/retrieval-augmented-generation-systems"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/solutions/ai-agents-for-businesses</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/solutions/ai-agents-for-businesses"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/solutions/ai-agents-for-businesses"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/solutions/ai-agents-for-businesses"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/solutions/ai-agents-for-businesses</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/solutions/ai-agents-for-businesses"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/solutions/ai-agents-for-businesses"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/solutions/ai-agents-for-businesses"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/solutions/ai-consulting-services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/solutions/ai-consulting-services"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/solutions/ai-consulting-services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/solutions/ai-consulting-services"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/solutions/ai-consulting-services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/solutions/ai-consulting-services"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/solutions/ai-consulting-services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/solutions/ai-consulting-services"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/resources/technical-seo-services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/resources/technical-seo-services"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/resources/technical-seo-services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/resources/technical-seo-services"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/resources/technical-seo-services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/resources/technical-seo-services"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/resources/technical-seo-services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/resources/technical-seo-services"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/resources/nextjs-seo-services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/resources/nextjs-seo-services"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/resources/nextjs-seo-services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/resources/nextjs-seo-services"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/resources/nextjs-seo-services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/resources/nextjs-seo-services"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/resources/nextjs-seo-services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/resources/nextjs-seo-services"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/resources/react-website-seo</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/resources/react-website-seo"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/resources/react-website-seo"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/resources/react-website-seo"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/resources/react-website-seo</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/resources/react-website-seo"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/resources/react-website-seo"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/resources/react-website-seo"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/resources/core-web-vitals-optimization</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/resources/core-web-vitals-optimization"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/resources/core-web-vitals-optimization"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/resources/core-web-vitals-optimization"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/resources/core-web-vitals-optimization</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/resources/core-web-vitals-optimization"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/resources/core-web-vitals-optimization"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/resources/core-web-vitals-optimization"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/resources/website-speed-optimization</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/resources/website-speed-optimization"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/resources/website-speed-optimization"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/resources/website-speed-optimization"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/resources/website-speed-optimization</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/resources/website-speed-optimization"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/resources/website-speed-optimization"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/resources/website-speed-optimization"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/resources/javascript-seo</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/resources/javascript-seo"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/resources/javascript-seo"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/resources/javascript-seo"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/resources/javascript-seo</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/resources/javascript-seo"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/resources/javascript-seo"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/resources/javascript-seo"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/resources/structured-data-implementation</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/resources/structured-data-implementation"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/resources/structured-data-implementation"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/resources/structured-data-implementation"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/resources/structured-data-implementation</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/resources/structured-data-implementation"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/resources/structured-data-implementation"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/resources/structured-data-implementation"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/resources/xml-sitemap-optimization</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/resources/xml-sitemap-optimization"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/resources/xml-sitemap-optimization"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/resources/xml-sitemap-optimization"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/resources/xml-sitemap-optimization</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/resources/xml-sitemap-optimization"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/resources/xml-sitemap-optimization"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/resources/xml-sitemap-optimization"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/resources/internal-linking-strategy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/resources/internal-linking-strategy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/resources/internal-linking-strategy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/resources/internal-linking-strategy"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/resources/internal-linking-strategy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/resources/internal-linking-strategy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/resources/internal-linking-strategy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/resources/internal-linking-strategy"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/resources/seo-website-audit</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/resources/seo-website-audit"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/resources/seo-website-audit"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/resources/seo-website-audit"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/resources/seo-website-audit</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/resources/seo-website-audit"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/resources/seo-website-audit"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/resources/seo-website-audit"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/resources/programmatic-seo</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/resources/programmatic-seo"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/resources/programmatic-seo"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/resources/programmatic-seo"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/resources/programmatic-seo</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/resources/programmatic-seo"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/resources/programmatic-seo"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/resources/programmatic-seo"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/resources/local-seo-website-development</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/resources/local-seo-website-development"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/resources/local-seo-website-development"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/resources/local-seo-website-development"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/resources/local-seo-website-development</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/resources/local-seo-website-development"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/resources/local-seo-website-development"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/resources/local-seo-website-development"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/resources/conversion-focused-web-design</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/resources/conversion-focused-web-design"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/resources/conversion-focused-web-design"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/resources/conversion-focused-web-design"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/resources/conversion-focused-web-design</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/resources/conversion-focused-web-design"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/resources/conversion-focused-web-design"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/resources/conversion-focused-web-design"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/resources/mobile-website-optimization</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/resources/mobile-website-optimization"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/resources/mobile-website-optimization"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/resources/mobile-website-optimization"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/resources/mobile-website-optimization</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/resources/mobile-website-optimization"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/resources/mobile-website-optimization"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/resources/mobile-website-optimization"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/resources/website-accessibility-services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/resources/website-accessibility-services"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/resources/website-accessibility-services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/resources/website-accessibility-services"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/resources/website-accessibility-services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/resources/website-accessibility-services"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/resources/website-accessibility-services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/resources/website-accessibility-services"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/industries/web-development-for-real-estate</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries/web-development-for-real-estate"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries/web-development-for-real-estate"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries/web-development-for-real-estate"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/industries/web-development-for-real-estate</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries/web-development-for-real-estate"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries/web-development-for-real-estate"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries/web-development-for-real-estate"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/industries/crm-development-for-real-estate</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries/crm-development-for-real-estate"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries/crm-development-for-real-estate"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries/crm-development-for-real-estate"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/industries/crm-development-for-real-estate</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries/crm-development-for-real-estate"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries/crm-development-for-real-estate"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries/crm-development-for-real-estate"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/industries/web-development-for-restaurants</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries/web-development-for-restaurants"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries/web-development-for-restaurants"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries/web-development-for-restaurants"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/industries/web-development-for-restaurants</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries/web-development-for-restaurants"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries/web-development-for-restaurants"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries/web-development-for-restaurants"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/industries/online-ordering-systems-for-restaurants</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries/online-ordering-systems-for-restaurants"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries/online-ordering-systems-for-restaurants"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries/online-ordering-systems-for-restaurants"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/industries/online-ordering-systems-for-restaurants</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries/online-ordering-systems-for-restaurants"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries/online-ordering-systems-for-restaurants"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries/online-ordering-systems-for-restaurants"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/industries/web-development-for-dental-clinics</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries/web-development-for-dental-clinics"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries/web-development-for-dental-clinics"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries/web-development-for-dental-clinics"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/industries/web-development-for-dental-clinics</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries/web-development-for-dental-clinics"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries/web-development-for-dental-clinics"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries/web-development-for-dental-clinics"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/industries/web-development-for-healthcare-clinics</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries/web-development-for-healthcare-clinics"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries/web-development-for-healthcare-clinics"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries/web-development-for-healthcare-clinics"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/industries/web-development-for-healthcare-clinics</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries/web-development-for-healthcare-clinics"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries/web-development-for-healthcare-clinics"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries/web-development-for-healthcare-clinics"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/industries/appointment-booking-systems</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries/appointment-booking-systems"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries/appointment-booking-systems"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries/appointment-booking-systems"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/industries/appointment-booking-systems</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries/appointment-booking-systems"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries/appointment-booking-systems"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries/appointment-booking-systems"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/industries/web-development-for-hotels</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries/web-development-for-hotels"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries/web-development-for-hotels"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries/web-development-for-hotels"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/industries/web-development-for-hotels</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries/web-development-for-hotels"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries/web-development-for-hotels"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries/web-development-for-hotels"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/industries/hotel-booking-website-development</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries/hotel-booking-website-development"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries/hotel-booking-website-development"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries/hotel-booking-website-development"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/industries/hotel-booking-website-development</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries/hotel-booking-website-development"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries/hotel-booking-website-development"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries/hotel-booking-website-development"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/industries/web-development-for-transport-companies</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries/web-development-for-transport-companies"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries/web-development-for-transport-companies"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries/web-development-for-transport-companies"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/industries/web-development-for-transport-companies</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries/web-development-for-transport-companies"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries/web-development-for-transport-companies"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries/web-development-for-transport-companies"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/industries/bus-and-coach-booking-systems</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries/bus-and-coach-booking-systems"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries/bus-and-coach-booking-systems"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries/bus-and-coach-booking-systems"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/industries/bus-and-coach-booking-systems</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries/bus-and-coach-booking-systems"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries/bus-and-coach-booking-systems"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries/bus-and-coach-booking-systems"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/industries/web-development-for-schools</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries/web-development-for-schools"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries/web-development-for-schools"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries/web-development-for-schools"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/industries/web-development-for-schools</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries/web-development-for-schools"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries/web-development-for-schools"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries/web-development-for-schools"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/industries/school-management-software</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries/school-management-software"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries/school-management-software"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries/school-management-software"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/industries/school-management-software</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries/school-management-software"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries/school-management-software"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries/school-management-software"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/industries/web-development-for-law-firms</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries/web-development-for-law-firms"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries/web-development-for-law-firms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries/web-development-for-law-firms"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/industries/web-development-for-law-firms</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries/web-development-for-law-firms"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries/web-development-for-law-firms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries/web-development-for-law-firms"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/industries/web-development-for-construction-companies</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries/web-development-for-construction-companies"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries/web-development-for-construction-companies"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries/web-development-for-construction-companies"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/industries/web-development-for-construction-companies</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries/web-development-for-construction-companies"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries/web-development-for-construction-companies"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries/web-development-for-construction-companies"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/industries/web-development-for-salons</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries/web-development-for-salons"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries/web-development-for-salons"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries/web-development-for-salons"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/industries/web-development-for-salons</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries/web-development-for-salons"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries/web-development-for-salons"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries/web-development-for-salons"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/industries/salon-booking-system-development</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries/salon-booking-system-development"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries/salon-booking-system-development"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries/salon-booking-system-development"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/industries/salon-booking-system-development</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries/salon-booking-system-development"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries/salon-booking-system-development"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries/salon-booking-system-development"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/industries/web-development-for-travel-agencies</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries/web-development-for-travel-agencies"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries/web-development-for-travel-agencies"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries/web-development-for-travel-agencies"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/industries/web-development-for-travel-agencies</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries/web-development-for-travel-agencies"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries/web-development-for-travel-agencies"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries/web-development-for-travel-agencies"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/industries/tour-booking-platform-development</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries/tour-booking-platform-development"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries/tour-booking-platform-development"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries/tour-booking-platform-development"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/industries/tour-booking-platform-development</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries/tour-booking-platform-development"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries/tour-booking-platform-development"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries/tour-booking-platform-development"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/industries/web-development-for-small-businesses</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries/web-development-for-small-businesses"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries/web-development-for-small-businesses"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries/web-development-for-small-businesses"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/industries/web-development-for-small-businesses</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/industries/web-development-for-small-businesses"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/industries/web-development-for-small-businesses"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/industries/web-development-for-small-businesses"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/guides/how-to-build-a-nextjs-website</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides/how-to-build-a-nextjs-website"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides/how-to-build-a-nextjs-website"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides/how-to-build-a-nextjs-website"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/guides/how-to-build-a-nextjs-website</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides/how-to-build-a-nextjs-website"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides/how-to-build-a-nextjs-website"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides/how-to-build-a-nextjs-website"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/guides/how-to-deploy-nextjs-on-vercel</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides/how-to-deploy-nextjs-on-vercel"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides/how-to-deploy-nextjs-on-vercel"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides/how-to-deploy-nextjs-on-vercel"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/guides/how-to-deploy-nextjs-on-vercel</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides/how-to-deploy-nextjs-on-vercel"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides/how-to-deploy-nextjs-on-vercel"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides/how-to-deploy-nextjs-on-vercel"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/guides/how-to-deploy-nextjs-on-cpanel</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides/how-to-deploy-nextjs-on-cpanel"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides/how-to-deploy-nextjs-on-cpanel"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides/how-to-deploy-nextjs-on-cpanel"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/guides/how-to-deploy-nextjs-on-cpanel</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides/how-to-deploy-nextjs-on-cpanel"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides/how-to-deploy-nextjs-on-cpanel"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides/how-to-deploy-nextjs-on-cpanel"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/guides/how-to-use-supabase-authentication-with-nextjs</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides/how-to-use-supabase-authentication-with-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides/how-to-use-supabase-authentication-with-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides/how-to-use-supabase-authentication-with-nextjs"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/guides/how-to-use-supabase-authentication-with-nextjs</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides/how-to-use-supabase-authentication-with-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides/how-to-use-supabase-authentication-with-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides/how-to-use-supabase-authentication-with-nextjs"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/guides/how-to-build-a-nextjs-admin-dashboard</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides/how-to-build-a-nextjs-admin-dashboard"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides/how-to-build-a-nextjs-admin-dashboard"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides/how-to-build-a-nextjs-admin-dashboard"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/guides/how-to-build-a-nextjs-admin-dashboard</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides/how-to-build-a-nextjs-admin-dashboard"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides/how-to-build-a-nextjs-admin-dashboard"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides/how-to-build-a-nextjs-admin-dashboard"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/guides/how-to-connect-nextjs-to-postgresql</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides/how-to-connect-nextjs-to-postgresql"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides/how-to-connect-nextjs-to-postgresql"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides/how-to-connect-nextjs-to-postgresql"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/guides/how-to-connect-nextjs-to-postgresql</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides/how-to-connect-nextjs-to-postgresql"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides/how-to-connect-nextjs-to-postgresql"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides/how-to-connect-nextjs-to-postgresql"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/guides/how-to-create-dynamic-routes-in-nextjs</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides/how-to-create-dynamic-routes-in-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides/how-to-create-dynamic-routes-in-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides/how-to-create-dynamic-routes-in-nextjs"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/guides/how-to-create-dynamic-routes-in-nextjs</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides/how-to-create-dynamic-routes-in-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides/how-to-create-dynamic-routes-in-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides/how-to-create-dynamic-routes-in-nextjs"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/guides/how-to-generate-metadata-in-nextjs</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides/how-to-generate-metadata-in-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides/how-to-generate-metadata-in-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides/how-to-generate-metadata-in-nextjs"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/guides/how-to-generate-metadata-in-nextjs</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides/how-to-generate-metadata-in-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides/how-to-generate-metadata-in-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides/how-to-generate-metadata-in-nextjs"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/guides/how-to-create-an-xml-sitemap-in-nextjs</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides/how-to-create-an-xml-sitemap-in-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides/how-to-create-an-xml-sitemap-in-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides/how-to-create-an-xml-sitemap-in-nextjs"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/guides/how-to-create-an-xml-sitemap-in-nextjs</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides/how-to-create-an-xml-sitemap-in-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides/how-to-create-an-xml-sitemap-in-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides/how-to-create-an-xml-sitemap-in-nextjs"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/guides/how-to-add-json-ld-in-nextjs</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides/how-to-add-json-ld-in-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides/how-to-add-json-ld-in-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides/how-to-add-json-ld-in-nextjs"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/guides/how-to-add-json-ld-in-nextjs</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides/how-to-add-json-ld-in-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides/how-to-add-json-ld-in-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides/how-to-add-json-ld-in-nextjs"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/guides/how-to-improve-core-web-vitals-in-nextjs</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides/how-to-improve-core-web-vitals-in-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides/how-to-improve-core-web-vitals-in-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides/how-to-improve-core-web-vitals-in-nextjs"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/guides/how-to-improve-core-web-vitals-in-nextjs</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides/how-to-improve-core-web-vitals-in-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides/how-to-improve-core-web-vitals-in-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides/how-to-improve-core-web-vitals-in-nextjs"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/guides/how-to-optimize-nextjs-images</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides/how-to-optimize-nextjs-images"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides/how-to-optimize-nextjs-images"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides/how-to-optimize-nextjs-images"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/guides/how-to-optimize-nextjs-images</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides/how-to-optimize-nextjs-images"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides/how-to-optimize-nextjs-images"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides/how-to-optimize-nextjs-images"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/guides/how-to-protect-api-routes-in-nextjs</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides/how-to-protect-api-routes-in-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides/how-to-protect-api-routes-in-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides/how-to-protect-api-routes-in-nextjs"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/guides/how-to-protect-api-routes-in-nextjs</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides/how-to-protect-api-routes-in-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides/how-to-protect-api-routes-in-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides/how-to-protect-api-routes-in-nextjs"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/guides/how-to-add-google-maps-to-nextjs</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides/how-to-add-google-maps-to-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides/how-to-add-google-maps-to-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides/how-to-add-google-maps-to-nextjs"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/guides/how-to-add-google-maps-to-nextjs</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides/how-to-add-google-maps-to-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides/how-to-add-google-maps-to-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides/how-to-add-google-maps-to-nextjs"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/guides/how-to-integrate-stripe-with-nextjs</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides/how-to-integrate-stripe-with-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides/how-to-integrate-stripe-with-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides/how-to-integrate-stripe-with-nextjs"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/guides/how-to-integrate-stripe-with-nextjs</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides/how-to-integrate-stripe-with-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides/how-to-integrate-stripe-with-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides/how-to-integrate-stripe-with-nextjs"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/guides/how-to-build-a-crm-with-nextjs-and-supabase</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides/how-to-build-a-crm-with-nextjs-and-supabase"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides/how-to-build-a-crm-with-nextjs-and-supabase"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides/how-to-build-a-crm-with-nextjs-and-supabase"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/guides/how-to-build-a-crm-with-nextjs-and-supabase</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides/how-to-build-a-crm-with-nextjs-and-supabase"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides/how-to-build-a-crm-with-nextjs-and-supabase"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides/how-to-build-a-crm-with-nextjs-and-supabase"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/guides/how-to-build-a-saas-application-with-nextjs</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides/how-to-build-a-saas-application-with-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides/how-to-build-a-saas-application-with-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides/how-to-build-a-saas-application-with-nextjs"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/guides/how-to-build-a-saas-application-with-nextjs</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides/how-to-build-a-saas-application-with-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides/how-to-build-a-saas-application-with-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides/how-to-build-a-saas-application-with-nextjs"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/guides/how-to-build-an-ai-chatbot-for-a-website</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides/how-to-build-an-ai-chatbot-for-a-website"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides/how-to-build-an-ai-chatbot-for-a-website"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides/how-to-build-an-ai-chatbot-for-a-website"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/guides/how-to-build-an-ai-chatbot-for-a-website</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides/how-to-build-an-ai-chatbot-for-a-website"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides/how-to-build-an-ai-chatbot-for-a-website"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides/how-to-build-an-ai-chatbot-for-a-website"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/guides/how-to-integrate-the-openai-api-with-nextjs</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides/how-to-integrate-the-openai-api-with-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides/how-to-integrate-the-openai-api-with-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides/how-to-integrate-the-openai-api-with-nextjs"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/guides/how-to-integrate-the-openai-api-with-nextjs</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides/how-to-integrate-the-openai-api-with-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides/how-to-integrate-the-openai-api-with-nextjs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides/how-to-integrate-the-openai-api-with-nextjs"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.justinjohnson.de/guides/how-to-improve-seo-for-a-react-website</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides/how-to-improve-seo-for-a-react-website"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides/how-to-improve-seo-for-a-react-website"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides/how-to-improve-seo-for-a-react-website"/>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.justinjohnson.de/de/guides/how-to-improve-seo-for-a-react-website</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.justinjohnson.de/guides/how-to-improve-seo-for-a-react-website"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.justinjohnson.de/de/guides/how-to-improve-seo-for-a-react-website"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.justinjohnson.de/guides/how-to-improve-seo-for-a-react-website"/>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

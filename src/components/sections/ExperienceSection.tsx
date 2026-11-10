@@ -1,5 +1,6 @@
 import ExperienceItem from "../experience/ExperienceItem";
 import { experiences } from "../../data/experience";
+import { t } from "../../i18n/locale";
 
 export default function ExperienceSection() {
   return (
@@ -7,9 +8,9 @@ export default function ExperienceSection() {
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="flex justify-between items-end mb-16">
           <div>
-            <h2 className="font-headline text-4xl font-black text-primary">EXPERIENCE</h2>
+            <h2 className="font-headline text-4xl font-black text-primary">{t({ en: "EXPERIENCE", de: "BERUFSERFAHRUNG" })}</h2>
             <p className="text-on-surface-variant uppercase tracking-[0.2em] text-xs mt-2">
-              Professional Journey
+              {t({ en: "Professional Journey", de: "Beruflicher Werdegang" })}
             </p>
           </div>
         </div>

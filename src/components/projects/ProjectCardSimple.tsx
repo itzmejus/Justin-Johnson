@@ -1,3 +1,10 @@
+import { t } from "../../i18n/locale";
+
+const copy = t({
+  en: { live: "Live link", internal: "Internal system", privateAccess: "Private access", notPublic: "internal system, not publicly accessible", demo: "dashboard (demo data)" },
+  de: { live: "Live ansehen", internal: "Internes System", privateAccess: "Privater Zugang", notPublic: "internes System, nicht öffentlich zugänglich", demo: "Dashboard (Demodaten)" },
+});
+
 interface ProjectCardSimpleProps {
   category: string;
   title: string;
@@ -53,7 +60,7 @@ export default function ProjectCardSimple({
             onClick={(e) => e.stopPropagation()}
             className="text-xs uppercase tracking-widest font-bold text-on-surface-variant hover:text-primary transition-colors"
           >
-            Live link
+            {copy.live}
           </a>
           <span className="flex items-center justify-center w-9 h-9 rounded-[999px] bg-surface-container-highest text-on-surface-variant transition-all duration-300 group-hover:bg-primary group-hover:text-on-primary group-hover:shadow-lg group-hover:shadow-primary/25">
             <span className="material-symbols-outlined text-lg">arrow_outward</span>
@@ -70,14 +77,14 @@ function LockedCard({ category, title, image }: { category: string; title: strin
   return (
     <div
       className="group flex flex-col bg-surface-container rounded-2xl border border-outline-variant shadow-sm overflow-hidden"
-      aria-label={`${title} (internal system, not publicly accessible)`}
+      aria-label={`${title} (${copy.notPublic})`}
     >
       <div className="p-3 pb-0">
         {image ? (
           <div className="relative aspect-video bg-surface-container-low overflow-hidden rounded-xl border border-outline-variant">
             <img
               src={image}
-              alt={`${title} dashboard (demo data)`}
+              alt={`${title} ${copy.demo}`}
               loading="lazy"
               decoding="async"
               className="w-full h-full object-cover object-top"
@@ -87,7 +94,7 @@ function LockedCard({ category, title, image }: { category: string; title: strin
                 <span className="material-symbols-outlined text-3xl">lock</span>
               </span>
               <span className="px-2.5 py-1 rounded-[999px] bg-white/90 backdrop-blur-sm border border-outline-variant shadow-sm text-[10px] uppercase tracking-widest font-bold text-on-surface">
-                Internal system
+                {copy.internal}
               </span>
             </div>
           </div>
@@ -97,7 +104,7 @@ function LockedCard({ category, title, image }: { category: string; title: strin
             <span className="material-symbols-outlined text-3xl">lock</span>
           </span>
           <span className="text-[10px] uppercase tracking-widest font-bold text-on-surface-variant">
-            Internal system
+            {copy.internal}
           </span>
         </div>
         )}
@@ -109,7 +116,7 @@ function LockedCard({ category, title, image }: { category: string; title: strin
         <h3 className="mt-3 mb-5 text-xl font-headline font-bold text-on-surface">{title}</h3>
         <div className="mt-auto pt-5 flex items-center justify-between border-t border-outline-variant">
           <span className="text-xs uppercase tracking-widest font-bold text-on-surface-variant">
-            Private access
+            {copy.privateAccess}
           </span>
           <span className="flex items-center justify-center w-9 h-9 rounded-[999px] bg-surface-container-highest text-on-surface-variant">
             <span className="material-symbols-outlined text-lg">lock</span>

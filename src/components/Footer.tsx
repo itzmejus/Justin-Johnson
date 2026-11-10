@@ -1,28 +1,71 @@
 import { useId, useState } from "react";
 import { profile } from "../data/profile";
 import { CATEGORY_LABELS, CATEGORY_PATHS, type SeoCategory } from "../data/seo/types";
+import { lp, t } from "../i18n/locale";
 
 const seoCategories: SeoCategory[] = ["services", "technologies", "solutions", "resources", "industries", "guides"];
 
-// The footer appears on every page, so home sections are linked as "/#id" rather than "#id".
-const exploreLinks = [
-  { label: "About", href: "/#about" },
-  { label: "Experience", href: "/#experience" },
-  { label: "Case Studies", href: "/#case-studies" },
-  { label: "Ventures", href: "/#ventures" },
-  { label: "Projects", href: "/#projects" },
-];
+const copy = t({
+  en: {
+    getInTouch: "Get in touch",
+    explore: "Explore",
+    workWithMe: "Work with me",
+    resources: "Resources",
+    rights: "All rights reserved.",
+    backToTop: "Back to top",
+    location: "Abu Dhabi, UAE",
+    in: "in",
+    blurb: ", building fast, scalable web platforms for e-commerce, travel and service businesses, and founder of",
+  },
+  de: {
+    getInTouch: "Kontakt",
+    explore: "Entdecken",
+    workWithMe: "Zusammenarbeit",
+    resources: "Ressourcen",
+    rights: "Alle Rechte vorbehalten.",
+    backToTop: "Nach oben",
+    location: "Abu Dhabi, VAE",
+    in: "in",
+    blurb: ". Ich entwickle schnelle, skalierbare Webplattformen für E-Commerce, Reise- und Dienstleistungsunternehmen und bin Gründer von",
+  },
+});
 
-const workLinks = [
-  { label: "Hire Me", href: "/#contact" },
-  { label: "Freelance", href: "/freelance" },
-  { label: "Blog", href: "/blog" },
-  { label: "Download CV", href: "/cv" },
-];
+// The footer appears on every page, so home sections are linked as "/#id" rather than "#id".
+const exploreLinks = t({
+  en: [
+    { label: "About", href: "/#about" },
+    { label: "Experience", href: "/#experience" },
+    { label: "Case Studies", href: "/#case-studies" },
+    { label: "Ventures", href: "/#ventures" },
+    { label: "Projects", href: "/#projects" },
+  ],
+  de: [
+    { label: "Über mich", href: "/#about" },
+    { label: "Erfahrung", href: "/#experience" },
+    { label: "Fallstudien", href: "/#case-studies" },
+    { label: "Eigene Produkte", href: "/#ventures" },
+    { label: "Projekte", href: "/#projects" },
+  ],
+}).map((link) => ({ ...link, href: lp(link.href) }));
+
+const workLinks = t({
+  en: [
+    { label: "Hire Me", href: "/#contact" },
+    { label: "Freelance", href: "/freelance" },
+    { label: "Blog", href: "/blog" },
+    { label: "Download CV", href: "/cv" },
+  ],
+  de: [
+    { label: "Anfrage senden", href: "/#contact" },
+    { label: "Freelance", href: "/freelance" },
+    { label: "Blog", href: "/blog" },
+    { label: "Lebenslauf", href: "/cv" },
+  ],
+}).map((link) => ({ ...link, href: lp(link.href) }));
 
 const resourceLinks = seoCategories.map((category) => ({
   label: CATEGORY_LABELS[category],
-  href: CATEGORY_PATHS[category],
+  href: lp(CATEGORY_PATHS[category]),
 }));
 
 const linkClass = "text-sm text-on-surface-variant hover:text-primary transition-colors";
@@ -38,7 +81,7 @@ export default function Footer() {
 
           {/* Phones: contact card comes straight after the brand; wider screens: last column */}
           <div className="order-2 sm:order-last mt-8 sm:mt-0 lg:col-span-2">
-            <ColumnTitle className="hidden sm:block">Get in touch</ColumnTitle>
+            <ColumnTitle className="hidden sm:block">{copy.getInTouch}</ColumnTitle>
             <ul className="grid gap-3 p-4 sm:p-0 bg-white sm:bg-transparent border border-outline-variant sm:border-0 rounded-2xl shadow-sm sm:shadow-none">
               <li>
                 <a href={`mailto:${profile.email}`} className={`${linkClass} inline-flex items-start gap-2 break-all`}>
@@ -54,21 +97,21 @@ export default function Footer() {
               </li>
               <li className="inline-flex items-center gap-2 text-sm text-on-surface-variant">
                 <span className="material-symbols-outlined text-base text-primary">location_on</span>
-                {profile.location}
+                {copy.location}
               </li>
             </ul>
           </div>
 
           <div className="order-3 mt-6 sm:mt-0 border-t border-outline-variant sm:border-0 sm:contents">
-            <LinkGroup title="Explore" links={exploreLinks} className="sm:order-3 lg:col-span-2" />
-            <LinkGroup title="Work with me" links={workLinks} className="sm:order-3 lg:col-span-2" />
-            <LinkGroup title="Resources" links={resourceLinks} className="sm:order-3 lg:col-span-2" />
+            <LinkGroup title={copy.explore} links={exploreLinks} className="sm:order-3 lg:col-span-2" />
+            <LinkGroup title={copy.workWithMe} links={workLinks} className="sm:order-3 lg:col-span-2" />
+            <LinkGroup title={copy.resources} links={resourceLinks} className="sm:order-3 lg:col-span-2" />
           </div>
         </div>
 
         {/* Extra bottom padding on phones keeps the bar clear of the floating buttons */}
         <div className="mt-8 md:mt-16 py-6 pb-28 sm:pb-6 border-t border-outline-variant flex flex-col-reverse sm:flex-row items-center justify-between gap-3 text-xs text-on-surface-variant text-center">
-          <p>&copy; {year} {profile.name}. All rights reserved.</p>
+          <p>&copy; {year} {profile.name}. {copy.rights}</p>
           <a
             href="#"
             onClick={(e) => {
@@ -77,7 +120,7 @@ export default function Footer() {
             }}
             className="inline-flex items-center gap-1 font-bold uppercase tracking-widest hover:text-primary transition-colors"
           >
-            Back to top
+            {copy.backToTop}
             <span className="material-symbols-outlined text-base">arrow_upward</span>
           </a>
         </div>
@@ -89,12 +132,11 @@ export default function Footer() {
 function Brand() {
   return (
     <div className="order-1 sm:col-span-2 lg:col-span-4 flex flex-col items-center sm:items-start text-center sm:text-left gap-4 sm:gap-5">
-      <a href="/" className="font-headline text-2xl font-black tracking-tighter text-primary">
+      <a href={lp("/")} className="font-headline text-2xl font-black tracking-tighter text-primary">
         JUSTIN JOHNSON
       </a>
       <p className="text-sm text-on-surface-variant leading-relaxed max-w-sm">
-        {profile.jobTitle} in {profile.location}, building fast, scalable web platforms for
-        e-commerce, travel and service businesses, and founder of{" "}
+        {profile.jobTitle} {copy.in} {copy.location}{copy.blurb}{" "}
         <a
           href="https://assist.siteselo.com/"
           target="_blank"

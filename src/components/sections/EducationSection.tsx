@@ -1,4 +1,5 @@
 import { education } from "../../data/education";
+import { t } from "../../i18n/locale";
 
 export default function EducationSection() {
   return (
@@ -7,7 +8,7 @@ export default function EducationSection() {
         <div className="grid md:grid-cols-2 gap-16">
           <div>
             <h2 className="font-headline text-4xl font-black text-primary mb-12">
-              ACADEMIC FOUNDATION
+              {t({ en: "ACADEMIC FOUNDATION", de: "AUSBILDUNG" })}
             </h2>
             <div className="space-y-8">
               {education.map((edu) => (
@@ -69,9 +70,12 @@ function ContinuousLearningCard() {
       <span className="material-symbols-outlined text-6xl text-primary mb-6">
         workspace_premium
       </span>
-      <h3 className="font-headline text-2xl font-bold mb-4">Continuous Learning</h3>
+      <h3 className="font-headline text-2xl font-bold mb-4">{t({ en: "Continuous Learning", de: "Kontinuierliches Lernen" })}</h3>
       <p className="text-on-surface-variant max-w-sm">
-        Consistently updating skillsets through AWS certifications and modern framework deep-dives.
+        {t({
+          en: "Consistently updating skillsets through AWS certifications and modern framework deep-dives.",
+          de: "Ich erweitere meine Fähigkeiten laufend durch AWS-Zertifizierungen und intensive Auseinandersetzung mit modernen Frameworks.",
+        })}
       </p>
     </div>
   );

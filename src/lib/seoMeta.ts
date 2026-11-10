@@ -1,5 +1,6 @@
 import type { SeoPage } from "../data/seo/types";
 import { CATEGORY_LABELS, CATEGORY_PATHS } from "../data/seo/types";
+import { lp, t } from "../i18n/locale";
 
 /**
  * Framework-agnostic SEO helpers shared by the client-side useSEO hook and the
@@ -16,15 +17,20 @@ export function seoPagePath(page: SeoPage): string {
   return `${CATEGORY_PATHS[page.category]}/${page.slug}`;
 }
 
+/** Absolute URL of a logical path in the current locale. */
+export function absoluteUrl(path: string): string {
+  return `${SITE_URL}${lp(path)}`;
+}
+
 export function seoPageUrl(page: SeoPage): string {
-  return `${SITE_URL}${seoPagePath(page)}`;
+  return absoluteUrl(seoPagePath(page));
 }
 
 export type BreadcrumbItem = { label: string; path: string };
 
 export function seoBreadcrumbs(page: SeoPage): BreadcrumbItem[] {
   return [
-    { label: "Home", path: "/" },
+    { label: t({ en: "Home", de: "Startseite" }), path: "/" },
     { label: CATEGORY_LABELS[page.category], path: CATEGORY_PATHS[page.category] },
     { label: page.h1, path: seoPagePath(page) },
   ];
@@ -38,7 +44,7 @@ export function breadcrumbJsonLd(items: BreadcrumbItem[]) {
       "@type": "ListItem",
       position: index + 1,
       name: item.label,
-      item: `${SITE_URL}${item.path}`,
+      item: absoluteUrl(item.path),
     })),
   };
 }
@@ -52,6 +58,7 @@ function mainEntityJsonLd(page: SeoPage) {
     name: page.h1,
     headline: page.h1,
     description: page.description,
+    inLanguage: t({ en: "en", de: "de" }),
     datePublished: page.publishedAt,
     dateModified: page.updatedAt,
   };
@@ -63,7 +70,7 @@ function mainEntityJsonLd(page: SeoPage) {
         "@type": "Service",
         serviceType: page.primaryKeyword,
         provider: { "@type": "Person", name: AUTHOR_NAME, url: AUTHOR_URL },
-        areaServed: { "@type": "Place", name: "Worldwide (remote)" },
+        areaServed: { "@type": "Place", name: t({ en: "Worldwide (remote)", de: "Weltweit (remote)" }) },
       };
     case "TechArticle":
       return {

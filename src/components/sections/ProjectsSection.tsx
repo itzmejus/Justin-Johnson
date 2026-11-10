@@ -1,5 +1,32 @@
 import ProjectCardFeatured from "../projects/ProjectCardFeatured";
 import ProjectCardSimple from "../projects/ProjectCardSimple";
+import { t } from "../../i18n/locale";
+
+// German category labels, keyed by the English label used in the project lists below.
+const CATEGORY_DE: Record<string, string> = {
+  "Real Estate": "Immobilien",
+  "Vehicle Hire": "Fahrzeugvermietung",
+  "Pet Boutique": "Tierbedarf-Boutique",
+  "Print Design": "Druck & Design",
+  "Tour Booking": "Tourenbuchung",
+  "Visa Services": "Visa-Service",
+  "Desert Safaris": "Wüstensafaris",
+  "Luxury Car Hire": "Luxuswagenvermietung",
+  "Flight Booking": "Flugbuchung",
+  "Taxi & Transfers": "Taxi & Transfers",
+  "Umrah Essentials": "Umrah-Bedarf",
+  "Transport Comparison": "Transportvergleich",
+  "Visa App": "Visa-App",
+  "Taxi Booking": "Taxibuchung",
+  Restaurant: "Restaurant",
+  "Scalp Micropigmentation": "Kopfhaut-Mikropigmentierung",
+  "Handyman Services": "Handwerkerservice",
+  "Hotel Reviews": "Hotelbewertungen",
+  "Transport Operations": "Transportbetrieb",
+  "Business Centre CRM": "Business-Center-CRM",
+};
+
+const localizeCategory = (category: string) => t({ en: category, de: CATEGORY_DE[category] ?? category });
 
 import imgJadeProps from "../../assets/jadeprops.webp";
 import imgMinibus from "../../assets/minibushirelondon.webp";
@@ -74,18 +101,18 @@ export default function ProjectsSection() {
     <section className="py-24" id="projects">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="mb-16">
-          <h2 className="font-headline text-4xl font-black text-primary">SELECTED WORKS</h2>
+          <h2 className="font-headline text-4xl font-black text-primary">{t({ en: "SELECTED WORKS", de: "AUSGEWÄHLTE PROJEKTE" })}</h2>
           <p className="text-on-surface-variant uppercase tracking-[0.2em] text-xs mt-2">
-            19 Live Deployments · 2 Internal Systems
+            {t({ en: "19 Live Deployments · 2 Internal Systems", de: "19 Live-Projekte · 2 interne Systeme" })}
           </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {featuredProjects.map((project) => (
-            <ProjectCardFeatured key={project.title} {...project} />
+            <ProjectCardFeatured key={project.title} {...project} category={localizeCategory(project.category)} />
           ))}
           {simpleProjects.map((project) => (
-            <ProjectCardSimple key={project.title} {...project} />
+            <ProjectCardSimple key={project.title} {...project} category={localizeCategory(project.category)} />
           ))}
         </div>
       </div>

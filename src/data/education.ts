@@ -1,4 +1,6 @@
-export const education = [
+import { t } from "../i18n/locale";
+
+const educationList = [
   {
     degree: "BCA",
     institution: "Shreedevi College, India",
@@ -19,3 +21,17 @@ export const education = [
     years: "2015",
   },
 ];
+
+// German labels for the degrees and the country; years and links stay the same.
+const DEGREES_DE: Record<string, string> = {
+  BCA: "Bachelor of Computer Applications (BCA)",
+  "Plus 2": "Hochschulreife (Plus 2)",
+  SSLC: "Mittlerer Schulabschluss (SSLC)",
+};
+
+export const education = educationList.map((edu) =>
+  t({
+    en: edu,
+    de: { ...edu, degree: DEGREES_DE[edu.degree] ?? edu.degree, institution: edu.institution.replace(", India", ", Indien") },
+  }),
+);

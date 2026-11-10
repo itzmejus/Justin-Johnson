@@ -11,6 +11,7 @@ import ProjectsSection from "./components/sections/ProjectsSection";
 import LanguagesSection from "./components/sections/LanguagesSection";
 import EducationSection from "./components/sections/EducationSection";
 import ContactSection from "./components/sections/ContactSection";
+import ExploreSection from "./components/sections/ExploreSection";
 import Footer from "./components/Footer";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import ChatWidgetHint from "./components/ChatWidgetHint";
@@ -26,12 +27,15 @@ import SeoNotFoundPage from "./pages/seo/SeoNotFoundPage";
 import { getSeoPage } from "./data/seo";
 import { hubConfigs } from "./data/seo/hubs";
 import type { SeoCategory } from "./data/seo/types";
+import { stripLocale, t } from "./i18n/locale";
+import { useSEO } from "./hooks/useSEO";
 
 const SEO_DETAIL_CATEGORIES: SeoCategory[] = ["technologies", "solutions", "resources", "industries", "guides"];
 const SEO_HUB_CATEGORIES: SeoCategory[] = ["technologies", "solutions", "resources", "industries", "guides"];
 
 export default function App() {
-  const path = window.location.pathname;
+  // Logical route path: the /de prefix is stripped so both languages share one routing table.
+  const path = stripLocale(window.location.pathname);
   const chat = useChatWidget();
   // Stack the WhatsApp button above the chat launcher when they share the corner.
   const whatsappAboveChat = chat.ready && chat.position === "right";
@@ -98,6 +102,31 @@ export default function App() {
     return <BlogPostPage slug={slug} />;
   }
 
+  return <HomePage whatsappAboveChat={whatsappAboveChat} />;
+}
+
+function HomePage({ whatsappAboveChat }: { whatsappAboveChat: boolean }) {
+  useSEO(
+    t({
+      en: {
+        title: "Justin Johnson | Full Stack Developer & Freelance React/Next.js Engineer",
+        description:
+          "Justin Johnson is a Full Stack Developer and freelance React, Next.js, Node.js & AWS engineer based in Abu Dhabi, UAE, specializing in e-commerce, Shopify headless commerce, cloud integrations, and multi-market booking platforms. Available for freelance and contract work — explore case studies and get in touch.",
+        path: "/",
+        keywords:
+          "Justin Johnson, Full Stack Developer, Freelance Full Stack Developer, React Developer, Next.js Developer, Node.js Developer, AWS Developer, Shopify Headless Commerce Developer, E-commerce Developer, Web Developer Abu Dhabi, Web Developer UAE, Freelance Web Developer, Hire React Developer, Booking Platform Developer, JavaScript Developer, TypeScript Developer",
+      },
+      de: {
+        title: "Justin Johnson | Full Stack Entwickler – React, Next.js & AWS",
+        description:
+          "Justin Johnson ist Full Stack Entwickler und freiberuflicher React-, Next.js-, Node.js- & AWS-Entwickler mit Schwerpunkt E-Commerce, Shopify Headless Commerce, Cloud-Integrationen und Buchungsplattformen. Verfügbar für Freelance- und Projektarbeit.",
+        path: "/",
+        keywords:
+          "Justin Johnson, Full Stack Entwickler, Freiberuflicher Full Stack Entwickler, React Entwickler, Next.js Entwickler, Node.js Entwickler, AWS Entwickler, Shopify Headless Commerce Entwickler, E-Commerce Entwickler, Freelance Webentwickler, React Entwickler beauftragen, Buchungsplattform Entwicklung, TypeScript Entwickler, Webentwickler Deutschland",
+      },
+    }),
+  );
+
   return (
     <div className="font-body selection:bg-primary selection:text-on-primary">
       <Header />
@@ -111,6 +140,7 @@ export default function App() {
         <ProjectsSection />
         <LanguagesSection />
         <EducationSection />
+        <ExploreSection />
         <ContactSection />
       </main>
       <Footer />
@@ -125,7 +155,7 @@ export default function App() {
           backgroundColor: "#25D366",
           ...(whatsappAboveChat && { bottom: CHAT_LAUNCHER_BOX + 8, right: CHAT_LAUNCHER_BOX / 2 - 28 }),
         }}
-        aria-label="Chat on WhatsApp"
+        aria-label={t({ en: "Chat on WhatsApp", de: "Per WhatsApp chatten" })}
       >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" className="w-8 h-8 fill-white">
           <path d="M16 .5C7.44.5.5 7.44.5 16c0 2.83.74 5.49 2.04 7.8L.5 31.5l7.93-2.01A15.45 15.45 0 0 0 16 31.5C24.56 31.5 31.5 24.56 31.5 16S24.56.5 16 .5zm0 28.3a13.17 13.17 0 0 1-6.72-1.84l-.48-.29-4.7 1.19 1.24-4.57-.32-.5A13.2 13.2 0 1 1 16 28.8zm7.24-9.88c-.4-.2-2.35-1.16-2.71-1.29-.37-.13-.63-.2-.9.2s-1.03 1.29-1.26 1.55c-.23.27-.46.3-.86.1a10.83 10.83 0 0 1-3.19-1.97 11.96 11.96 0 0 1-2.21-2.74c-.23-.4 0-.61.18-.81.16-.18.4-.46.6-.69.2-.23.26-.4.4-.66.13-.27.07-.5-.03-.7-.1-.2-.9-2.16-1.23-2.96-.32-.78-.65-.67-.9-.68h-.76c-.27 0-.7.1-1.06.5-.37.4-1.4 1.36-1.4 3.32s1.43 3.85 1.63 4.12c.2.27 2.82 4.3 6.83 6.03.95.41 1.7.66 2.28.84.96.3 1.83.26 2.52.16.77-.12 2.35-.96 2.68-1.89.33-.93.33-1.72.23-1.89-.1-.17-.36-.27-.76-.47z" />

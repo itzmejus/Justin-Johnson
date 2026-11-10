@@ -11,19 +11,34 @@ import type { SeoPage as SeoPageData } from "../../data/seo/types";
 import { getRelatedPages } from "../../data/seo";
 import { useSEO } from "../../hooks/useSEO";
 import { buildSeoHeadMeta, seoBreadcrumbs } from "../../lib/seoMeta";
+import { t } from "../../i18n/locale";
 
-const CTA_COPY: Record<SeoPageData["pageType"], { heading: string; body: string }> = {
-  commercial: {
-    heading: "NEED THIS FOR YOUR PROJECT?",
-    body:
-      "I'm currently available for freelance and contract work. Check availability and engagement options, or reach out directly to discuss scope.",
+const CTA_COPY: Record<SeoPageData["pageType"], { heading: string; body: string }> = t({
+  en: {
+    commercial: {
+      heading: "NEED THIS FOR YOUR PROJECT?",
+      body:
+        "I'm currently available for freelance and contract work. Check availability and engagement options, or reach out directly to discuss scope.",
+    },
+    guide: {
+      heading: "BUILDING SOMETHING SIMILAR?",
+      body:
+        "If you'd rather have this built and shipped than build it yourself, I'm available for freelance and contract work.",
+    },
   },
-  guide: {
-    heading: "BUILDING SOMETHING SIMILAR?",
-    body:
-      "If you'd rather have this built and shipped than build it yourself, I'm available for freelance and contract work.",
+  de: {
+    commercial: {
+      heading: "BRAUCHEN SIE DAS FÜR IHR PROJEKT?",
+      body:
+        "Ich bin derzeit für Freelance- und Projektarbeit verfügbar. Prüfen Sie Verfügbarkeit und Formen der Zusammenarbeit oder kontaktieren Sie mich direkt, um den Umfang zu besprechen.",
+    },
+    guide: {
+      heading: "SIE PLANEN ETWAS ÄHNLICHES?",
+      body:
+        "Wenn Sie das lieber entwickeln und ausliefern lassen möchten, statt es selbst umzusetzen: Ich bin für Freelance- und Projektarbeit verfügbar.",
+    },
   },
-};
+});
 
 export default function SeoPage({ page }: { page: SeoPageData }) {
   const meta = buildSeoHeadMeta(page);
