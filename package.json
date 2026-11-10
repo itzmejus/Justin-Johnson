@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && node scripts/generate-sitemap.mjs && vite build && node scripts/prerender.mjs",
+    "build": "tsc -b && node scripts/generate-sitemap.mjs && vite build && npm run prerender",
     "build:fast": "tsc -b && node scripts/generate-sitemap.mjs && vite build",
     "sitemap": "node scripts/generate-sitemap.mjs",
-    "prerender": "node scripts/prerender.mjs",
+    "prerender": "puppeteer browsers install chrome && node scripts/prerender.mjs",
     "qa:content": "tsx scripts/qa-content.mjs",
     "qa:dist": "node scripts/qa-dist.mjs",
     "qa:links": "node scripts/qa-links.mjs",
